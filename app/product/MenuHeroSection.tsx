@@ -22,7 +22,7 @@ export default function MenuHeroSection() {
       {/* Mobile/Tablet Hero Image */}
       <div className="block lg:hidden absolute inset-0">
         <Image
-          src="/images/pages/our_products/ourProducts.contactUs.png"
+          src="/images/pages/our_products/ourProducts.heroSection.png"
           alt="Our Products"
           fill
           className="object-cover object-center"
@@ -40,11 +40,11 @@ export default function MenuHeroSection() {
         </svg>
       </div>
 
-      {/* Hero Text Content */}
-      <div className="relative z-20 h-full flex items-center justify-center px-4">
+      {/* Hero Text Content - Visible on all screens, positioned at bottom */}
+      <div className="relative z-20 h-full flex items-end justify-center px-4 pb-6 md:pb-8 lg:pb-10">
         <SlideUp delay={0.3}>
           <div className="text-center max-w-4xl">
-            <h1 className="alegreya-regular text-4xl md:text-5xl lg:text-6xl text-white">
+            <h1 className="alegreya-regular text-4xl md:text-5xl lg:text-6xl text-[var(--foreground-pink)] lg:text-white">
               Our <span className="alegreya-italic">Products</span>
             </h1>
           </div>
