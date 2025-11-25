@@ -1,6 +1,7 @@
 'use client';
 
 import { IoSearch } from 'react-icons/io5';
+import FadeIn from '@/components/animations/FadeIn';
 
 interface ProductSearchProps {
   searchTerm: string;
@@ -11,7 +12,8 @@ export default function ProductSearch({ searchTerm, onSearchChange }: ProductSea
   return (
     <div className="w-full bg-[var(--background-pink)] py-8 md:py-12">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative">
+        <FadeIn>
+          <div className="relative">
           <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
             <IoSearch className="h-5 w-5 md:h-6 md:w-6 text-[var(--foreground-pink)]" />
           </div>
@@ -26,12 +28,13 @@ export default function ProductSearch({ searchTerm, onSearchChange }: ProductSea
                      rubik-regular text-base md:text-lg"
             aria-label="Search products"
           />
-        </div>
-        {searchTerm && (
-          <p className="mt-3 text-sm md:text-base rubik-light text-[var(--foreground-pink)] text-center">
-            Searching for: "{searchTerm}"
-          </p>
-        )}
+          </div>
+          {searchTerm && (
+            <p className="mt-3 text-sm md:text-base rubik-light text-[var(--foreground-pink)] text-center">
+              Searching for: "{searchTerm}"
+            </p>
+          )}
+        </FadeIn>
       </div>
     </div>
   );

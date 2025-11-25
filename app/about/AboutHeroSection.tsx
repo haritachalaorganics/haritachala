@@ -1,4 +1,8 @@
+'use client';
+
 import Image from 'next/image';
+import FadeIn from '@/components/animations/FadeIn';
+import SlideUp from '@/components/animations/SlideUp';
 
 export default function AboutHeroSection() {
   return (
@@ -39,11 +43,13 @@ export default function AboutHeroSection() {
 
       {/* Hero Text Content - Only visible on small/medium screens */}
       <div className="relative z-20 h-full flex items-center justify-center px-4 pb-20 lg:hidden">
-        <div className="text-center max-w-4xl">
-          <h1 className="alegreya-regular text-4xl text-[var(--foreground-blue)]">
-            Welcome to <span className="alegreya-italic">Haritachala Organics</span>
-          </h1>
-        </div>
+        <SlideUp delay={0.3}>
+          <div className="text-center max-w-4xl">
+            <h1 className="alegreya-regular text-4xl text-[var(--foreground-blue)]">
+              Welcome to <span className="alegreya-italic">Haritachala Organics</span>
+            </h1>
+          </div>
+        </SlideUp>
       </div>
     </section>
   );

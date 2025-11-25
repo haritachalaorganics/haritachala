@@ -5,6 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
+import FadeIn from './animations/FadeIn';
+import Stagger from './animations/Stagger';
+import StaggerItem from './animations/StaggerItem';
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,38 +72,45 @@ export default function NavBar() {
           {/* Menu Content */}
           <div className="relative w-full h-full flex flex-col items-center justify-center">
             {/* Close Button */}
-            <button
-              onClick={toggleMenu}
-              className="absolute top-8 right-8 text-white hover:opacity-70 transition-opacity"
-              aria-label="Close menu"
-            >
-              <IoClose size={40} />
-            </button>
+            <FadeIn delay={0.1}>
+              <button
+                onClick={toggleMenu}
+                className="absolute top-8 right-8 text-white hover:opacity-70 transition-opacity"
+                aria-label="Close menu"
+              >
+                <IoClose size={40} />
+              </button>
+            </FadeIn>
 
             {/* Arunachala Line Art */}
-            <div className="mb-12 md:mb-16">
-              <Image
-                src="/images/pages/menu/arunachala_lineart.png"
-                alt="Arunachala"
-                width={300}
-                height={100}
-                className="w-64 md:w-80 h-auto"
-              />
-            </div>
+            <FadeIn delay={0.2}>
+              <div className="mb-12 md:mb-16">
+                <Image
+                  src="/images/pages/menu/arunachala_lineart.png"
+                  alt="Arunachala"
+                  width={300}
+                  height={100}
+                  className="w-64 md:w-80 h-auto"
+                />
+              </div>
+            </FadeIn>
 
             {/* Menu Links */}
-            <nav className="flex flex-col items-center gap-6 md:gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={toggleMenu}
-                  className="afacad-regular text-2xl md:text-3xl text-white hover:opacity-70 transition-opacity"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </nav>
+            <Stagger>
+              <nav className="flex flex-col items-center gap-6 md:gap-8">
+                {navLinks.map((link) => (
+                  <StaggerItem key={link.name}>
+                    <Link
+                      href={link.href}
+                      onClick={toggleMenu}
+                      className="afacad-regular text-2xl md:text-3xl text-white hover:opacity-70 transition-opacity"
+                    >
+                      {link.name}
+                    </Link>
+                  </StaggerItem>
+                ))}
+              </nav>
+            </Stagger>
           </div>
         </div>
       )}

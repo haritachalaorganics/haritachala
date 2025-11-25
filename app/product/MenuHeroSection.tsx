@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import SlideUp from '@/components/animations/SlideUp';
 
 export default function MenuHeroSection() {
   return (
@@ -39,11 +42,13 @@ export default function MenuHeroSection() {
 
       {/* Hero Text Content */}
       <div className="relative z-20 h-full flex items-center justify-center px-4">
-        <div className="text-center max-w-4xl">
-          <h1 className="alegreya-regular text-4xl md:text-5xl lg:text-6xl text-white">
-            Our <span className="alegreya-italic">Products</span>
-          </h1>
-        </div>
+        <SlideUp delay={0.3}>
+          <div className="text-center max-w-4xl">
+            <h1 className="alegreya-regular text-4xl md:text-5xl lg:text-6xl text-white">
+              Our <span className="alegreya-italic">Products</span>
+            </h1>
+          </div>
+        </SlideUp>
       </div>
     </section>
   );

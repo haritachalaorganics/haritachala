@@ -1,6 +1,8 @@
 'use client';
 
 import ProductCarousel from '@/components/ProductCarousel';
+import SlideUp from '@/components/animations/SlideUp';
+import FadeIn from '@/components/animations/FadeIn';
 
 interface Product {
   name: string;
@@ -35,26 +37,30 @@ export default function ProductSection({
     <section className={`w-full py-12 md:py-16 lg:py-20`} style={{ backgroundColor }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="afacad-regular text-3xl md:text-4xl lg:text-5xl uppercase mb-2" style={{ color: textColor }}>
-            {title}
-          </h2>
-          {subtitle && (
-            <p className="rubik-light text-base md:text-lg" style={{ color: textColor }}>
-              {subtitle}
-            </p>
-          )}
-        </div>
+        <SlideUp>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="afacad-regular text-3xl md:text-4xl lg:text-5xl uppercase mb-2" style={{ color: textColor }}>
+              {title}
+            </h2>
+            {subtitle && (
+              <p className="rubik-light text-base md:text-lg" style={{ color: textColor }}>
+                {subtitle}
+              </p>
+            )}
+          </div>
+        </SlideUp>
 
         {/* Products or Empty State */}
         {products.length > 0 ? (
-          <ProductCarousel
-            products={products}
-            buttonColor={buttonColor}
-            arrowColor="#FFFFFF"
-            cardButtonColor={buttonColor}
-            cardTextColor={textColor}
-          />
+          <FadeIn delay={0.2}>
+            <ProductCarousel
+              products={products}
+              buttonColor={buttonColor}
+              arrowColor="#FFFFFF"
+              cardButtonColor={buttonColor}
+              cardTextColor={textColor}
+            />
+          </FadeIn>
         ) : (
           <div className="text-center py-12">
             <p className="rubik-regular text-lg md:text-xl" style={{ color: textColor }}>

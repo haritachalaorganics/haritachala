@@ -2,6 +2,10 @@
 
 import { useState } from 'react';
 import { IoChevronDown } from 'react-icons/io5';
+import SlideUp from '@/components/animations/SlideUp';
+import Stagger from '@/components/animations/Stagger';
+import StaggerItem from '@/components/animations/StaggerItem';
+import FadeIn from '@/components/animations/FadeIn';
 
 interface FAQItem {
   question: string;
@@ -23,17 +27,19 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
     <section className="w-full bg-[var(--background-pink)] py-12 md:py-16 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <h2 className="afacad-regular text-2xl md:text-3xl lg:text-4xl text-[var(--foreground-pink)] text-center mb-8 md:mb-12">
-          Have Questions? We Have Answers.
-        </h2>
+        <SlideUp>
+          <h2 className="afacad-regular text-2xl md:text-3xl lg:text-4xl text-[var(--foreground-pink)] text-center mb-8 md:mb-12">
+            Have Questions? We Have Answers.
+          </h2>
+        </SlideUp>
 
         {/* FAQ Items */}
-        <div className="space-y-4">
+        <Stagger className="space-y-4" staggerDelay={0.1}>
           {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md"
-            >
+            <StaggerItem key={index}>
+              <div
+                className="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md"
+              >
               {/* Question Button */}
               <button
                 onClick={() => toggleFAQ(index)}
@@ -68,11 +74,13 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                 </div>
               </div>
             </div>
+          </StaggerItem>
           ))}
-        </div>
+        </Stagger>
 
         {/* Still Have Questions Section */}
-        <div className="mt-12 md:mt-16 text-center">
+        <FadeIn delay={0.5}>
+          <div className="mt-12 md:mt-16 text-center">
           <p className="rubik-regular text-base md:text-lg text-[var(--foreground-pink)] mb-4">
             Still have questions?
           </p>
@@ -85,7 +93,8 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
               +1 (945) 289-0980
             </a>
           </p>
-        </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

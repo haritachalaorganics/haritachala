@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Button from './Button';
+import ScaleIn from './animations/ScaleIn';
 
 interface ProductCardProps {
   name: string;
@@ -19,7 +22,7 @@ export default function ProductCard({
   textColor = '#C4735A'
 }: ProductCardProps) {
   return (
-    <div className="flex-shrink-0 w-72 md:w-80 bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="flex-shrink-0 w-72 md:w-80 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300">
       <div className="p-6 flex flex-col h-full">
         {/* Product Title */}
         <h3 

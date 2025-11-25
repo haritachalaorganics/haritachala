@@ -1,6 +1,10 @@
+'use client';
+
 import ProductCarousel from '../../components/ProductCarousel';
 import Button from '../../components/Button';
 import productsData from '../../data/products.json';
+import SlideUp from '@/components/animations/SlideUp';
+import FadeIn from '@/components/animations/FadeIn';
 
 interface OurProductsProps {
   backgroundColor?: string;
@@ -33,30 +37,36 @@ export default function OurProducts({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 
-          className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-center mb-8 md:mb-10"
-          style={{ color: titleColor }}
-        >
-          OUR PRODUCTS
-        </h2>
+        <SlideUp>
+          <h2 
+            className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-center mb-8 md:mb-10"
+            style={{ color: titleColor }}
+          >
+            OUR PRODUCTS
+          </h2>
+        </SlideUp>
 
         {/* Carousel */}
-        <ProductCarousel 
-          products={productsWithImages}
-          buttonColor={scrollButtonColor}
-          arrowColor={scrollArrowColor}
-          cardButtonColor={cardButtonColor}
-          cardTextColor={cardTextColor}
-        />
+        <FadeIn delay={0.2} duration={0.8}>
+          <ProductCarousel 
+            products={productsWithImages}
+            buttonColor={scrollButtonColor}
+            arrowColor={scrollArrowColor}
+            cardButtonColor={cardButtonColor}
+            cardTextColor={cardTextColor}
+          />
+        </FadeIn>
 
         {/* All Products Button */}
-        <div className="flex justify-center mt-6 md:mt-8">
-          <Button
-            buttonOutlineColor={allProductsButtonColor}
-            buttonText="All Products"
-            href="/menu"
-          />
-        </div>
+        <FadeIn delay={0.4}>
+          <div className="flex justify-center mt-6 md:mt-8">
+            <Button
+              buttonOutlineColor={allProductsButtonColor}
+              buttonText="All Products"
+              href="/menu"
+            />
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

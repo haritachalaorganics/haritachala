@@ -3,6 +3,8 @@
 import { useRef, useState, useEffect } from 'react';
 import TeamMemberCard from './TeamMemberCard';
 import ScrollButton from '@/components/ScrollButton';
+import SlideUp from '@/components/animations/SlideUp';
+import FadeIn from '@/components/animations/FadeIn';
 
 interface TeamMember {
   name: string;
@@ -80,11 +82,14 @@ export default function TeamCarousel({ teamMembers }: TeamCarouselProps) {
   return (
     <section className="bg-[var(--background-pink)] py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="rubik-light text-3xl md:text-4xl lg:text-5xl text-[var(--foreground-pink)] text-center uppercase mb-12">
-          Meet Our Team
-        </h2>
+        <SlideUp>
+          <h2 className="rubik-light text-3xl md:text-4xl lg:text-5xl text-[var(--foreground-pink)] text-center uppercase mb-12">
+            Meet Our Team
+          </h2>
+        </SlideUp>
 
-        <div className="relative">
+        <FadeIn delay={0.3}>
+          <div className="relative">
           {/* Left Scroll Button */}
           {showLeftButton && (
             <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-20">
@@ -141,7 +146,8 @@ export default function TeamCarousel({ teamMembers }: TeamCarouselProps) {
               display: none;
             }
           `}</style>
-        </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
