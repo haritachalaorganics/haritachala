@@ -72,9 +72,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <div className="relative min-h-screen">
-      {/* Hero Section without curved overlay */}
+      {/* Hero Section with curved overlay */}
       <section 
-        className="relative w-full pt-32 pb-12 md:pt-36 md:pb-16 lg:pt-40 lg:pb-20"
+        className="relative w-full pt-32 pb-24 md:pt-36 md:pb-32 lg:pt-40 lg:pb-40"
         style={{ backgroundColor: bgColor }}
       >
         {/* White Gradient Overlay for NavBar */}
@@ -83,6 +83,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         {/* NavBar */}
         <div className="absolute top-0 left-0 right-0 z-30">
           <NavBar />
+        </div>
+
+        {/* Curved Bottom Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none">
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
+            <path d="M0 120L1440 120L1440 0C1440 0 1080 120 720 120C360 120 0 0 0 0L0 120Z" fill="var(--background-purple)"/>
+          </svg>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
