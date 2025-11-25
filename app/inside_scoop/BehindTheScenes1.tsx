@@ -6,14 +6,14 @@ export default function BehindTheScenes1() {
     <section className="bg-[var(--background-pink)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         {/* Title */}
-        <div className="text-center mb-4">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="afacad-regular text-3xl md:text-4xl text-[var(--foreground-pink)] mb-4 uppercase">
             Behind the Scenes
           </h2>
         </div>
 
         {/* First Card */}
-        <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-4">
+        <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Image - LEFT side */}
             <div className="relative w-full h-[250px] md:h-[300px] lg:h-[350px]">

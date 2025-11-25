@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function InsideScoopHeroSection() {
   return (
-    <section className="relative w-full hidden md:block md:h-[70vh] lg:h-screen overflow-hidden">
-      {/* Desktop/Large Screen Hero Video */}
-      <div className="hidden lg:block absolute inset-0">
+    <section className="relative w-full h-[70vh] lg:h-screen overflow-hidden">
+      {/* Hero Video - All screens */}
+      <div className="absolute inset-0">
         <video
           autoPlay
           loop
@@ -14,17 +14,6 @@ export default function InsideScoopHeroSection() {
         >
           <source src="/images/pages/inside_scoop/insideScoop.heroSectionVideo.mp4" type="video/mp4" />
         </video>
-      </div>
-
-      {/* Mobile/Tablet Hero Image */}
-      <div className="block lg:hidden absolute inset-0">
-        <Image
-          src="/images/pages/inside_scoop/inside_scoop.heroSection.png"
-          alt="Inside Scoop"
-          fill
-          className="object-cover"
-          priority
-        />
       </div>
 
       {/* White Gradient Overlay for Navbar */}
@@ -40,7 +29,7 @@ export default function InsideScoopHeroSection() {
       {/* Hero Text Content - Only visible on small/medium screens */}
       <div className="relative z-20 h-full flex items-center justify-center px-4 pb-20 lg:hidden">
         <div className="text-center max-w-4xl">
-          <h1 className="alegreya-regular text-4xl text-[var(--foreground-blue)]">
+          <h1 className="alegreya-regular text-4xl text-white">
             Welcome to the <span className="alegreya-italic">Inside Scoop</span>
           </h1>
         </div>
