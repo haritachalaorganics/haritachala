@@ -26,11 +26,11 @@ export default function InsideScoopHeroSection() {
         </svg>
       </div>
 
-      {/* Hero Text Content - Only visible on small/medium screens */}
-      <div className="relative z-20 h-full flex items-center justify-center px-4 pb-20 lg:hidden">
-        <div className="text-center max-w-4xl">
-          <h1 className="alegreya-regular text-4xl text-white">
-            Welcome to the <span className="alegreya-italic">Inside Scoop</span>
+      {/* Hero Text Content - Bottom of hero section */}
+      <div className="relative z-20 h-full flex items-end justify-center px-4 pb-8 md:pb-12 lg:pb-16">
+        <div className="text-center max-w-4xl mb-8 md:mb-12">
+          <h1 className="alegreya-regular text-3xl md:text-4xl lg:text-5xl text-white">
+            The <span className="alegreya-italic">Inside Scoop</span>
           </h1>
         </div>
       </div>

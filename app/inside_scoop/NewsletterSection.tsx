@@ -49,7 +49,7 @@ export default function NewsletterSection() {
               <Button
                 buttonOutlineColor="var(--foreground-blue)"
                 buttonText="VIEW HERE"
-                href="/menu"
+                href="https://drive.google.com/file/d/1UB9bU2bWMimaJpqRZzaLYZGyvWamSZF-/view?usp=sharing"
               />
             </div>
           </div>

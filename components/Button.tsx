@@ -5,13 +5,15 @@ interface ButtonProps {
   buttonText?: string;
   href?: string;
   onClick?: () => void;
+  openInNewTab?: boolean;
 }
 
 export default function Button({ 
   buttonOutlineColor, 
   buttonText,
   href,
-  onClick 
+  onClick,
+  openInNewTab = false
 }: ButtonProps) {
   const buttonClasses = "rubik-regular px-8 md:px-12 lg:px-16 py-3 md:py-4 border-2 bg-transparent uppercase text-sm md:text-base lg:text-lg tracking-wide hover:opacity-80 hover:scale-105 transition-all duration-300 inline-block text-center";
   
@@ -22,6 +24,22 @@ export default function Button({
 
   // If href is provided, render as Link
   if (href) {
+    // External link or new tab
+    if (openInNewTab || href.startsWith('http')) {
+      return (
+        <a
+          href={href}
+          className={buttonClasses}
+          style={buttonStyle}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {buttonText}
+        </a>
+      );
+    }
+    
+    // Internal link
     return (
       <Link
         href={href}
