@@ -18,6 +18,7 @@ export default function NavBar() {
     { name: 'Our Products', href: '/product' },
     { name: 'Inside Scoop', href: '/inside_scoop' },
     { name: 'FAQs', href: '/faq' },
+    { name: 'Order Now!', href: '/order' },
   ];
 
   const toggleMenu = () => {
@@ -37,15 +38,28 @@ export default function NavBar() {
 
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="afacad-regular text-base xl:text-lg text-[#645DAB] hover:opacity-70 transition-opacity"
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                if (link.name === 'Order Now!') {
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      className="afacad-regular text-base xl:text-lg text-[#645DAB] border-2 border-[#645DAB] px-4 py-1.5 rounded hover:bg-[#645DAB] hover:text-white transition-all"
+                    >
+                      {link.name}
+                    </Link>
+                  );
+                }
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className="afacad-regular text-base xl:text-lg text-[#645DAB] hover:opacity-70 transition-opacity"
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Mobile/Tablet Menu Button */}
@@ -98,17 +112,32 @@ export default function NavBar() {
             {/* Menu Links */}
             <Stagger>
               <nav className="flex flex-col items-center gap-6 md:gap-8">
-                {navLinks.map((link) => (
-                  <StaggerItem key={link.name}>
-                    <Link
-                      href={link.href}
-                      onClick={toggleMenu}
-                      className="afacad-regular text-2xl md:text-3xl text-white hover:opacity-70 transition-opacity"
-                    >
-                      {link.name}
-                    </Link>
-                  </StaggerItem>
-                ))}
+                {navLinks.map((link) => {
+                  if (link.name === 'Order Now!') {
+                    return (
+                      <StaggerItem key={link.name}>
+                        <Link
+                          href={link.href}
+                          onClick={toggleMenu}
+                          className="afacad-regular text-2xl md:text-3xl text-white border-2 border-white px-6 py-2 rounded hover:bg-white hover:text-[#B3B0D1] transition-all"
+                        >
+                          {link.name}
+                        </Link>
+                      </StaggerItem>
+                    );
+                  }
+                  return (
+                    <StaggerItem key={link.name}>
+                      <Link
+                        href={link.href}
+                        onClick={toggleMenu}
+                        className="afacad-regular text-2xl md:text-3xl text-white hover:opacity-70 transition-opacity"
+                      >
+                        {link.name}
+                      </Link>
+                    </StaggerItem>
+                  );
+                })}
               </nav>
             </Stagger>
           </div>
