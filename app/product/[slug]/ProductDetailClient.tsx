@@ -32,6 +32,22 @@ interface ProductDetailClientProps {
 }
 
 export default function ProductDetailClient({ product, bgColor, textColor, buttonColor }: ProductDetailClientProps) {
+  // Helper function to format field names for display
+  const formatFieldName = (key: string): string => {
+    return key
+      .replace(/([A-Z])/g, ' $1') // Add space before capital letters
+      .replace(/^./, (str) => str.toUpperCase()) // Capitalize first letter
+      .trim();
+  };
+
+  // Fields to exclude from dynamic rendering (already displayed elsewhere)
+  const excludedFields = ['name', 'available', 'tagline', 'images', 'variants'];
+
+  // Get all additional product fields dynamically
+  const additionalFields = Object.entries(product).filter(
+    ([key]) => !excludedFields.includes(key)
+  );
+
   return (
     <>
       {/* Hero Section with curved overlay */}
@@ -61,7 +77,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
             {product.tagline && (
               <StaggerItem>
                 <p 
-                  className="rubik-light text-base md:text-lg mb-3"
+                  className="rubik-light-italic text-base md:text-lg mb-3"
                   style={{ color: textColor }}
                 >
                   {product.tagline}
@@ -125,105 +141,31 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
               </FadeIn>
             )}
 
-            {/* Description */}
-            {product.description && (
-              <FadeIn delay={0.6}>
-                <div className="mb-10">
-                  <h2 
-                    className="afacad-medium text-sm md:text-base uppercase tracking-wider mb-4"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    Description
-                  </h2>
-                  <p 
-                    className="afacad-light text-base md:text-lg leading-relaxed"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    {product.description}
-                  </p>
-                </div>
-              </FadeIn>
-            )}
-
-            {/* Ingredients */}
-            {product.ingredients && product.ingredients.length > 0 && (
-              <FadeIn delay={0.7}>
-                <div className="mb-10">
-                  <h2 
-                    className="afacad-medium text-sm md:text-base uppercase tracking-wider mb-4"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    Ingredients
-                  </h2>
-                  <p 
-                    className="afacad-light text-base md:text-lg leading-relaxed"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    {product.ingredients.join(', ')}
-                  </p>
-                </div>
-              </FadeIn>
-            )}
-
-            {/* Spelt Info */}
-            {product.speltInfo && (
-              <FadeIn delay={0.8}>
-                <div className="mb-10">
-                  <h2 
-                    className="afacad-medium text-sm md:text-base uppercase tracking-wider mb-4"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    Spelt Info
-                  </h2>
-                  <p 
-                    className="afacad-light text-base md:text-lg leading-relaxed"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    {product.speltInfo}
-                  </p>
-                </div>
-              </FadeIn>
-            )}
-
-            {/* Preparation */}
-            {product.preparation && (
-              <FadeIn delay={0.9}>
-                <div className="mb-10">
-                  <h2 
-                    className="afacad-medium text-sm md:text-base uppercase tracking-wider mb-4"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    Preparation
-                  </h2>
-                  <p 
-                    className="afacad-light text-base md:text-lg leading-relaxed"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    {product.preparation}
-                  </p>
-                </div>
-              </FadeIn>
-            )}
-
-            {/* Guidelines */}
-            {product.guidelines && product.guidelines.length > 0 && (
-              <FadeIn delay={1.0}>
-                <div>
-                  <h2 
-                    className="afacad-medium text-sm md:text-base uppercase tracking-wider mb-4"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    Guidelines
-                  </h2>
-                  <p 
-                    className="afacad-light text-base md:text-lg leading-relaxed"
-                    style={{ color: 'var(--foreground-purple)' }}
-                  >
-                    {product.guidelines.join(', ')}
-                  </p>
-                </div>
-              </FadeIn>
-            )}
+            {/* Dynamic Product Details */}
+            {additionalFields.map(([key, value], index) => {
+              if (!value || (Array.isArray(value) && value.length === 0)) return null;
+              
+              const displayValue = Array.isArray(value) ? value.join(', ') : String(value);
+              
+              return (
+                <FadeIn key={key} delay={0.6 + index * 0.1}>
+                  <div className={index < additionalFields.length - 1 ? "mb-10" : ""}>
+                    <h2 
+                      className="afacad-medium text-sm md:text-base uppercase tracking-wider mb-4"
+                      style={{ color: 'var(--foreground-purple)' }}
+                    >
+                      {formatFieldName(key)}
+                    </h2>
+                    <p 
+                      className="afacad-light text-base md:text-lg leading-relaxed"
+                      style={{ color: 'var(--foreground-purple)' }}
+                    >
+                      {displayValue}
+                    </p>
+                  </div>
+                </FadeIn>
+              );
+            })}
           </ScaleIn>
         </div>
       </section>

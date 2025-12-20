@@ -35,10 +35,13 @@ export default function ProductCard({
         {/* Product Image */}
         <div className="relative w-full aspect-square mb-4 rounded-lg overflow-hidden bg-gray-200">
           <Image
-            src="https://placehold.co/400x400/png"
+            src={image || "https://placehold.co/400x400/png"}
             alt={name}
             fill
             className="object-cover"
+            onError={(e) => {
+              e.currentTarget.src = "https://placehold.co/400x400/png";
+            }}
           />
         </div>
 

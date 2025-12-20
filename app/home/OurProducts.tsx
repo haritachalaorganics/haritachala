@@ -63,7 +63,7 @@ export default function OurProducts({
             <Button
               buttonOutlineColor={allProductsButtonColor}
               buttonText="All Products"
-              href="/menu"
+              href="/product"
             />
           </div>
         </FadeIn>

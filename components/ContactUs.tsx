@@ -22,7 +22,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
   const socialLinks: SocialLink[] = [
     {
       icon: FaInstagram,
-      href: 'https://instagram.com/haritachalaorganics',
+      href: 'https://www.instagram.com/haritachalabakery/',
       label: 'Instagram'
     },
     {
@@ -32,7 +32,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
     },
     {
       icon: FaYoutube,
-      href: 'https://youtube.com/@haritachalaorganics',
+      href: 'https://www.youtube.com/@724Giggling.Geckos',
       label: 'YouTube'
     },
     {

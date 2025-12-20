@@ -70,12 +70,12 @@ export default function HeroSection() {
             {/* Buttons */}
             <StaggerItem>
               <div className="flex gap-4 md:gap-6">
-                <button className="rubik-regular px-6 md:px-8 py-2.5 md:py-3 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all">
+                <a href="/about" className="rubik-regular px-6 md:px-8 py-2.5 md:py-3 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block">
                   Learn More
-                </button>
-                <button className="rubik-regular px-6 md:px-8 py-2.5 md:py-3 bg-[#B3B0D1] text-white uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all">
+                </a>
+                <a href="/product" className="rubik-regular px-6 md:px-8 py-2.5 md:py-3 bg-[#B3B0D1] text-white uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block">
                   Our Products
-                </button>
+                </a>
               </div>
             </StaggerItem>
           </Stagger>
