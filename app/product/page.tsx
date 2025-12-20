@@ -83,29 +83,7 @@ export default function MenuPage() {
         emptyMessage="No U.S. products match your search."
       />
 
-      {/* India Products Section */}
-      <ProductSection
-        title="India Products"
-        subtitle="Our Haritachala Organic Goods are currently available in Haritachala, Tiruvanamalai, on Girivalam Road. We sell a variety of organic, farm-grown, and handmade products all year round."
-        products={indiaProducts}
-        backgroundColor="var(--background-blue)"
-        buttonColor="#0D4F78"
-        textColor="var(--foreground-blue)"
-        emptyMessage="No India products match your search."
-      />
-
-      {/* Full Moon Products Section (if any) */}
-      {fullMoonProducts.length > 0 && (
-        <ProductSection
-          title="Full Moon Products"
-          subtitle="Every Pournami, we offer a small selection of organic farm-grown products, including nourishing soups, soothing teas, and hearty farm breads. These offerings are available only on the full moon day and must be purchased in person."
-          products={fullMoonProducts}
-          backgroundColor="var(--background-purple)"
-          buttonColor="#645DAB"
-          textColor="var(--foreground-purple)"
-          emptyMessage="No Full Moon products match your search."
-        />
-      )}
+      
 
       {/* Contact Us Section */}
       <ContactUs bottomImage="/images/pages/our_products/ourProducts.contactUs.png" />

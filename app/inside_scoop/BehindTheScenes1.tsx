@@ -61,7 +61,7 @@ export default function BehindTheScenes1() {
                 <Button
                   buttonOutlineColor="var(--foreground-pink)"
                   buttonText="VIEW HERE"
-                  href="https://photos.app.goo.gl/vJyCiNgrdi7LTTdw7"
+                  href=""
                 />
               </div>
             </div>
