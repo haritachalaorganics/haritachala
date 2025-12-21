@@ -14,6 +14,9 @@ export default function OrderFormSection() {
             <p className="rubik-light text-base md:text-lg text-white">
               Complete the form below to place your order
             </p>
+            <p className="rubik-light text-sm md:text-base text-white mt-4">
+              Dallas, Frisco, January, last day to order, pick up only
+            </p>
           </div>
         </FadeIn>
 

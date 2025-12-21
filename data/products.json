@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "name": "Organic Original Banana Walnut Bread",
+      "name": "Organic Classic Banana Walnut Bread",
       "available": ["US"],
       "tagline": "Loaf at first bite",
       "images": ["/images/bakery_products/banana_bread.jpeg"],
@@ -34,7 +34,7 @@
       "variants": [
         { "size": "2.65 lb", "price": "$15.44"}
       ],
-      "description": "Enjoy the sweet, wholesome goodness of our fresh, organic, homemade banana bread.",
+      "description": "Enjoy our fresh, organic, gluten-free vegan banana bread, baked in small batches with simple ingredients.",
       "ingredients": [
         "Organic Bananas",
         "Organic Oat Flour",
@@ -86,7 +86,7 @@
       "variants": [
         { "size": "16 oz", "price": "$9.50" }
       ],
-      "description": "A sweet, homemade organic strawberry jam for toast, desserts, or by the spoonful.",
+      "description": "A sweet, homemade organic strawberry jam for toast, desserts, or by the spoonful. Free of artificial colors, flavors, and preservatives.",
       "ingredients": [
         "Organic Strawberries",
         "Organic Cane Sugar",
@@ -104,16 +104,8 @@
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
       ],
-      "description": "Homemade organic peach jam with pure sweet flavor.",
+      "description": "Homemade organic peach jam made with ripe, seasonal peaches—no high fructose corn syrup, no preservatives, and no artificial flavors.",
       "ingredients": ["Organic Peaches", "Organic Cane Sugar", "Organic Vinegar"],
-      "about": "Cranberry Andhra Pachadi beautifully represents our essence - a fusion of rich Telugu culinary heritage and contemporary western upbringing. Cranberries, native to North America, offer distinct health benefits when grown and consumed locally, ensuring better assimilation into our bodies. Consuming seasonal fruits aligns with healthier living principles, and in this harmonious marriage of flavors, we spotlight locally-sourced ingredients.",
-      "servingSuggestions": [
-    "Pair it with dosa, idli, or vada for a tangy twist",
-    "Swap it for your regular pachadis for a vitamin-packed punch",
-    "Spread it on bread or use as a dip for a zesty snack",
-    "Serve as a flavorful accompaniment with pappu and curd rice",
-    "Mix it into steaming hot rice, drizzle ghee on top, and savor true Andhra bliss"
-  ],
       "guidelines": ["Consume within 30 days", "Refrigerate after opening"]
     },
 
@@ -125,7 +117,7 @@
       "variants": [
         { "size": "16 oz", "price": "$11.62" }
       ],
-      "description": "A tangy, vitamin-packed chutney combining cranberries with traditional Andhra spices.",
+      "description": "An innovative cranberry pachadi created in our kitchen, blending tangy cranberries with traditional Andhra spices using a cherished family recipe.",  
       "ingredients": [
         "Cranberries",
         "Sunflower Oil",
@@ -140,8 +132,15 @@
         "Methi Seeds",
         "Karam Podi"
       ],
-      "guidelines": ["Lasts 3 months when refrigerated"]
-    },
+      "guidelines": ["Lasts 3 months when refrigerated"],
+      "about": "Cranberry Andhra Pachadi beautifully represents our essence - a fusion of rich Telugu culinary heritage and contemporary western upbringing. Cranberries, native to North America, offer distinct health benefits when grown and consumed locally, ensuring better assimilation into our bodies. Consuming seasonal fruits aligns with healthier living principles, and in this harmonious marriage of flavors, we spotlight locally-sourced ingredients.",
+      "servingSuggestions": [
+    "Pair it with dosa, idli, or vada for a tangy twist",
+    "Swap it for your regular pachadis for a vitamin-packed punch",
+    "Spread it on bread or use as a dip for a zesty snack",
+    "Serve as a flavorful accompaniment with pappu and curd rice",
+    "Mix it into steaming hot rice, drizzle ghee on top, and savor true Andhra bliss"
+  ]    },
 
     {
       "name": "Buddha's Hand Andhra Pachadi",
@@ -179,7 +178,7 @@
   "variants": [
     { "size": "16 whole biscotti", "price": "$12.95" }
   ],
-  "description": "A lightly sweet, twice-baked almond biscotti made with almond flour, whole almonds, and organic ingredients for a satisfying crunch with every bite.",
+  "description": "A lightly sweet, twice-baked almond biscotti made with almond flour, whole almonds, and organic ingredients for a satisfying crunch with every bite. A healthier alternative to Almond House Bisticks!",
   "ingredients": [
     "Almond Flour",
     "Organic Eggs",
@@ -201,7 +200,7 @@
   "variants": [
     { "size": "35 crackers", "price": "$9.99" }
   ],
-  "description": "Thin, crispy crackers baked with a blend of toasted seeds, almonds, and dried cranberries, balanced with a subtle tang and natural sweetness for an addictive crunch.",
+  "description": "Thin, healthy, crispy crackers baked with a blend of toasted seeds, almonds, and dried cranberries, balanced with a subtle tang and natural sweetness for an addictive crunch.",
   "ingredients": [
     "Organic Greek Yogurt",
     "Organic Brown Sugar",

@@ -28,14 +28,14 @@ export default function AboutSection() {
             <div className="space-y-6">
               <SlideUp delay={0.3}>
                 <div>
-                  <h2 className="rubik-light text-3xl md:text-4xl lg:text-5xl text-[var(--foreground-white)] uppercase mb-4">
+                  <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-[var(--foreground-white)] uppercase mb-4">
                     About Us
                   </h2>
                   <div className="w-full h-[1px] bg-[var(--foreground-white)] mb-6"></div>
                 </div>
               </SlideUp>
               
-              <Stagger className="space-y-4 rubik-light text-base md:text-lg text-[var(--foreground-white)] leading-relaxed" staggerDelay={0.1}>
+              <Stagger className="space-y-4 rubik-light text-sm md:text-base lg:text-base text-[var(--foreground-white)] leading-relaxed" staggerDelay={0.1}>
                 <StaggerItem>
                   <p>
                     Haritachala Organics was born from a shared vision - to come together to nurture both people and nature as a sincere offering of love, devotion, and gratitude to our Gurus, Shirdi Sai Baba and Sri Sainathuni Sarath Babuji.
@@ -44,7 +44,7 @@ export default function AboutSection() {
                 
                 <StaggerItem>
                   <p>
-                    We belong to Saipatham (the path of Sai), as shown by our beloved Guruji, Sri Babuji. Located on Girivalam Road at the sacred foothills of Arunachala in Tiruvannamalai, India, Haritachala is more than just a farm - it's a living expression of sustainability and empowerment. United by our shared passions and a deep love for Haritachala, we began this project to keep our connection vibrant and alive.
+                    We belong to Saipatham (the path of Sai), as shown by our beloved Guruji, Sri Babuji. Located on Girivalam Road at the sacred foothills of Arunachala in Tiruvannamalai, India, Haritachala is more than just a farm - it's a living expression of spirituality, community living, sustainability and empowerment. United by our shared passions and a deep love for Haritachala, we began this project to keep our connection vibrant and alive.
                   </p>
                 </StaggerItem>
                 
@@ -56,13 +56,13 @@ export default function AboutSection() {
                 
                 <StaggerItem>
                   <p>
-                    We offer high-quality, organic, and wholesome products, lovingly grown and prepared in harmony with nature.
+                    We offer high-quality, organic, and wholesome products.
                   </p>
                 </StaggerItem>
                 
                 <StaggerItem>
                   <p className="font-semibold">
-                    100% of proceeds directly support our Sai Baba temple, our biodiverse organic farm, and the livelihoods of rural women.
+                    100% of proceeds directly support our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women.
                   </p>
                 </StaggerItem>
                 

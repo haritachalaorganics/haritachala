@@ -5,6 +5,7 @@ import OurInspiration from './OurInspiration';
 import TeamCarousel from './TeamCarousel';
 import HowWeWork from './HowWeWork';
 import GigglingGeckos from './GigglingGeckos';
+import BehindTheScenes2 from '../inside_scoop/BehindTheScenes2';
 import ContactUs from '@/components/ContactUs';
 import teamMembers from '@/data/team_members.json';
 
@@ -22,6 +23,7 @@ export default function AboutPage() {
       <AboutSection />
       <OurInspiration />
       <TeamCarousel teamMembers={teamMembers} />
+      <BehindTheScenes2 />
       <HowWeWork />
       <GigglingGeckos />
       <ContactUs bottomImage="/images/pages/about/aboutUs.contactUs.png" />

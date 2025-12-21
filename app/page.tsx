@@ -7,6 +7,7 @@ import HeroSection from "./home/HeroSection";
 import OurPurpose from "./home/OurPurpose";
 import OurProducts from "./home/OurProducts";
 import HaveQuestions from "./home/HaveQuestions";
+import AboutSection from "./about/AboutSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
       
       {/* Hero Section with images and gradient */}
       <HeroSection />
+      
+      {/* About Section */}
+      <AboutSection />
       
       {/* Our Purpose Section */}
       <OurPurpose />

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
+import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa';
 import FadeIn from './animations/FadeIn';
 import Stagger from './animations/Stagger';
 import StaggerItem from './animations/StaggerItem';
@@ -60,6 +61,37 @@ export default function NavBar() {
                   </Link>
                 );
               })}
+              
+              {/* Social Media Icons */}
+              <div className="flex items-center gap-4 ml-2">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookF size={20} />
+                </a>
+                <a
+                  href="https://www.tiktok.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  aria-label="TikTok"
+                >
+                  <FaTiktok size={20} />
+                </a>
+              </div>
             </div>
 
             {/* Mobile/Tablet Menu Button */}
