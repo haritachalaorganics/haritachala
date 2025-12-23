@@ -116,7 +116,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     {/* Product Title */}
                     <StaggerItem>
                       <h2 
-                        className="alegreya-regular text-3xl md:text-4xl lg:text-5xl mb-4"
+                        className="alegreya-regular text-3xl md:text-4xl lg:text-5xl mb-4 text-center sm:text-center md:text-center lg:text-left"
                         style={{ color: textColor }}
                       >
                         {product.name}
@@ -127,7 +127,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     {product.tagline && (
                       <StaggerItem>
                         <p 
-                          className="rubik-light-italic text-lg md:text-xl mb-6"
+                          className="rubik-light-italic text-lg md:text-xl mb-6 text-center sm:text-center md:text-center lg:text-left"
                           style={{ color: textColor }}
                         >
                           "{product.tagline}"
@@ -146,7 +146,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     {/* Price */}
                     {product.variants && product.variants.length > 0 && (
                       <StaggerItem>
-                        <div className="mb-6">
+                        <div className="mb-6 text-center sm:text-center md:text-center lg:text-left">
                           {product.variants.map((variant, index) => (
                             <div key={index} className="mb-2">
                               <p 

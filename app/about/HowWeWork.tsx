@@ -12,15 +12,18 @@ export default function HowWeWork() {
     <section className="bg-[var(--background-purple)] py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SlideUp>
-          <h2 className="rubik-light text-3xl md:text-4xl lg:text-5xl text-[var(--foreground-white)] text-center uppercase mb-12">
-            How We Work
-          </h2>
+          <div className="text-center">
+            <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-[var(--foreground-white)] uppercase mb-6 text-center sm:text-center md:text-center">
+              How We Work
+            </h2>
+            <div className="w-full h-[1px] bg-[var(--foreground-white)] mb-8 md:mb-10"></div>
+          </div>
         </SlideUp>
         
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="space-y-6">
-            <Stagger className="space-y-4 rubik-light text-base md:text-lg text-[var(--foreground-white)] leading-relaxed" staggerDelay={0.15}>
+            <Stagger className="space-y-4 rubik-light text-sm md:text-base lg:text-base text-[var(--foreground-white)] leading-relaxed text-center sm:text-center md:text-center lg:text-left" staggerDelay={0.15}>
               <StaggerItem>
                 <p>
                   Rooted in our love for Haritachala and guided by the blessings of Baba and Guruji, we approach everything we do as an act of joyful service.

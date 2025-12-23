@@ -82,7 +82,7 @@
       "name": "Organic and Artisanal Strawberry Jam",
       "available": ["US"],
       "tagline": "Organic and Artisanal",
-      "images": ["/images/bakery_products/strawberry_jam.png"],
+      "images": ["/images/bakery_products/strawberry_jam.jpg"],
       "variants": [
         { "size": "16 oz", "price": "$9.50" }
       ],
@@ -100,7 +100,7 @@
       "name": "Organic and Artisanal Peach Jam",
       "available": ["US"],
       "tagline": "Organic and Artisanal",
-      "images": ["/images/bakery_products/peach_jam.png"],
+      "images": ["/images/bakery_products/peach_jam.jpg"],
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
       ],
@@ -196,7 +196,7 @@
   "name": "Organic Cranberry Seed Crisps",
   "available": ["US"],
   "tagline": "tangy, toasty crunch with seeds in every bite",
-  "images": ["/images/bakery_products/cranberry_crisps.jpeg"],
+  "images": ["/images/bakery_products/cranberry_crisps.PNG"],
   "variants": [
     { "size": "35 crackers", "price": "$9.99" }
   ],

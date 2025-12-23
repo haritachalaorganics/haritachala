@@ -20,14 +20,14 @@ export default function NewsletterSection() {
           {/* Text Content - RIGHT side */}
           <div className="space-y-6">
             <div>
-              <h2 className="afacad-regular text-3xl md:text-4xl text-[var(--foreground-blue)] mb-4 uppercase">
+              <h2 className="afacad-regular text-3xl md:text-4xl text-[var(--foreground-blue)] mb-6 uppercase text-center sm:text-center md:text-center lg:text-left">
                 {/* TODO: Extract exact heading from Figma */}
                 Stay in the Loop
               </h2>
-              <div className="w-full h-[2px] bg-[var(--foreground-blue)] mb-6"></div>
+              <div className="w-full h-[1px] bg-[var(--foreground-blue)] mb-8 md:mb-10"></div>
             </div>
             
-            <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-blue)] leading-relaxed">
+            <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-blue)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
               <p>
                 {/* TODO: Extract exact body text from Figma */}
                 Subscribe to our newsletter and be the first to know about new products, 

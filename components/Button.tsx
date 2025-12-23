@@ -15,7 +15,7 @@ export default function Button({
   onClick,
   openInNewTab = false
 }: ButtonProps) {
-  const buttonClasses = "rubik-regular px-8 md:px-12 lg:px-16 py-3 md:py-4 border-2 bg-transparent uppercase text-sm md:text-base lg:text-lg tracking-wide hover:opacity-80 hover:scale-105 transition-all duration-300 inline-block text-center";
+  const buttonClasses = "rubik-regular px-8 md:px-12 lg:px-16 py-3 md:py-4 border-2 bg-transparent uppercase text-sm md:text-base lg:text-lg tracking-wide hover:opacity-80 hover:scale-105 transition-all duration-300 text-center sm:text-center md:text-center inline-block";
   
   const buttonStyle = {
     borderColor: buttonOutlineColor,

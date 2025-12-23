@@ -53,7 +53,7 @@ export default function OrderProductsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SlideUp>
           <h2 
-            className="afacad-regular text-3xl md:text-4xl text-center mb-12 uppercase"
+            className="afacad-regular text-3xl md:text-4xl text-center mb-12 uppercase text-center sm:text-center md:text-center"
             style={{ color: 'var(--foreground-pink)' }}
           >
             Browse Our Products

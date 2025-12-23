@@ -32,19 +32,25 @@ export default function OurProducts({
 
   return (
     <section 
-      className="w-full py-12 md:py-14 lg:py-16"
+      className="w-full py-16 md:py-16 lg:py-16"
       style={{ backgroundColor }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <SlideUp>
-          <h2 
-            className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-center mb-8 md:mb-10"
-            style={{ color: titleColor }}
-          >
-            OUR PRODUCTS
-          </h2>
+          <div className="text-center">
+            <h2 
+              className="afacad-regular text-3xl md:text-4xl lg:text-4xl mb-6 text-center sm:text-center md:text-center"
+              style={{ color: titleColor }}
+            >
+              OUR PRODUCTS
+            </h2>
+          </div>
         </SlideUp>
+        <div
+              className="w-full h-[1px] mb-8 md:mb-10"
+              style={{ backgroundColor: titleColor }}
+            ></div>
 
         {/* Carousel */}
         <FadeIn delay={0.2} duration={0.8}>

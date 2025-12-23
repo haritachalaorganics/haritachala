@@ -37,17 +37,29 @@ export default function HeroSection() {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/85 via-white/50 to-transparent pointer-events-none z-10" />
 
       {/* Hero Text Content - Only visible on small screens */}
-      <div className="relative z-20 h-full flex items-start pt-32 justify-center px-4 md:hidden">
+      <div className="relative z-20 h-full flex items-start pt-36 justify-center px-4 md:hidden">
         <Stagger className="text-center max-w-4xl">
           <StaggerItem>
-            <h1 className="alegreya-regular text-4xl text-white mb-4">
+            <h1 className="alegreya-regular text-4xl text-white mb-4 text-center sm:text-center md:text-center">
               cultivating <span className="alegreya-italic">connection</span>
             </h1>
           </StaggerItem>
           <StaggerItem>
-            <h2 className="alegreya-regular text-4xl text-white">
+            <h2 className="alegreya-regular text-4xl text-white mb-8 text-center sm:text-center md:text-center">
               one <span className="alegreya-italic">offering</span> at a time
             </h2>
+          </StaggerItem>
+          
+          {/* Buttons */}
+          <StaggerItem>
+            <div className="flex flex-col gap-4 items-center sm:items-center md:items-center">
+              <a href="/about" className="rubik-regular w-44 px-6 py-2.5 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
+                Learn More
+              </a>
+              <a href="/products" className="rubik-regular w-44 px-6 py-2.5 border-2 border-[#FFDCDC] text-[#FFDCDC] bg-transparent uppercase text-xs hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
+                Our Products
+              </a>
+            </div>
           </StaggerItem>
         </Stagger>
       </div>
@@ -57,23 +69,23 @@ export default function HeroSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <Stagger className="max-w-2xl">
             <StaggerItem>
-              <h1 className="alegreya-regular text-3xl md:text-4xl lg:text-5xl text-white mb-2">
+              <h1 className="alegreya-regular text-3xl md:text-4xl lg:text-5xl text-white mb-2 text-center sm:text-center md:text-center lg:text-left">
                 cultivating <span className="alegreya-italic">connections</span>
               </h1>
             </StaggerItem>
             <StaggerItem>
-              <h2 className="alegreya-regular text-3xl md:text-4xl lg:text-5xl text-white mb-6 md:mb-8">
+              <h2 className="alegreya-regular text-3xl md:text-4xl lg:text-5xl text-white mb-6 md:mb-8 text-center sm:text-center md:text-center lg:text-left">
                 one <span className="alegreya-italic">offering</span> at a time
               </h2>
             </StaggerItem>
             
             {/* Buttons */}
             <StaggerItem>
-              <div className="flex gap-4 md:gap-6">
-                <a href="/about" className="rubik-regular px-6 md:px-8 py-2.5 md:py-3 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block">
+              <div className="flex gap-4 md:gap-6 justify-center sm:justify-center md:justify-center lg:justify-start">
+                <a href="/about" className="rubik-regular w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
                   Learn More
                 </a>
-                <a href="/product" className="rubik-regular px-6 md:px-8 py-2.5 md:py-3 bg-[#B3B0D1] text-white uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block">
+                <a href="/products" className="rubik-regular w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 border-2 border-[#FFDCDC] text-[#FFDCDC] bg-transparent uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
                   Our Products
                 </a>
               </div>

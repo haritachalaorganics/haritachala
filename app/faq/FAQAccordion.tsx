@@ -47,7 +47,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >
-                <span className="afacad-regular text-base md:text-lg lg:text-xl text-[var(--foreground-pink)] pr-4">
+                <span className="afacad-regular text-base md:text-lg lg:text-xl text-[var(--foreground-pink)] pr-4 text-left sm:text-center md:text-center lg:text-left">
                   {faq.question}
                 </span>
                 <IoChevronDown
@@ -68,7 +68,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                 aria-labelledby={`faq-question-${index}`}
               >
                 <div className="px-6 pb-4 md:px-8 md:pb-5 pt-2">
-                  <p className="rubik-light text-sm md:text-base text-[var(--foreground-pink)] leading-relaxed">
+                  <p className="rubik-light text-sm md:text-base text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                     {faq.answer}
                   </p>
                 </div>

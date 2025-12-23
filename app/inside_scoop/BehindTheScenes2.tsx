@@ -5,13 +5,13 @@ export default function BehindTheScenes2() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-lg shadow-md p-6 md:p-8 text-center">
             <div>
-              <h2 className="afacad-regular text-3xl md:text-4xl text-[#0D4F78] mb-4 uppercase">
+              <h2 className="afacad-regular text-3xl md:text-4xl text-[#0D4F78] mb-6 uppercase text-center sm:text-center md:text-center">
                 The Design Team
               </h2>
-              <div className="w-32 h-[2px] bg-[#0D4F78] mx-auto mb-6"></div>
             </div>
+            <div className="w-full h-[1px] bg-[#0D4F78] mb-8 md:mb-10"></div>
             
-            <div className="afacad-regular text-base md:text-lg text-[#0D4F78] leading-relaxed">
+            <div className="afacad-regular text-base md:text-lg text-[#0D4F78] leading-relaxed text-center sm:text-center md:text-center">
               <p>
                 Our design team is a group of dedicated volunteers who find joy in creativity. From product packaging to marketing flyers, design is their way of letting ideas flow and adding beauty to our offerings. The team includes Sruti Akka, Sirisha Auntie, Pravallika Kullampalle, Namita Bhavanam, and Sweety Chekuri—each bringing their unique style and heart to every detail.
               </p>

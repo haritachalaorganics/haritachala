@@ -83,9 +83,12 @@ export default function TeamCarousel({ teamMembers }: TeamCarouselProps) {
     <section className="bg-[var(--background-pink)] py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SlideUp>
-          <h2 className="rubik-light text-3xl md:text-4xl lg:text-5xl text-[var(--foreground-pink)] text-center uppercase mb-12">
-            Meet Our Team
-          </h2>
+          <div className="text-center">
+            <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-[var(--foreground-pink)] uppercase mb-6 text-center sm:text-center md:text-center">
+              Meet Our Team
+            </h2>
+            <div className="w-full h-[1px] bg-[var(--foreground-pink)] mb-8 md:mb-10"></div>
+          </div>
         </SlideUp>
 
         <FadeIn delay={0.3}>

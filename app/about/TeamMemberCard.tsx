@@ -23,7 +23,7 @@ export default function TeamMemberCard({
               src={image}
               alt={name}
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-[#F5F5F0]">
@@ -40,17 +40,17 @@ export default function TeamMemberCard({
 
         {/* Content */}
         <div className="p-6 flex-1 flex flex-col">
-          <h3 className="rubik-light text-xl md:text-2xl text-[var(--foreground-pink)] mb-2">
+          <h3 className="rubik-light text-xl md:text-2xl text-[var(--foreground-pink)] mb-2 text-center sm:text-center md:text-center">
             {name}
           </h3>
           
           {position && (
-            <p className="rubik-light text-sm text-[var(--foreground-purple)] uppercase mb-3">
+            <p className="rubik-light text-sm text-[var(--foreground-purple)] uppercase mb-3 text-center sm:text-center md:text-center">
               {position}
             </p>
           )}
           
-          <p className="rubik-light text-sm text-gray-600 leading-relaxed">
+          <p className="rubik-light text-sm text-gray-600 leading-relaxed text-center sm:text-center md:text-center">
             {bio}
           </p>
         </div>

@@ -19,7 +19,7 @@ export default function BehindTheScenes3() {
 
             {/* Text Content - RIGHT side */}
             <div className="space-y-6">
-              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed">
+              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 <p>
                   A reflection on a year in the life of building Haritachala Bakery—this video captures the heart, growth, and joy behind our journey. From the first idea to the many hands that shaped it, we invite you to take a glimpse into how it all came to life.
                 </p>

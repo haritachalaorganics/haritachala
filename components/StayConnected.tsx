@@ -35,7 +35,7 @@ export default function StayConnected() {
     <section className="w-full bg-[#FFDCDC] py-12 md:py-14 lg:py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-[#C4735A] text-center mb-8 md:mb-10">
+        <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-[#C4735A] text-center mb-6">
           STAY CONNECTED
         </h2>
 

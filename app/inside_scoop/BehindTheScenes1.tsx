@@ -7,8 +7,8 @@ export default function BehindTheScenes1() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         {/* Title */}
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="afacad-regular text-3xl md:text-4xl text-[var(--foreground-pink)] mb-4 uppercase">
-            Behind the Scenes
+          <h2 className="afacad-regular text-3xl md:text-4xl text-[var(--foreground-pink)] mb-6 uppercase text-center sm:text-center md:text-center">
+            The Inside Scoop
           </h2>
         </div>
 
@@ -50,7 +50,7 @@ export default function BehindTheScenes1() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Text Content - LEFT side */}
             <div className="space-y-6 order-2 md:order-1">
-              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed">
+              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 <p>
                   Step into the heart of Haritachala Organics, where flour flies, laughter echoes, and every loaf is made with devotion. Our behind-the-scenes moments share the process that brings our offerings to life.
                 </p>
@@ -93,7 +93,7 @@ export default function BehindTheScenes1() {
 
             {/* Text Content - RIGHT side */}
             <div className="space-y-6">
-              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed">
+              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 <p>
                   A reflection on a year in the life of building Haritachala Bakery—this video captures the heart, growth, and joy behind our journey. From the first idea to the many hands that shaped it, we invite you to take a glimpse into how it all came to life.
                 </p>

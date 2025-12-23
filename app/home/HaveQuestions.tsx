@@ -10,10 +10,13 @@ export default function HaveQuestions() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <SlideUp>
-          <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-white text-center mb-8 md:mb-10">
-            HAVE QUESTIONS?
-          </h2>
+          <div className="text-center">
+            <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-white mb-6 text-center sm:text-center md:text-center">
+              HAVE QUESTIONS?
+            </h2>
+          </div>
         </SlideUp>
+        <div className="w-full h-[1px] bg-white mb-8 md:mb-10"></div>
 
         {/* Content Card */}
         <ScaleIn delay={0.2}>

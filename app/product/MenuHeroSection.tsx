@@ -22,7 +22,7 @@ export default function MenuHeroSection() {
       {/* Mobile/Tablet Hero Image */}
       <div className="block lg:hidden absolute inset-0">
         <Image
-          src="/images/pages/our_products/ourProducts.heroSection.png"
+          src="/images/pages/our_products/ourProducts.heroSection.JPG"
           alt="Our Products"
           fill
           className="object-cover object-center"
@@ -34,7 +34,7 @@ export default function MenuHeroSection() {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/85 via-white/50 to-transparent pointer-events-none z-10" />
 
       {/* Curved Bottom Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none">
+      <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none -mb-1">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
           <path d="M0 120L1440 120L1440 0C1440 0 1080 120 720 120C360 120 0 0 0 0L0 120Z" fill="#FFDCDC"/>
         </svg>
@@ -44,9 +44,7 @@ export default function MenuHeroSection() {
       <div className="relative z-20 h-full flex items-end justify-center px-4 pb-6 md:pb-8 lg:pb-10">
         <SlideUp delay={0.3}>
           <div className="text-center max-w-4xl">
-            <h1 className="alegreya-regular text-4xl md:text-5xl lg:text-6xl text-[var(--foreground-pink)] lg:text-white">
-              Our <span className="alegreya-italic">Products</span>
-            </h1>
+            
           </div>
         </SlideUp>
       </div>
