@@ -8,14 +8,13 @@ export default function OrderFormSection() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn delay={0.1}>
           <div className="text-center mb-8">
-            <h2 className="afacad-regular text-3xl md:text-4xl mb-6 uppercase text-white text-center sm:text-center md:text-center">
+            <h2 className="afacad-regular text-3xl md:text-4xl mb-8 uppercase text-white text-center sm:text-center md:text-center">
               Monthly Order Form
             </h2>
             <p className="rubik-light text-base md:text-lg text-white text-center sm:text-center md:text-center">
-              Complete the form below to place your order
-            </p>
-            <p className="rubik-light text-sm md:text-base text-white mt-4 text-center sm:text-center md:text-center">
-              Dallas, Frisco, January, last day to order, pick up only
+              Form Open From December 31st - January 6th
+              <br />
+              Pick Up in Dallas, TX on January 20th
             </p>
           </div>
         </FadeIn>
@@ -23,7 +22,7 @@ export default function OrderFormSection() {
         <FadeIn delay={0.3}>
           <div className="rounded-lg shadow-lg overflow-hidden" style={{ backgroundColor: 'var(--background-purple)' }}>
             <iframe
-              src="https://forms.fillout.com/t/kSTB59H1Abus"
+              src="https://forms.fillout.com/t/beLwsAC4NEus"
               style={{
                 width: '100%',
                 height: '800px',

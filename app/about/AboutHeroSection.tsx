@@ -6,7 +6,7 @@ import SlideUp from '@/components/animations/SlideUp';
 
 export default function AboutHeroSection() {
   return (
-    <section className="relative w-full h-[50vh] md:h-[70vh] lg:h-[90vh] overflow-hidden">
+    <section className="relative w-full hidden md:block md:h-[70vh] lg:h-[85vh] overflow-hidden">
       {/* Desktop/Large Screen Hero Video */}
       <div className="hidden lg:block absolute inset-0">
         <video

@@ -26,7 +26,7 @@ export default function ProductCard({
       <div className="p-6 flex flex-col h-full">
         {/* Product Title */}
         <h3 
-          className="rubik-regular text-xl md:text-2xl text-center mb-4"
+          className="afacad-regular text-xl md:text-2xl text-center mb-4"
           style={{ color: textColor }}
         >
           {name}

@@ -10,6 +10,7 @@ import FadeIn from '@/components/animations/FadeIn';
 interface Product {
   name: string;
   available: string[];
+  availableThisMonth?: boolean;
   tagline?: string;
   description?: string;
   images: string[];
@@ -23,12 +24,13 @@ interface Product {
 export default function OrderProductsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  // Filter US products with images
+  // Filter US products with images that are available this month
   const usProducts = (productsData.products as Product[]).filter(
     (product) =>
       (product.available.includes('US') || product.available.includes('Both')) &&
       product.images &&
-      product.images.length > 0
+      product.images.length > 0 &&
+      product.availableThisMonth === true
   );
 
   const nextSlide = () => {
@@ -45,6 +47,10 @@ export default function OrderProductsSection() {
 
   const currentProduct = usProducts[currentIndex];
 
+  if (!currentProduct) {
+    return null;
+  }
+
   return (
     <section 
       className="py-16 md:py-24"
@@ -56,7 +62,7 @@ export default function OrderProductsSection() {
             className="afacad-regular text-3xl md:text-4xl text-center mb-12 uppercase text-center sm:text-center md:text-center"
             style={{ color: 'var(--foreground-pink)' }}
           >
-            Browse Our Products
+            Product Offerings This Month
           </h2>
         </SlideUp>
 

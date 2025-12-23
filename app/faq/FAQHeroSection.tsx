@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function FAQHeroSection() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">
+    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
       {/* Hero Image */}
       <div className="absolute inset-0">
         <Image

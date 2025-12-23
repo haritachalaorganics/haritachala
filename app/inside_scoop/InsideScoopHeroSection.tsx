@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function InsideScoopHeroSection() {
   return (
-    <section className="relative w-full h-[70vh] lg:h-[90vh] overflow-hidden">
+    <section className="relative w-full h-[70vh] lg:h-[85vh] overflow-hidden">
       {/* Hero Video - All screens */}
       <div className="absolute inset-0">
         <video

@@ -29,7 +29,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
         {/* Section Title */}
         <SlideUp>
           <h2 className="afacad-regular text-2xl md:text-3xl lg:text-4xl text-[var(--foreground-pink)] text-center mb-8 md:mb-12">
-            Have Questions? We Have Answers.
+            You Have Questions? We Have Answers.
           </h2>
         </SlideUp>
 
@@ -78,23 +78,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
           ))}
         </Stagger>
 
-        {/* Still Have Questions Section */}
-        <FadeIn delay={0.5}>
-          <div className="mt-12 md:mt-16 text-center">
-          <p className="rubik-regular text-base md:text-lg text-[var(--foreground-pink)] mb-4">
-            Still have questions?
-          </p>
-          <p className="rubik-light text-sm md:text-base text-[var(--foreground-pink)]">
-            Feel free to reach out to us at{' '}
-            <a
-              href="tel:+19452890980"
-              className="underline hover:opacity-70 transition-opacity"
-            >
-              +1 (945) 289-0980
-            </a>
-          </p>
-          </div>
-        </FadeIn>
+        
       </div>
     </section>
   );

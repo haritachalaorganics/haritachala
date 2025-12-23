@@ -6,7 +6,7 @@ import FadeIn from '@/components/animations/FadeIn';
 export default function OrderHeroSection() {
   return (
     <section 
-      className="relative w-full pt-32 pb-24 md:pt-36 md:pb-32 lg:pt-40 lg:pb-40"
+      className="relative w-full pt-24 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24"
       style={{ backgroundColor: 'var(--background-blue)' }}
     >
       {/* White Gradient Overlay for NavBar */}
@@ -15,7 +15,7 @@ export default function OrderHeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
         <SlideUp>
           <h1 
-            className="alegreya-regular text-4xl md:text-5xl lg:text-6xl mb-4 text-center sm:text-center md:text-center"
+            className="alegreya-regular text-4xl md:text-5xl lg:text-6xl mb-8 text-center sm:text-center md:text-center"
             style={{ color: 'var(--foreground-blue)' }}
           >
             Order <span className="alegreya-italic">Now!</span>

@@ -22,12 +22,12 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
   const socialLinks: SocialLink[] = [
     {
       icon: FaInstagram,
-      href: 'https://www.instagram.com/haritachalabakery/',
+      href: 'https://www.instagram.com/haritachalaorganics/',
       label: 'Instagram'
     },
     {
       icon: MdEmail,
-      href: 'mailto:contact@haritachalaorganics.com',
+      href: 'mailto:haritachalaorganics@saimail.com',
       label: 'Email'
     },
     {
@@ -37,7 +37,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
     },
     {
       icon: FaTiktok,
-      href: 'https://www.tiktok.com/@haritachalabakery',
+      href: 'http://www.tiktok.com/@haritachalaorganics',
       label: 'TikTok'
     },
     {

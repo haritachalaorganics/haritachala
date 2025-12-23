@@ -65,7 +65,7 @@ export default function NavBar() {
               {/* Social Media Icons */}
               <div className="flex items-center gap-4 ml-2">
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/haritachalaorganics/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#645DAB] hover:opacity-70 transition-opacity"
@@ -83,7 +83,7 @@ export default function NavBar() {
                   <FaFacebookF size={20} />
                 </a>
                 <a
-                  href="https://www.tiktok.com"
+                  href="http://www.tiktok.com/@haritachalaorganics"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#645DAB] hover:opacity-70 transition-opacity"

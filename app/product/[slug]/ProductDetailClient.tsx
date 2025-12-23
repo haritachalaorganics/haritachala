@@ -41,7 +41,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
   };
 
   // Fields to exclude from dynamic rendering
-  const excludedFields = ['name', 'available', 'tagline', 'images', 'variants', 'description'];
+  const excludedFields = ['name', 'available', 'availableThisMonth', 'tagline', 'images', 'variants', 'description'];
 
   // Get all additional product fields dynamically
   const additionalFields = Object.entries(product).filter(

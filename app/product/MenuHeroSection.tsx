@@ -5,7 +5,7 @@ import SlideUp from '@/components/animations/SlideUp';
 
 export default function MenuHeroSection() {
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden" style={{ backgroundColor: 'var(--background-pink)' }}>
+    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden" style={{ backgroundColor: 'var(--background-pink)' }}>
       {/* Desktop/Large Screen Hero Video */}
       <div className="hidden lg:block absolute inset-0">
         <video

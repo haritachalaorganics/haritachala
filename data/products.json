@@ -3,6 +3,7 @@
     {
       "name": "Organic Classic Banana Walnut Bread",
       "available": ["US"],
+      "availableThisMonth": true,
       "tagline": "Loaf at first bite",
       "images": ["/images/bakery_products/banana_bread.jpeg"],
       "variants": [
@@ -29,6 +30,7 @@
     {
       "name": "Organic Vegan Banana Walnut Bread",
       "available": ["US"],
+      "availableThisMonth": true,
       "tagline": "Loaf at first bite",
       "images": ["/images/bakery_products/vegan_banana_bread.jpeg"],
       "variants": [
@@ -60,6 +62,7 @@
     {
       "name": "Organic Simply Spelt Sandwich Bread",
       "available": ["US"],
+      "availableThisMonth": false,
       "tagline": "Made with Ancient Spelt Flour",
       "images": ["/images/bakery_products/spelt_sandwhich_bread.png"],
       "variants": [
@@ -81,6 +84,7 @@
     {
       "name": "Organic and Artisanal Strawberry Jam",
       "available": ["US"],
+      "availableThisMonth": true,
       "tagline": "Organic and Artisanal",
       "images": ["/images/bakery_products/strawberry_jam.jpg"],
       "variants": [
@@ -99,6 +103,7 @@
     {
       "name": "Organic and Artisanal Peach Jam",
       "available": ["US"],
+      "availableThisMonth": false,
       "tagline": "Organic and Artisanal",
       "images": ["/images/bakery_products/peach_jam.jpg"],
       "variants": [
@@ -110,8 +115,9 @@
     },
 
     {
-      "name": "Cranberry Andhra Pachadi",
+      "name": "Artisinal Cranberry Andhra Pachadi",
       "available": ["US"],
+      "availableThisMonth": false,
       "tagline": "flavors that speak తెలుగు with a cranberry accent",
       "images": ["/images/bakery_products/cranberry_andhra_pachadi.png"],
       "variants": [
@@ -143,8 +149,9 @@
   ]    },
 
     {
-      "name": "Buddha's Hand Andhra Pachadi",
+      "name": "Artisinal Buddha's Hand Andhra Pachadi",
       "available": ["US"],
+      "availableThisMonth": false,
       "tagline": "Where తెలుగు Flavors Meet a Citrusy Zen Handshake",
       "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png"],
       "variants": [
@@ -173,6 +180,7 @@
     {
   "name": "Organic Double Baked Almond Biscotti",
   "available": ["US"],
+  "availableThisMonth": true,
   "tagline": "crunchy, nutty bites made for slow sips and cozy moments",
   "images": ["/images/bakery_products/almond_biscotti.jpeg"],
   "variants": [
@@ -195,6 +203,7 @@
 {
   "name": "Organic Cranberry Seed Crisps",
   "available": ["US"],
+  "availableThisMonth": true,
   "tagline": "tangy, toasty crunch with seeds in every bite",
   "images": ["/images/bakery_products/cranberry_crisps.PNG"],
   "variants": [
