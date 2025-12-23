@@ -8,7 +8,7 @@ import StaggerItem from '@/components/animations/StaggerItem';
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-[90vh] overflow-hidden">
       {/* Desktop/Large Tablet Hero Video */}
       <div className="hidden md:block absolute inset-0">
         <video
@@ -28,7 +28,7 @@ export default function HeroSection() {
           src="/images/pages/home/homepage.herosection.img.png"
           alt="Haritachala Hero"
           fill
-          className="object-cover object-bottom"
+          className="object-cover object-top"
           priority
         />
       </div>

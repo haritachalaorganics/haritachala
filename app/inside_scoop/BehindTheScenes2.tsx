@@ -13,7 +13,7 @@ export default function BehindTheScenes2() {
             
             <div className="afacad-regular text-base md:text-lg text-[#0D4F78] leading-relaxed text-center sm:text-center md:text-center">
               <p>
-                Our design team is a group of dedicated volunteers who find joy in creativity. From product packaging to marketing flyers, design is their way of letting ideas flow and adding beauty to our offerings. The team includes Sruti Akka, Sirisha Auntie, Pravallika Kullampalle, Namita Bhavanam, and Sweety Chekuri—each bringing their unique style and heart to every detail.
+                Our design team is a group of dedicated volunteers who find joy in creativity. From product packaging to marketing flyers, design is their way of letting ideas flow and adding beauty to our offerings. The team includes Sruti Akka, Sireesha Aunty, Pravallika Kullampalle, Namita Bhavanam, and Sweety Chekuri—each bringing their unique style and heart to every detail.
               </p>
             </div>
           </div>

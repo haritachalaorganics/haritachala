@@ -80,7 +80,7 @@ export default function TeamCarousel({ teamMembers }: TeamCarouselProps) {
   };
 
   return (
-    <section className="bg-[var(--background-pink)] py-16 md:py-24">
+    <section className="bg-[var(--background-pink)] py-8 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SlideUp>
           <div className="text-center">

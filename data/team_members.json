@@ -8,7 +8,7 @@
   {
     "name": "Tanvi Pothireddy",
     "position": "Baker",
-    "image": "",
+    "image": "/images/team_members/tanvi.JPG",
     "bio": "Tanvi loves experimenting in the kitchen and creating warm, comforting treats."
   },
   {
@@ -20,7 +20,7 @@
   {
     "name": "Sweety Chekuri",
     "position": "Multimedia Producer, Design & Marketing",
-    "image": "",
+    "image": "/images/team_members/sweety.JPG",
     "bio": "Sweety helps shape the brand’s visual identity and brings creative ideas to life."
   },
   {
@@ -44,7 +44,7 @@
   {
     "name": "Tapaswini Bhavanam",
     "position": "Social Media",
-    "image": "",
+    "image": "/images/team_members/aswi.JPG ",
     "bio": "Tapaswini curates engaging content and helps grow the bakery’s digital reach."
   }
 ]

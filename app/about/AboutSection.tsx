@@ -54,7 +54,7 @@ export default function AboutSection() {
                 <ScaleIn className="md:hidden flex flex-col items-center my-6" delay={0.3}>
                   <div className="relative w-48 aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
                     <Image
-                      src="/images/pages/about/aboutUs.aboutUs.image1.png"
+                      src="/images/pages/about/aboutUs.aboutUs.image1.jpg"
                       alt="About Haritachala Organics"
                       fill
                       className="object-cover"

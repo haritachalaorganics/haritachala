@@ -9,7 +9,7 @@ import StaggerItem from '@/components/animations/StaggerItem';
 
 export default function HowWeWork() {
   return (
-    <section className="bg-[var(--background-purple)] py-16 md:py-24">
+    <section className="bg-[var(--background-purple)] py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SlideUp>
           <div className="text-center">
@@ -20,7 +20,19 @@ export default function HowWeWork() {
           </div>
         </SlideUp>
         
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+        {/* Image - Mobile/Tablet (appears first) */}
+        <ScaleIn delay={0.3} className="lg:hidden mb-8">
+          <div className="relative w-full h-[300px] md:h-[350px]">
+            <Image
+              src="/images/pages/about/aboutUs.howWeWork.updated.jpg"
+              alt="How We Work"
+              fill
+              className="object-contain rounded-lg"
+            />
+          </div>
+        </ScaleIn>
+
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="space-y-6">
             <Stagger className="space-y-4 rubik-light text-sm md:text-base lg:text-base text-[var(--foreground-white)] leading-relaxed text-center sm:text-center md:text-center lg:text-left" staggerDelay={0.15}>
@@ -44,7 +56,7 @@ export default function HowWeWork() {
             </Stagger>
 
             <SlideUp delay={0.6}>
-              <div className="pt-4">
+              <div className="pt-4 flex justify-center lg:justify-start">
                 <Button 
                   href="/inside_scoop"
                   buttonText="Get the Inside Scoop"
@@ -54,14 +66,14 @@ export default function HowWeWork() {
             </SlideUp>
           </div>
 
-          {/* Image */}
-          <ScaleIn delay={0.3}>
-            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+          {/* Image - Desktop */}
+          <ScaleIn delay={0.3} className="hidden lg:block">
+            <div className="relative w-full h-[400px]">
               <Image
-                src="/images/pages/about/aboutUs.howWeWork.jpg"
+                src="/images/pages/about/aboutUs.howWeWork.updated.jpg"
                 alt="How We Work"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
               />
             </div>
           </ScaleIn>
