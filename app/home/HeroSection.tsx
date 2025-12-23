@@ -53,8 +53,8 @@ export default function HeroSection() {
           {/* Buttons */}
           <StaggerItem>
             <div className="flex flex-col gap-4 items-center sm:items-center md:items-center">
-              <a href="/about" className="rubik-regular w-44 px-6 py-2.5 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
-                Learn More
+              <a href="/order" className="rubik-regular w-44 px-6 py-2.5 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
+                Order Now
               </a>
               <a href="/products" className="rubik-regular w-44 px-6 py-2.5 border-2 border-[#FFDCDC] text-[#FFDCDC] bg-transparent uppercase text-xs hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
                 Our Products
@@ -82,8 +82,8 @@ export default function HeroSection() {
             {/* Buttons */}
             <StaggerItem>
               <div className="flex gap-4 md:gap-6 justify-center sm:justify-center md:justify-center lg:justify-start">
-                <a href="/about" className="rubik-regular w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
-                  Learn More
+                <a href="/order" className="rubik-regular w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 bg-[#FFDCDC] text-[#C4735A] uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
+                  Order Now
                 </a>
                 <a href="/products" className="rubik-regular w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 border-2 border-[#FFDCDC] text-[#FFDCDC] bg-transparent uppercase text-xs md:text-sm hover:opacity-90 hover:scale-105 transition-all inline-block text-center sm:text-center md:text-center">
                   Our Products
