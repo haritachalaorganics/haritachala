@@ -178,7 +178,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     {/* Divider */}
                     <StaggerItem>
                       <div 
-                        className="w-24 h-1 mb-6"
+                        className="w-24 h-1 mb-6 mx-auto lg:mx-0"
                         style={{ backgroundColor: textColor, opacity: 0.3 }}
                       ></div>
                     </StaggerItem>
@@ -211,7 +211,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     {/* Available In */}
                     {product.available && (
                       <StaggerItem>
-                        <div className="mb-6">
+                        <div className="mb-6 text-center lg:text-left">
                           <p 
                             className="rubik-regular text-sm uppercase tracking-wider mb-2 opacity-70"
                             style={{ color: textColor }}
@@ -232,7 +232,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     {product.description && (
                       <StaggerItem>
                         <p 
-                          className="rubik-light text-base md:text-lg leading-relaxed"
+                          className="rubik-light text-base md:text-lg leading-relaxed text-center lg:text-left"
                           style={{ color: textColor }}
                         >
                           {product.description}
@@ -243,7 +243,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     {/* Flyer Button */}
                     {product.flyer && (
                       <StaggerItem>
-                        <div className="mt-6">
+                        <div className="mt-6 flex justify-center lg:justify-start">
                           <a
                             href={product.flyer}
                             target="_blank"
