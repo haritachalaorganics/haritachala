@@ -24,6 +24,11 @@ export default function OurInspiration() {
           {/* First Card - Sri Babuji Quote */}
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.3}>
             <div className="space-y-6">
+              {/* Title */}
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-blue)] text-center">
+                Sri Sainathuni Sarath Babuji
+              </h3>
+
               {/* Image */}
               <div className="relative w-full h-[250px] md:h-[280px]">
                 <Image
@@ -49,6 +54,11 @@ export default function OurInspiration() {
           {/* Second Card - Saibaba Quote */}
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.4}>
             <div className="space-y-6">
+              {/* Title */}
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-blue)] text-center">
+                Shirdi Sai Baba
+              </h3>
+
               {/* Image */}
               <div className="relative w-full h-[250px] md:h-[280px]">
                 <Image
@@ -74,6 +84,11 @@ export default function OurInspiration() {
           {/* Third Card - Ammagaru */}
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.5}>
             <div className="space-y-6">
+              {/* Title */}
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-blue)] text-center">
+                Ammagaru
+              </h3>
+
               {/* Image */}
               <div className="relative w-full h-[250px] md:h-[280px]">
                 <Image
@@ -90,7 +105,6 @@ export default function OurInspiration() {
                   Guiding us with unconditional love and blessings
                 </p>
                 <p className="rubik-light text-sm md:text-base text-[var(--foreground-blue)] text-right">
-                  — Ammagaru
                 </p>
               </div>
             </div>

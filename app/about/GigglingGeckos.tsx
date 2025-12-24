@@ -34,29 +34,19 @@ export default function GigglingGeckos() {
 
           <SlideUp delay={0.7}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a 
-                href="https://www.livinginlaughter.org/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full sm:w-64 md:w-72"
-              >
-                <Button 
-                  buttonText="Living in Laughter Website"
-                  buttonOutlineColor="#C4735A"
-                />
-              </a>
+              <Button 
+                buttonText="Living in Laughter Website"
+                buttonOutlineColor="#C4735A"
+                href="https://www.livinginlaughter.org/"
+                openInNewTab={true}
+              />
               
-              <a 
-                href="https://www.youtube.com/@724Giggling.Geckos" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full sm:w-64 md:w-72"
-              >
-                <Button 
-                  buttonText="Our YouTube Channel"
-                  buttonOutlineColor="#C4735A"
-                />
-              </a>
+              <Button 
+                buttonText="Our YouTube Channel"
+                buttonOutlineColor="#C4735A"
+                href="https://www.youtube.com/@724Giggling.Geckos"
+                openInNewTab={true}
+              />
             </div>
           </SlideUp>
         </ScaleIn>

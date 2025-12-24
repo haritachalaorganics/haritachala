@@ -55,8 +55,8 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src={product.images && product.images.length > 0 && product.images[0] ? product.images[0] : 'https://placehold.co/1920x1080/FFDCDC/C4735A?text=Haritachala+Organics'}
-            alt={product.name}
+            src="/images/pages/our_products/productDetail.heroSection.JPG"
+            alt="Our Products"
             fill
             className="object-cover"
             priority
@@ -68,22 +68,6 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
 
         {/* White Gradient Overlay for NavBar */}
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/90 to-transparent z-10 pointer-events-none"></div>
-
-        {/* Hero Text with decorative elements */}
-        <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
-          <FadeIn delay={0.3}>
-            <h1 className="alegreya-regular text-4xl md:text-5xl lg:text-6xl text-white text-center tracking-wide" style={{ textShadow: '2px 4px 12px rgba(0,0,0,0.5)' }}>
-              Homemade with Love
-            </h1>
-          </FadeIn>
-        </div>
-
-        {/* Curved Bottom Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none">
-          <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
-            <path d="M0 80L1440 80L1440 0C1440 0 1080 80 720 80C360 80 0 0 0 0L0 80Z" style={{ fill: bgColor }} />
-          </svg>
-        </div>
       </section>
 
       {/* Product Card Section */}
@@ -218,32 +202,45 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                       className="rounded-2xl shadow-lg p-6 md:p-8 h-full bg-white"
                     >
                       <h3 
-                        className="afacad-medium text-lg md:text-xl uppercase tracking-wider mb-4"
-                        style={{ color: textColor }}
+                        className="afacad-medium text-base md:text-lg uppercase tracking-wider mb-5 pb-2 border-b-2"
+                        style={{ color: textColor, borderColor: `${textColor}20` }}
                       >
                         {formatFieldName(key)}
                       </h3>
                       
                       {Array.isArray(value) ? (
-                        <ul className="space-y-2">
-                          {value.map((item, i) => (
-                            <li 
-                              key={i}
-                              className="rubik-light text-sm md:text-base leading-relaxed flex items-start"
-                              style={{ color: textColor }}
-                            >
-                              <span className="mr-2 opacity-50">•</span>
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        // Render ingredients and guidelines as comma-separated text
+                        key === 'ingredients' || key === 'guidelines' ? (
+                          <p 
+                            className="rubik-light text-sm md:text-base leading-7"
+                            style={{ color: textColor, opacity: 0.85 }}
+                          >
+                            {value.join(', ')}
+                          </p>
+                        ) : (
+                          // Render other arrays as bullet lists
+                          <ul className="space-y-3">
+                            {value.map((item, i) => (
+                              <li 
+                                key={i}
+                                className="rubik-light text-sm md:text-base leading-7 flex items-start"
+                                style={{ color: textColor, opacity: 0.85 }}
+                              >
+                                <span className="mr-3 mt-2 opacity-40">•</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )
                       ) : (
-                        <p 
-                          className="rubik-light text-sm md:text-base leading-relaxed"
-                          style={{ color: textColor }}
+                        <div 
+                          className="rubik-light text-sm md:text-base leading-7 space-y-4"
+                          style={{ color: textColor, opacity: 0.85 }}
                         >
-                          {String(value)}
-                        </p>
+                          {String(value).split('\n\n').map((paragraph, i) => (
+                            <p key={i}>{paragraph}</p>
+                          ))}
+                        </div>
                       )}
                     </div>
                   </FadeIn>
