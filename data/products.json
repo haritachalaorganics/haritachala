@@ -7,7 +7,7 @@
       "tagline": "Loaf at first bite",
       "images": ["/images/bakery_products/banana_bread.jpeg", "/images/product_detailed/classic_banana_bread/bananabread1.jpg", "/images/product_detailed/classic_banana_bread/bananabread2.jpg", "/images/product_detailed/classic_banana_bread/bananabread3.JPG", "/images/product_detailed/classic_banana_bread/bananabread4.JPG", "/images/product_detailed/classic_banana_bread/bananabread5.JPG", "/images/product_detailed/classic_banana_bread/bananabread6.jpg"],
       "variants": [
-        { "size": "2.65 lb", "price": "$14.00"}
+        { "size": "2.65 lb", "price": "$14.77"}
       ],
       "description": "Enjoy the sweet, wholesome goodness of our fresh, organic, homemade banana bread.",
       "ingredients": [
@@ -36,7 +36,7 @@
       "tagline": "Loaf at first bite",
       "images": ["/images/bakery_products/vegan_banana_bread.jpeg", "/images/product_detailed/vegan_banana_bread/vb1.JPG", "/images/product_detailed/vegan_banana_bread/vb2.png"],
       "variants": [
-        { "size": "2.65 lb", "price": "$15.44"}
+        { "size": "2.65 lb", "price": "$16.00"}
       ],
       "description": "Enjoy our fresh, organic, gluten-free vegan banana bread, baked in small batches with simple ingredients.",
       "ingredients": [
@@ -119,7 +119,7 @@
       "tagline": "Organic and Artisanal",
       "images": ["/images/bakery_products/strawberry_jam.jpg"],
       "variants": [
-        { "size": "16 oz", "price": "$9.50" }
+        { "size": "16 oz", "price": "$11.21" }
       ],
       "description": "A sweet, homemade organic strawberry jam for toast, desserts, or by the spoonful. Free of artificial colors, flavors, and preservatives.",
       "ingredients": [
@@ -152,7 +152,7 @@
       "tagline": "flavors that speak తెలుగు with a cranberry accent",
       "images": ["/images/bakery_products/cranberry_andhra_pachadi.png"],
       "variants": [
-        { "size": "16 oz", "price": "$11.62" }
+        { "size": "16 oz", "price": "$11.00" }
       ],
       "description": "An innovative cranberry pachadi created in our kitchen, blending tangy cranberries with traditional Andhra spices using a cherished family recipe.",  
       "ingredients": [
@@ -216,7 +216,7 @@
       "tagline": "crunchy, nutty bites made for slow sips and cozy moments",
       "images": ["/images/bakery_products/almond_biscotti.jpeg"],
       "variants": [
-        { "size": "16 whole biscotti", "price": "$12.95" }
+        { "size": "16 whole biscotti", "price": "$14.00" }
       ],
       "description": "A lightly sweet, twice-baked almond biscotti made with almond flour, whole almonds, and organic ingredients for a satisfying crunch with every bite. A healthier alternative to Almond House Bisticks!",
       "ingredients": [

@@ -6,7 +6,7 @@ import SlideUp from '@/components/animations/SlideUp';
 
 export default function AboutHeroSection() {
   return (
-    <section className="relative w-full hidden md:block md:h-[70vh] lg:h-[85vh] overflow-hidden">
+    <section className="relative w-full h-[50vh] md:h-[70vh] lg:h-[85vh] overflow-hidden">
       {/* Desktop/Large Screen Hero Video */}
       <div className="hidden lg:block absolute inset-0">
         <video
@@ -23,7 +23,7 @@ export default function AboutHeroSection() {
       {/* Mobile/Tablet Hero Image */}
       <div className="block lg:hidden absolute inset-0">
         <Image
-          src="/images/pages/about/aboutUs.heroSection.png"
+          src="/images/pages/about/aboutUs.HeroSection.jpg"
           alt="About Haritachala Organics"
           fill
           className="object-cover object-top"

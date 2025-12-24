@@ -32,7 +32,7 @@ export default function BehindTheScenes1() {
                 <Button
                   buttonOutlineColor="var(--foreground-pink)"
                   buttonText="WATCH ON YOUTUBE"
-                  href="https://www.youtube.com/watch?v=8EkpI1lRhaw&t=383s"
+                  href="https://www.youtube.com/watch?v=Y6curd_tVNs"
                 />
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function BehindTheScenes1() {
             <div className="relative w-full h-[250px] md:h-[300px] lg:h-[350px] order-1 md:order-2">
               <iframe
                 className="w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/8EkpI1lRhaw?start=383"
+                src="https://www.youtube.com/embed/Y6curd_tVNs"
                 title="Haritachala Baking Process"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

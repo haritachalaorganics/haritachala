@@ -12,9 +12,9 @@ export default function OrderFormSection() {
               Monthly Order Form
             </h2>
             <p className="rubik-light text-base md:text-lg text-white text-center sm:text-center md:text-center">
-              Form Open From December 31st - January 6th
+              Form Open From December 29th - January 13th
               <br />
-              Pick Up in Dallas, TX on January 20th
+              Pick Up in Dallas, TX on January 18th
             </p>
           </div>
         </FadeIn>

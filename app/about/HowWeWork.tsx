@@ -24,7 +24,7 @@ export default function HowWeWork() {
         <ScaleIn delay={0.3} className="lg:hidden mb-8">
           <div className="relative w-full h-[300px] md:h-[350px]">
             <Image
-              src="/images/pages/about/aboutUs.howWeWork.updated.jpg"
+              src="/images/pages/about/aboutUs.howWeWork.png"
               alt="How We Work"
               fill
               className="object-contain rounded-lg"
@@ -70,7 +70,7 @@ export default function HowWeWork() {
           <ScaleIn delay={0.3} className="hidden lg:block">
             <div className="relative w-full h-[400px]">
               <Image
-                src="/images/pages/about/aboutUs.howWeWork.updated.jpg"
+                src="/images/pages/about/aboutUs.howWeWork.png"
                 alt="How We Work"
                 fill
                 className="object-contain rounded-lg"
