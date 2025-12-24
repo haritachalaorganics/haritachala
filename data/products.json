@@ -5,7 +5,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "Loaf at first bite",
-      "images": ["/images/bakery_products/banana_bread.jpeg"],
+      "images": ["/images/bakery_products/banana_bread.jpeg", "/images/product_detailed/classic_banana_bread/bananabread1.jpg", "/images/product_detailed/classic_banana_bread/bananabread2.jpg", "/images/product_detailed/classic_banana_bread/bananabread3.JPG", "/images/product_detailed/classic_banana_bread/bananabread4.JPG", "/images/product_detailed/classic_banana_bread/bananabread5.JPG", "/images/product_detailed/classic_banana_bread/bananabread6.jpg"],
       "variants": [
         { "size": "2.65 lb", "price": "$14.00"}
       ],
@@ -24,7 +24,9 @@
         "Zero preservatives"
       ],
       "guidelines": ["Consume within one week"],
-      "testimonial": "It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!"
+      "testimonial": "It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!",
+      "whyMonkeys": "Our team resonates with monkeys because of their playful nature and adventurous spirit. During our time in Tiruvannamalai, we had many fun (and a few scary) encounters with these delightful creatures. These moments created cherished memories that we look back on fondly. We wanted to incorporate monkeys into our packaging as a nod to the place where our first banana bread recipe was tested.",
+      "flyer": "/pdfs/BananaBreadFlyer.pdf"
     },
 
     {
@@ -32,7 +34,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "Loaf at first bite",
-      "images": ["/images/bakery_products/vegan_banana_bread.jpeg"],
+      "images": ["/images/bakery_products/vegan_banana_bread.jpeg", "/images/product_detailed/vegan_banana_bread/vb1.JPG", "/images/product_detailed/vegan_banana_bread/vb2.png"],
       "variants": [
         { "size": "2.65 lb", "price": "$15.44"}
       ],
@@ -55,8 +57,36 @@
       ],
       "guidelines": ["Consume within one week"],
       "about": "During our January 21st sale, we introduced samples of this vegan, gluten-free banana walnut bread for everyone to try. The response was overwhelmingly positive, with many of you sharing how much you loved it. One of the Sai Kids even mentioned they couldn't tell the difference between the original and the new recipe—a testament to the flavor, texture, and quality we strive for in every bite. We've poured our heart and soul into crafting this version to ensure it's just as delicious and satisfying as the classic one we all cherish— because great taste should never come with compromises. We're delighted to offer this inclusive treat for everyone to enjoy. Whether you're gluten-free, vegan, or simply a fan of amazing banana bread, this one's for you!",
-      "howToEnjoy": "Savor our Organic Vegan Banana Walnut Bread as a quick, grab-and-go breakfast or a delightful afternoon snack!"
-
+      "howToEnjoy": "Savor our Organic Vegan Banana Walnut Bread as a quick, grab-and-go breakfast or a delightful afternoon snack!",
+      "saiKidTestimonial": "“Wait... isn’t this the same as the other banana bread (Organic Banana Walnut Bread)?” - Sai Kid",
+      "essential_nutrients": [
+        {
+          "ingredient": "Bananas",
+          "benefits": "Packed with potassium, Vitamin B6, Vitamin C, magnesium, and manganese, supporting heart health and muscle function."
+        },
+        {
+          "ingredient": "Chia Seeds & Walnuts",
+          "benefits": "Rich in fiber, protein, omega-3 fatty acids, calcium, magnesium, and antioxidants. Walnuts support memory, focus, and cognitive function."
+        },
+        {
+          "ingredient": "Cane Sugar",
+          "benefits": "Premium organic cane sugar that is less processed and retains some natural minerals for a pure, natural sweetness."
+        },
+        {
+          "ingredient": "Coconut Oil",
+          "benefits": "Rich in MCTs for quick, sustained energy and has a high smoke point, making it ideal for baking."
+        },
+        {
+          "ingredient": "Nutmeg",
+          "benefits": "Supports digestion by relieving indigestion, bloating, and gas, and aids liver and kidney detoxification."
+        },
+        {
+          "ingredient": "Flax Seeds, Cinnamon & Oat Flour",
+          "benefits": "High in fiber, promoting fullness and helping stabilize blood sugar levels."
+        }
+      ],
+      "flyer": "/pdfs/VeganBananaBreadFlyer.pdf"
+      
     },
 
     {
@@ -64,7 +94,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Made with Ancient Spelt Flour",
-      "images": ["/images/bakery_products/spelt_sandwhich_bread.png"],
+      "images": ["/images/bakery_products/spelt_sandwhich_bread.png", "/images/product_detailed/spelt_bread/sb1.JPG", "/images/product_detailed/spelt_bread/sb2.JPG", "/images/product_detailed/spelt_bread/sb3.JPG", "/images/product_detailed/spelt_bread/sb4.JPG", "/images/product_detailed/spelt_bread/sb5.JPG", "/images/product_detailed/spelt_bread/sb6.JPG", "/images/product_detailed/spelt_bread/sb7.png"],
       "variants": [
         { "size": "1.0 lb", "price": "$16.00" }
       ],
@@ -78,7 +108,8 @@
       ],
       "guidelines": ["Consume within 30 days", "Refrigerate after opening"],
       "speltInfo": "Spelt flour is unique for a variety of reasons. With its mild, nutty flavor, Spelt is an ancient variety of wheat that is more satiating compared to regular wheat and helps prevent blood sugar spikes. Although it contains gluten, its molecular composition is different— more fragile and water soluble—making it easier to digest. Additionally, Spelt is higher in fiber than wheat, aiding in gluten digestion. It also contains magnesium and zinc, which contribute to overall sleep quality and immunity.",
-      "ourDream": "Our dream is to open an artisinal bakery at Haritachala (Tiruvannamalai, India). This Sandwich bread is one of the first products being launched from our Haritachala Bakery lineup. We hope you savor the healthy, high- quality ingredients in these traditional recipes and feel our love and passion in every bite. We wholeheartedly seek your blessings and your valuable feedback. May each bite of our artisanal bread offer a soulful experience, bringing families and friends together in shared moments of culinary joy. Our Artisanal Bakers, Hasita and Tanvi, have dedicated countless hours to cultivating their own mother yeast, experimenting with various wheat flours, and perfecting the recipe. Our Sandwich Bread is just the first of many handcrafted products we want to share with you!"
+      "ourDream": "Our dream is to open an artisinal bakery at Haritachala (Tiruvannamalai, India). This Sandwich bread is one of the first products being launched from our Haritachala Bakery lineup. We hope you savor the healthy, high- quality ingredients in these traditional recipes and feel our love and passion in every bite. We wholeheartedly seek your blessings and your valuable feedback. May each bite of our artisanal bread offer a soulful experience, bringing families and friends together in shared moments of culinary joy. Our Artisanal Bakers, Hasita and Tanvi, have dedicated countless hours to cultivating their own mother yeast, experimenting with various wheat flours, and perfecting the recipe. Our Sandwich Bread is just the first of many handcrafted products we want to share with you!",
+      "flyer": "/pdfs/SpeltBreadFlyer.pdf"
     },
 
     {

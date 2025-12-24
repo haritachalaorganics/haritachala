@@ -62,7 +62,7 @@ export default function OurInspiration() {
               {/* Image */}
               <div className="relative w-full h-[250px] md:h-[280px]">
                 <Image
-                  src="/images/pages/about/OurInspiration.SaiBaba.JPG"
+                  src="/images/pages/about/OurInspiration.SaiBaba.updated.JPG"
                   alt="Saibaba of Shirdi"
                   fill
                   className="object-cover object-top rounded-lg"
