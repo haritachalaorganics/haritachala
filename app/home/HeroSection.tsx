@@ -56,7 +56,7 @@ export default function HeroSection() {
               <a href="/order" className="rubik-bold w-44 px-6 py-2.5 border-2 border-[#645DAB] text-[#645DAB] bg-transparent uppercase text-base hover:bg-[#645DAB] hover:text-white transition-all inline-block text-center sm:text-center md:text-center rounded-lg">
                 Order Now
               </a>
-              <a href="/products" className="rubik-bold w-44 px-6 py-2.5 border-2 border-[#645DAB] text-[#645DAB] bg-transparent uppercase text-base hover:bg-[#645DAB] hover:text-white transition-all inline-block text-center sm:text-center md:text-center rounded-lg">
+              <a href="/product" className="rubik-bold w-44 px-6 py-2.5 border-2 border-[#645DAB] text-[#645DAB] bg-transparent uppercase text-base hover:bg-[#645DAB] hover:text-white transition-all inline-block text-center sm:text-center md:text-center rounded-lg">
                 Our Products
               </a>
             </div>
@@ -85,7 +85,7 @@ export default function HeroSection() {
                 <a href="/order" className="rubik-bold w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 border-2 border-[#645DAB] lg:border-[#FFDCDC] text-[#645DAB] lg:text-[#FFDCDC] bg-transparent uppercase text-base md:text-lg hover:bg-[#645DAB] lg:hover:bg-[#FFDCDC] hover:text-white lg:hover:text-[#C4735A] transition-all inline-block text-center sm:text-center md:text-center rounded-lg">
                   Order Now
                 </a>
-                <a href="/products" className="rubik-bold w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 border-2 border-[#645DAB] lg:border-[#FFDCDC] text-[#645DAB] lg:text-[#FFDCDC] bg-transparent uppercase text-base md:text-lg hover:bg-[#645DAB] lg:hover:bg-[#FFDCDC] hover:text-white lg:hover:text-[#C4735A] transition-all inline-block text-center sm:text-center md:text-center rounded-lg">
+                <a href="/product" className="rubik-bold w-44 md:w-52 px-6 md:px-8 py-2.5 md:py-3 border-2 border-[#645DAB] lg:border-[#FFDCDC] text-[#645DAB] lg:text-[#FFDCDC] bg-transparent uppercase text-base md:text-lg hover:bg-[#645DAB] lg:hover:bg-[#FFDCDC] hover:text-white lg:hover:text-[#C4735A] transition-all inline-block text-center sm:text-center md:text-center rounded-lg">
                   Our Products
                 </a>
               </div>
