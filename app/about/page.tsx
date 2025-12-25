@@ -8,6 +8,7 @@ import GigglingGeckos from './GigglingGeckos';
 import BehindTheScenes2 from '../inside_scoop/BehindTheScenes2';
 import ContactUs from '@/components/ContactUs';
 import teamMembers from '@/data/team_members.json';
+import OurPurpose from '../home/OurPurpose';
 
 export default function AboutPage() {
   return (
@@ -19,8 +20,9 @@ export default function AboutPage() {
       
       {/* Hero Section with image and gradient */}
       <AboutHeroSection />
+
+      <OurPurpose />
       
-      <AboutSection />
       <OurInspiration />
       <TeamCarousel teamMembers={teamMembers} />
       <BehindTheScenes2 />

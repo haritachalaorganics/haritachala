@@ -59,6 +59,7 @@ export default function ProductCard({
             buttonOutlineColor={buttonColor}
             buttonText="View Product"
             href={`/product/${slug}`}
+            variant="product-view"
           />
         </div>
       </div>

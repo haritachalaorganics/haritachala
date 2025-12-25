@@ -37,7 +37,7 @@ export default function GigglingGeckos() {
               <Button 
                 buttonText="Living in Laughter Website"
                 buttonOutlineColor="#C4735A"
-                href="https://www.livinginlaughter.org/"
+                href="https://livinginlaughter.squarespace.com/"
                 openInNewTab={true}
               />
               

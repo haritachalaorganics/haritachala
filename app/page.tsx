@@ -24,7 +24,6 @@ export default function Home() {
       <AboutSection />
       
       {/* Our Purpose Section */}
-      <OurPurpose />
       
       {/* Our Products Carousel Section */}
       <OurProducts />

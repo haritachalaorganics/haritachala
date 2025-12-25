@@ -70,6 +70,7 @@ export default function OurProducts({
               buttonOutlineColor={allProductsButtonColor}
               buttonText="All Products"
               href="/product"
+              variant="all-products"
             />
           </div>
         </FadeIn>

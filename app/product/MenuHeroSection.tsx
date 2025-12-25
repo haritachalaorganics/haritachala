@@ -2,15 +2,33 @@
 
 import Image from 'next/image';
 import SlideUp from '@/components/animations/SlideUp';
+import { useEffect, useRef } from 'react';
 
 export default function MenuHeroSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleTimeUpdate = () => {
+      if (video.currentTime >= 8) {
+        video.currentTime = 0;
+        video.play();
+      }
+    };
+
+    video.addEventListener('timeupdate', handleTimeUpdate);
+    return () => video.removeEventListener('timeupdate', handleTimeUpdate);
+  }, []);
+
   return (
     <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden" style={{ backgroundColor: 'var(--background-pink)' }}>
       {/* Desktop/Large Screen Hero Video */}
       <div className="hidden lg:block absolute inset-0">
         <video
+          ref={videoRef}
           autoPlay
-          loop
           muted
           playsInline
           className="w-full h-full object-cover object-top"

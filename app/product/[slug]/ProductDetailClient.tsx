@@ -111,8 +111,9 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                       {/* Previous Button */}
                       <button
                         onClick={prevImage}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-white/90 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
                         aria-label="Previous image"
+                        style={{ color: 'var(--foreground-pink)' }}
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -122,8 +123,9 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                       {/* Next Button */}
                       <button
                         onClick={nextImage}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-white/90 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
                         aria-label="Next image"
+                        style={{ color: 'var(--foreground-pink)' }}
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

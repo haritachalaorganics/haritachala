@@ -7,17 +7,17 @@ import FadeIn from '@/components/animations/FadeIn';
 
 export default function OurInspiration() {
   return (
-    <section className="bg-[var(--background-blue)] py-12 md:py-16">
+    <section className="bg-[var(--background-purple)] py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title - outside white box */}
         <SlideUp delay={0.2}>
           <div className="text-center mb-8">
-            <h2 className="afacad-regular text-2xl md:text-3xl lg:text-4xl text-[var(--foreground-blue)] uppercase mb-6 text-center sm:text-center md:text-center">
+            <h2 className="afacad-regular text-2xl md:text-3xl lg:text-4xl text-white uppercase mb-6 text-center sm:text-center md:text-center">
               Our Inspiration
             </h2>
           </div>
         </SlideUp>
-        <div className="w-full h-[1px] bg-[var(--foreground-blue)] mb-8 md:mb-10"></div>
+        <div className="w-full h-[1px] bg-white mb-8 md:mb-10"></div>
 
         {/* Cards Container */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -25,7 +25,7 @@ export default function OurInspiration() {
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.3}>
             <div className="space-y-6">
               {/* Title */}
-              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-blue)] text-center">
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center">
                 Sri Sainathuni Sarath Babuji
               </h3>
 
@@ -41,10 +41,10 @@ export default function OurInspiration() {
 
               {/* Quote */}
               <div className="space-y-4">
-                <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-blue)] leading-relaxed text-center sm:text-center md:text-center">
+                <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
                   "If you have a talent, it is a gift from Baba. Make it an offering to him, which will be a means of remembering him. It is both an expression and an experience of Baba."
                 </blockquote>
-                <p className="rubik-light text-sm md:text-base text-[var(--foreground-blue)] text-right">
+                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
                   — Sri Babuji
                 </p>
               </div>
@@ -55,7 +55,7 @@ export default function OurInspiration() {
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.4}>
             <div className="space-y-6">
               {/* Title */}
-              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-blue)] text-center">
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center">
                 Shirdi Sai Baba
               </h3>
 
@@ -71,10 +71,10 @@ export default function OurInspiration() {
 
               {/* Quote */}
               <div className="space-y-4">
-                <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-blue)] leading-relaxed">
+                <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
                   "Have faith and patience. Then I will be always with you wherever you are and at all times."
                 </blockquote>
-                <p className="rubik-light text-sm md:text-base text-[var(--foreground-blue)] text-right">
+                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
                   — Saibaba of Shirdi
                 </p>
               </div>
@@ -85,7 +85,7 @@ export default function OurInspiration() {
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.5}>
             <div className="space-y-6">
               {/* Title */}
-              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-blue)] text-center">
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center">
                 Ammagaru
               </h3>
 
@@ -101,10 +101,10 @@ export default function OurInspiration() {
 
               {/* Text */}
               <div className="space-y-4">
-                <p className="rubik-light text-base md:text-lg text-[var(--foreground-blue)] leading-relaxed text-center">
+                <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
                   Guiding us with unconditional love and blessings
                 </p>
-                <p className="rubik-light text-sm md:text-base text-[var(--foreground-blue)] text-right">
+                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
                 </p>
               </div>
             </div>
