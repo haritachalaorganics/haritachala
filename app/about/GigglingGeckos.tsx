@@ -21,7 +21,7 @@ export default function GigglingGeckos() {
           <div className="w-full h-[1px] bg-[var(--foreground-pink)] mb-8 md:mb-10"></div>
           
           <FadeIn delay={0.5}>
-            <div className="space-y-6 rubik-light text-sm md:text-base lg:text-base text-[var(--foreground-pink)] leading-relaxed mb-10 text-center sm:text-center md:text-center">
+            <div className="space-y-6 rubik-light text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed mb-10 text-center sm:text-center md:text-center">
               <p>
                 Haritachala Bakery began with a group of us who met at a summer camp at Haritachala in 2023—fondly known as the Giggling Geckos. What started as friendship and laughter has grown into a shared passion for creating and giving back.
               </p>

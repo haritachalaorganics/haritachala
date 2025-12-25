@@ -115,7 +115,7 @@ export default function OrderProductsSection() {
                             {variant.price}
                           </p>
                           <p 
-                            className="rubik-light text-sm md:text-base"
+                            className="rubik-light text-base md:text-lg"
                             style={{ color: 'var(--foreground-pink)' }}
                           >
                             per {variant.size}
@@ -135,7 +135,7 @@ export default function OrderProductsSection() {
                         Description
                       </h4>
                       <p 
-                        className="rubik-light text-sm md:text-base leading-relaxed"
+                        className="rubik-light text-base md:text-lg leading-relaxed"
                         style={{ color: 'var(--foreground-pink)' }}
                       >
                         {currentProduct.description}
@@ -153,7 +153,7 @@ export default function OrderProductsSection() {
                         Ingredients
                       </h4>
                       <p 
-                        className="rubik-light text-sm md:text-base leading-relaxed"
+                        className="rubik-light text-base md:text-lg leading-relaxed"
                         style={{ color: 'var(--foreground-pink)' }}
                       >
                         {currentProduct.ingredients.join(', ')}

@@ -36,7 +36,7 @@ export default function AboutSection() {
             </ScaleIn>
 
             {/* Text Content */}
-            <Stagger className="space-y-4 rubik-light text-sm md:text-base lg:text-base text-[var(--foreground-white)] leading-relaxed text-center sm:text-center md:text-center lg:text-left" staggerDelay={0.1}>
+            <Stagger className="space-y-4 rubik-light text-base md:text-lg text-[var(--foreground-white)] leading-relaxed text-center sm:text-center md:text-center lg:text-left" staggerDelay={0.1}>
               <StaggerItem>
                 <p>
                   Haritachala Organics was born from a shared vision - to come together to nurture both people and nature as a sincere offering of love, devotion, and gratitude to our Gurus, Shirdi Sai Baba and Sri Sainathuni Sarath Babuji.

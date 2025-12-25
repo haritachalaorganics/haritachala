@@ -29,13 +29,13 @@ export default function OurPurpose() {
           <Stagger className="space-y-6 text-[#0D4F78]" staggerDelay={0.15}>
             {/* First paragraph */}
             <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+              <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 Haritachala Organics is a non-profit initiative founded by a devoted team of spiritual seekers and volunteers, as a sincere offering of love, devotion, and gratitude to our Gurus: Shirdi Sai Baba and Sri Sainathuni Sarath Babuji.
               </p>
             </StaggerItem>
 
             <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+              <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 Located on Girivalam Road at the sacred foothills of Arunachala in Tiruvannamalai, India, Haritachala is more than just a farm - it's a living expression of spirituality, community living, sustainability and empowerment. We offer high-quality, organic, and wholesome products.
               </p>
             </StaggerItem>
@@ -60,13 +60,13 @@ export default function OurPurpose() {
 
             {/* Remaining paragraphs */}
             <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+              <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 100% of proceeds directly support our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women.
               </p>
             </StaggerItem>
 
             <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+              <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 Inspired by our connection to Haritachala, we blend our love for healthy living, sustainability, baking skills, and design skills in joyful service, crafting each product with Baba and Guruji's blessings to nourish body and soul.
               </p>
             </StaggerItem>

@@ -35,7 +35,7 @@ export default function HowWeWork() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="space-y-6">
-            <Stagger className="space-y-4 rubik-light text-sm md:text-base lg:text-base text-[var(--foreground-white)] leading-relaxed text-center sm:text-center md:text-center lg:text-left" staggerDelay={0.15}>
+            <Stagger className="space-y-4 rubik-light text-base md:text-lg text-[var(--foreground-white)] leading-relaxed text-center sm:text-center md:text-center lg:text-left" staggerDelay={0.15}>
               <StaggerItem>
                 <p>
                   Rooted in our love for Haritachala and guided by the blessings of Baba and Guruji, we approach everything we do as an act of joyful service.

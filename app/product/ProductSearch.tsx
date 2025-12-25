@@ -30,7 +30,7 @@ export default function ProductSearch({ searchTerm, onSearchChange }: ProductSea
           />
           </div>
           {searchTerm && (
-            <p className="mt-3 text-sm md:text-base rubik-light text-[var(--foreground-pink)] text-center">
+            <p className="mt-3 text-base md:text-lg rubik-light text-[var(--foreground-pink)] text-center">
               Searching for: "{searchTerm}"
             </p>
           )}

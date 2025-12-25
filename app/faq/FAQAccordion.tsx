@@ -68,7 +68,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                 aria-labelledby={`faq-question-${index}`}
               >
                 <div className="px-6 pb-4 md:px-8 md:pb-5 pt-2">
-                  <p className="rubik-light text-sm md:text-base text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+                  <p className="rubik-light text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                     {faq.answer}
                   </p>
                 </div>

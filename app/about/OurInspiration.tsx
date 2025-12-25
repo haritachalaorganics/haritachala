@@ -43,7 +43,7 @@ export default function OurInspiration() {
                 <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
                   "Have faith and patience. Then I will be always with you wherever you are and at all times."
                 </blockquote>
-                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
+                <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] text-center">
                   — Saibaba of Shirdi
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function OurInspiration() {
                 <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
                   "If you have a talent, it is a gift from Baba. Make it an offering to him, which will be a means of remembering him. It is both an expression and an experience of Baba."
                 </blockquote>
-                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
+                <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] text-center">
                   — Sri Babuji
                 </p>
               </div>
@@ -104,8 +104,6 @@ export default function OurInspiration() {
               <div className="space-y-4">
                 <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
                   Guiding us with unconditional love and blessings
-                </p>
-                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
                 </p>
               </div>
             </div>

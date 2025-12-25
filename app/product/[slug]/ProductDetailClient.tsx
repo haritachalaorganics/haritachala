@@ -293,7 +293,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                         // Render ingredients and guidelines as comma-separated text
                         key === 'ingredients' || key === 'guidelines' ? (
                           <p 
-                            className="rubik-light text-sm md:text-base leading-7"
+                            className="rubik-light text-base md:text-lg leading-7"
                             style={{ color: textColor, opacity: 0.85 }}
                           >
                             {value.join(', ')}
@@ -305,13 +305,13 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                               {value.map((item, i) => (
                                 <div key={i} className="space-y-1">
                                   <p 
-                                    className="rubik-medium text-sm md:text-base"
+                                    className="rubik-medium text-base md:text-lg"
                                     style={{ color: textColor, opacity: 0.9 }}
                                   >
                                     {item.ingredient}
                                   </p>
                                   <p 
-                                    className="rubik-light text-sm md:text-base leading-7"
+                                    className="rubik-light text-base md:text-lg leading-7"
                                     style={{ color: textColor, opacity: 0.75 }}
                                   >
                                     {item.benefits}
@@ -325,7 +325,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                               {value.map((item, i) => (
                                 <li 
                                   key={i}
-                                  className="rubik-light text-sm md:text-base leading-7 flex items-start"
+                                  className="rubik-light text-base md:text-lg leading-7 flex items-start"
                                   style={{ color: textColor, opacity: 0.85 }}
                                 >
                                   <span className="mr-3 mt-2 opacity-40">•</span>
@@ -337,7 +337,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                         )
                       ) : (
                         <div 
-                          className="rubik-light text-sm md:text-base leading-7 space-y-4"
+                          className="rubik-light text-base md:text-lg leading-7 space-y-4"
                           style={{ color: textColor, opacity: 0.85 }}
                         >
                           {String(value).split('\n\n').map((paragraph, i) => (

@@ -47,7 +47,7 @@ export default function ProductCard({
 
         {/* Product Tagline/Description */}
         <p 
-          className="rubik-light text-sm md:text-base text-center mb-6 flex-grow"
+          className="rubik-light text-base md:text-lg text-center mb-6 flex-grow"
           style={{ color: textColor }}
         >
           {tagline}

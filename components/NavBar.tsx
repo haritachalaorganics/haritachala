@@ -45,7 +45,7 @@ export default function NavBar() {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="afacad-bold text-xl xl:text-2xl text-[#645DAB] border-2 border-[#645DAB] px-4 py-1.5 rounded hover:bg-[#645DAB] hover:text-white transition-all"
+                      className="afacad-bold text-lg xl:text-xl text-[#645DAB] border-2 border-[#645DAB] px-4 py-1.5 rounded hover:bg-[#645DAB] hover:text-white transition-all"
                     >
                       {link.name}
                     </Link>
@@ -55,7 +55,7 @@ export default function NavBar() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="afacad-bold text-xl xl:text-2xl text-[#645DAB] hover:opacity-70 transition-opacity"
+                    className="afacad-bold text-lg xl:text-xl text-[#645DAB] hover:opacity-70 transition-opacity"
                   >
                     {link.name}
                   </Link>
@@ -151,7 +151,7 @@ export default function NavBar() {
                         <Link
                           href={link.href}
                           onClick={toggleMenu}
-                          className="afacad-bold text-2xl md:text-3xl text-white border-2 border-white px-6 py-2 rounded hover:bg-white hover:text-[#B3B0D1] transition-all"
+                          className="afacad-bold text-xl md:text-2xl text-white border-2 border-white px-6 py-2 rounded hover:bg-white hover:text-[#B3B0D1] transition-all"
                         >
                           {link.name}
                         </Link>
@@ -163,7 +163,7 @@ export default function NavBar() {
                       <Link
                         href={link.href}
                         onClick={toggleMenu}
-                        className="afacad-bold text-2xl md:text-3xl text-white hover:opacity-70 transition-opacity"
+                        className="afacad-bold text-xl md:text-2xl text-white hover:opacity-70 transition-opacity"
                       >
                         {link.name}
                       </Link>

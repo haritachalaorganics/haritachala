@@ -27,7 +27,7 @@ export default function NewsletterSection() {
               <div className="w-full h-[1px] bg-[var(--foreground-blue)] mb-8 md:mb-10"></div>
             </div>
             
-            <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-blue)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+            <div className="space-y-4 rubik-light text-base md:text-lg text-[var(--foreground-blue)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
               <p>
                 {/* TODO: Extract exact body text from Figma */}
                 Subscribe to our newsletter and be the first to know about new products, 

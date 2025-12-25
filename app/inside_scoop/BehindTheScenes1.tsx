@@ -21,7 +21,7 @@ export default function BehindTheScenes1() {
               <h3 className="afacad-regular text-2xl md:text-3xl text-[var(--foreground-pink)] text-center sm:text-center md:text-center lg:text-left">
                 Bakery Beginnings Documentary
               </h3>
-              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+              <div className="space-y-4 rubik-light text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 <p>
                   Step into the heart of Haritachala Organics, where flour flies, laughter echoes, and every loaf is made with devotion. Our behind-the-scenes moments share the process that brings our offerings to life.
                 </p>
@@ -68,7 +68,7 @@ export default function BehindTheScenes1() {
               <h3 className="afacad-regular text-2xl md:text-3xl text-[var(--foreground-pink)] text-center sm:text-center md:text-center lg:text-left">
                 Designs Album
               </h3>
-              <div className="space-y-4 afacad-regular text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed">
+              <div className="space-y-4 rubik-light text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                 <p>
                   Every design—from our product packaging to our flyers—is crafted with care to reflect the sincerity and devotion of Haritachala Organics.
                 </p>
