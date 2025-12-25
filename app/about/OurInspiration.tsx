@@ -21,11 +21,39 @@ export default function OurInspiration() {
 
         {/* Cards Container */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.4}>
+            <div className="space-y-6">
+              {/* Title */}
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center uppercase">
+                Sri Shirdi Sai Baba
+              </h3>
+
+              {/* Image */}
+              <div className="relative w-full h-[250px] md:h-[280px]">
+                <Image
+                  src="/images/pages/about/OurInspiration.SaiBaba.updated.JPG"
+                  alt="Saibaba of Shirdi"
+                  fill
+                  className="object-cover object-top rounded-lg"
+                />
+              </div>
+
+              {/* Quote */}
+              <div className="space-y-4">
+                <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
+                  "Have faith and patience. Then I will be always with you wherever you are and at all times."
+                </blockquote>
+                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
+                  — Saibaba of Shirdi
+                </p>
+              </div>
+            </div>
+          </ScaleIn>
           {/* First Card - Sri Babuji Quote */}
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.3}>
             <div className="space-y-6">
               {/* Title */}
-              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center">
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center uppercase">
                 Sri Sainathuni Sarath Babuji
               </h3>
 
@@ -52,41 +80,14 @@ export default function OurInspiration() {
           </ScaleIn>
 
           {/* Second Card - Saibaba Quote */}
-          <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.4}>
-            <div className="space-y-6">
-              {/* Title */}
-              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center">
-                Shirdi Sai Baba
-              </h3>
-
-              {/* Image */}
-              <div className="relative w-full h-[250px] md:h-[280px]">
-                <Image
-                  src="/images/pages/about/OurInspiration.SaiBaba.updated.JPG"
-                  alt="Saibaba of Shirdi"
-                  fill
-                  className="object-cover object-top rounded-lg"
-                />
-              </div>
-
-              {/* Quote */}
-              <div className="space-y-4">
-                <blockquote className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
-                  "Have faith and patience. Then I will be always with you wherever you are and at all times."
-                </blockquote>
-                <p className="rubik-light text-sm md:text-base text-[var(--foreground-purple)] text-center">
-                  — Saibaba of Shirdi
-                </p>
-              </div>
-            </div>
-          </ScaleIn>
+          
 
           {/* Third Card - Ammagaru */}
           <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.5}>
             <div className="space-y-6">
               {/* Title */}
-              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center">
-                Ammagaru
+              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center uppercase">
+                Pujya Ammagaru
               </h3>
 
               {/* Image */}
