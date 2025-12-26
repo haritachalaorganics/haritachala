@@ -34,7 +34,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "crunchy, nutty bites made for slow sips and cozy moments",
-      "images": ["/images/bakery_products/almond_biscotti.jpeg", "images/product_detailed/biscotti/b1.jpg", "images/product_detailed/biscotti/b2.jpg", "images/product_detailed/biscotti/b3.jpg", "images/product_detailed/biscotti/b4.jpg", "images/product_detailed/biscotti/b5.jpg", "images/product_detailed/biscotti/b6.jpg", "images/product_detailed/biscotti/b7.jpg", "images/product_detailed/biscotti/b8.jpg"],
+      "images": ["/images/bakery_products/almond_biscotti.jpeg", "/images/product_detailed/biscotti/b1.jpg", "/images/product_detailed/biscotti/b2.jpg", "/images/product_detailed/biscotti/b3.jpg", "/images/product_detailed/biscotti/b4.jpg", "/images/product_detailed/biscotti/b5.jpg", "/images/product_detailed/biscotti/b8.jpg"],
       "variants": [
         { "size": "16 whole biscotti", "price": "$14.00" }
       ],
@@ -58,7 +58,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "tangy, toasty crunch with seeds in every bite",
-      "images": ["/images/bakery_products/cranberry_crisps.PNG", "images/product_detailed/cranberry_crisps/c1.jpg", "images/product_detailed/cranberry_crisps/c2.jpg", "images/product_detailed/cranberry_crisps/c3.jpg", "images/product_detailed/cranberry_crisps/c4.jpg", "images/product_detailed/cranberry_crisps/c5.jpg", "images/product_detailed/cranberry_crisps/c6.jpg", "images/product_detailed/cranberry_crisps/c7.jpg", "images/product_detailed/cranberry_crisps/c8.JPG", "images/product_detailed/cranberry_crisps/c9.png", "images/product_detailed/cranberry_crisps/c10.png"],
+      "images": ["/images/bakery_products/cranberry_crisps.PNG", "/images/product_detailed/cranberry_crisps/c1.jpg", "/images/product_detailed/cranberry_crisps/c2.jpg", "/images/product_detailed/cranberry_crisps/c3.jpg", "/images/product_detailed/cranberry_crisps/c4.jpg", "/images/product_detailed/cranberry_crisps/c5.jpg", "/images/product_detailed/cranberry_crisps/c8.JPG", "/images/product_detailed/cranberry_crisps/c9.png", "/images/product_detailed/cranberry_crisps/c10.png"],
       "variants": [
         { "size": "35 crackers", "price": "$9.99" }
       ],
@@ -94,7 +94,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "Loaf at first bite",
-      "images": ["/images/bakery_products/vegan_banana_bread.jpeg", "/images/product_detailed/vegan_banana_bread/vb1.JPG", "/images/product_detailed/vegan_banana_bread/vb2.png"],
+      "images": ["/images/bakery_products/vegan_banana_bread.jpeg", "/images/product_detailed/vegan_banana_bread/vb1.JPG", "/images/product_detailed/vegan_banana_bread/vb2.png", "/images/product_detailed/vegan_banana_bread/vb3.jpeg", "/images/product_detailed/vegan_banana_bread/vb4.jpeg"],
       "variants": [
         { "size": "2.65 lb", "price": "$16.00"}
       ],
@@ -173,7 +173,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Organic and Artisanal",
-      "images": ["/images/bakery_products/peach_jam.jpg", "/images/product_detailed/peach_jam/pj1.jpg", "/images/product_detailed/peach_jam/pj2.jpg", "/images/product_detailed/peach_jam/pj3.png", "/images/product_detailed/peach_jam/pj4.JPG", "/images/product_detailed/peach_jam/pj5.png", "/images/product_detailed/peach_jam/pj6.jpg", "/images/product_detailed/peach_jam/pj7.png"],
+      "images": ["/images/bakery_products/peach_jam.jpg", "/images/product_detailed/peach_jam/pj1.jpg", "/images/product_detailed/peach_jam/pj4.JPG", "/images/product_detailed/peach_jam/pj5.png", "/images/product_detailed/peach_jam/pj6.png", "/images/product_detailed/peach_jam/pj7.png"],
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
       ],
@@ -187,7 +187,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "flavors that speak తెలుగు with a cranberry accent",
-      "images": ["/images/bakery_products/cranberry_andhra_pachadi.png", "/images/product_detailed/cranberry_andhra_pachadi/cp1.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp2.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp3.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp4.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp5.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp6.JPG", "/images/product_detailed/cranberry_andhra_pachadi/cp7.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp8.png", "/images/product_detailed/cranberry_andhra_pachadi/cp9.JPG", "/images/product_detailed/cranberry_andhra_pachadi/cp10.png", "/images/product_detailed/cranberry_andhra_pachadi/cp11.png", "/images/product_detailed/cranberry_andhra_pachadi/cp12.png"],
+      "images": ["/images/bakery_products/cranberry_andhra_pachadi.png", "/images/product_detailed/cranberry_pachadi/cp6.JPG", "/images/product_detailed/cranberry_pachadi/cp7.jpg", "/images/product_detailed/cranberry_pachadi/cp9.JPG", "/images/product_detailed/cranberry_pachadi/cp10.png", "/images/product_detailed/cranberry_pachadi/cp11.png", "/images/product_detailed/cranberry_pachadi/cp12.png"],
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
       ],
@@ -277,7 +277,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Where తెలుగు Flavors Meet a Citrusy Zen Handshake",
-      "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png", "images/product_detailed/buddhas_hand/bh1.JPG", "/images/product_detailed/buddhas_hand/bh2.jpg", "/images/product_detailed/buddhas_hand/bh3.jpg", "/images/product_detailed/buddhas_hand/bh4.jpg", "/images/product_detailed/buddhas_hand/bh5.jpg", "/images/product_detailed/buddhas_hand/bh6.jpg", "/images/product_detailed/buddhas_hand/bh7.jpg", "images/product_detailed/bh8.jpg"],
+      "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png", "/images/product_detailed/buddhas_hand/bh2.jpg", "/images/product_detailed/buddhas_hand/bh3.jpg", "/images/product_detailed/buddhas_hand/bh4.jpg", "/images/product_detailed/buddhas_hand/bh5.jpg", "/images/product_detailed/buddhas_hand/bh6.jpg", "/images/product_detailed/buddhas_hand/bh7.jpg", "/images/product_detailed/buddhas_hand/bh8.jpg"],
       "variants": [
         { "size": "16 oz", "price": "$12.12" }
       ],

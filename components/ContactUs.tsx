@@ -32,7 +32,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
     },
     {
       icon: FaYoutube,
-      href: 'https://www.youtube.com/@724Giggling.Geckos',
+      href: 'https://www.youtube.com/@HaritachalaOrganics',
       label: 'YouTube'
     },
     {
@@ -104,9 +104,8 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
               </div>
               
               {/* Address */}
-              <p className="rubik-light text-sm text-[#0D4F78] text-center mb-4 leading-relaxed">
-                Dallas, Texas, United<br />
-                States
+              <p className="rubik-light text-base md:text-lg text-[#0D4F78] text-center mb-4 leading-relaxed">
+                Dallas, Texas, United States
               </p>
               
               {/* Phone Icon */}
@@ -121,10 +120,10 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
               </div>
               
               {/* Phone Number */}
-              <p className="rubik-light text-sm text-[#0D4F78] text-center mb-1">
+              <p className="rubik-light text-base md:text-lg text-[#0D4F78] text-center mb-1">
                 +1 945 289 0980
               </p>
-              <p className="rubik-light text-xs text-[#0D4F78] text-center">
+              <p className="rubik-light text-sm md:text-base text-[#0D4F78] text-center">
                 Call or Message us on WhatsApp
               </p>
             </div>
@@ -135,7 +134,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
         {bottomImage && (
           <FadeIn delay={0.6}>
             <div className="flex justify-center">
-            <div className="relative w-20 h-20 md:w-24 md:h-24">
+            <div className="relative w-48 h-48 md:w-56 md:h-56">
               <Image
                 src={bottomImage}
                 alt="Decorative element"

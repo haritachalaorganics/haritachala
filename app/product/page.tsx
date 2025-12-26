@@ -74,7 +74,7 @@ export default function MenuPage() {
 
       {/* U.S. Products Section */}
       <ProductSection
-        title="U.S. Products"
+        title="Products Available in the U.S."
         subtitle="Wholesome, nourishing, and crafted with love—each bite is a celebration of flavor and purpose. Our goods feed the body and warm the heart, with every offering helping to grow and sustain Haritachala's mission."
         products={usProducts}
         backgroundColor="var(--background-pink)"

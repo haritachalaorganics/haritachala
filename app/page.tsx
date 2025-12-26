@@ -8,6 +8,7 @@ import OurPurpose from "./home/OurPurpose";
 import OurProducts from "./home/OurProducts";
 import HaveQuestions from "./home/HaveQuestions";
 import AboutSection from "./about/AboutSection";
+import JoinBroadcastList from "./home/JoinBroadcastList";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
       
       {/* Have Questions Section */}
       <HaveQuestions />
+      
+      {/* Join Broadcast List Section */}
+      <JoinBroadcastList />
       
       {/* Contact Us and Stay In Touch Section */}
       <ContactUs bottomImage="/images/pages/home/homepage.contactus.img.png" />

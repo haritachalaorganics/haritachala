@@ -14,7 +14,7 @@ export default function TeamMemberCard({
   image 
 }: TeamMemberCardProps) {
   return (
-    <div className="flex-shrink-0 w-[280px] md:w-[320px]">
+    <div className="flex-shrink-0 w-[340px] md:w-[400px]">
       <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow h-full flex flex-col">
         {/* Image */}
         <div className="relative w-full h-[280px] md:h-[320px] flex-shrink-0 bg-gray-200">
@@ -50,7 +50,7 @@ export default function TeamMemberCard({
             </p>
           )}
           
-          <p className="rubik-light text-sm text-gray-600 leading-relaxed text-center sm:text-center md:text-center">
+          <p className="rubik-light text-base md:text-lg text-gray-600 leading-relaxed text-center sm:text-center md:text-center">
             {bio}
           </p>
         </div>

@@ -17,27 +17,27 @@ export default function LearnMoreSection() {
   const articles = [
     {
       title: 'Self Sustainability at Haritachala',
-      url: 'https://livinginlaughter.squarespace.com/self-sustainability',
+      url: 'https://www.livinginlaughter.org/self-sustainability',
     },
     {
       title: 'How Sustainable Cooking is Practiced at Haritachala',
-      url: 'https://livinginlaughter.squarespace.com/sustainable-cooking',
+      url: 'https://www.livinginlaughter.org/sustainable-cooking',
     },
     {
       title: 'The Beginnings of the Haritachala Bakery',
-      url: 'https://livinginlaughter.squarespace.com/hasi-bakery',
+      url: 'https://www.livinginlaughter.org/hasi-bakery',
     },
     {
-      title: 'Staff Meeting at Haritachala',
-      url: 'https://livinginlaughter.squarespace.com/staff-meeting',
+      title: "Meeting the Staff of Haritachala",
+      url: 'https://www.livinginlaughter.org/staff-meeting',
     },
     {
       title: 'Summer Camp Daily Blogposts',
-      url: 'https://livinginlaughter.squarespace.com/summer-camp#camp',
+      url: 'https://www.livinginlaughter.org/summer-camp#camp',
     },
     {
       title: 'Unique Layered Mulching at Haritachala',
-      url: 'https://livinginlaughter.squarespace.com/layered-mulching',
+      url: 'https://www.livinginlaughter.org/layered-mulching',
     },
   ];
 

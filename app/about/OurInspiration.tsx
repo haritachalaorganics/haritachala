@@ -19,9 +19,9 @@ export default function OurInspiration() {
         </SlideUp>
         <div className="w-full h-[1px] bg-white mb-8 md:mb-10"></div>
 
-        {/* Cards Container */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.4}>
+        {/* Top Two Cards Container */}
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
+          <ScaleIn className="bg-white rounded-lg p-8 md:p-10" delay={0.4}>
             <div className="space-y-6">
               {/* Title */}
               <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center uppercase">
@@ -31,7 +31,7 @@ export default function OurInspiration() {
               {/* Image */}
               <div className="relative w-full h-[250px] md:h-[280px]">
                 <Image
-                  src="/images/pages/about/OurInspiration.SaiBaba.updated.JPG"
+                  src="/images/pages/about/OurInspiration.SaiBaba.Updated.JPG"
                   alt="Saibaba of Shirdi"
                   fill
                   className="object-cover object-top rounded-lg"
@@ -50,7 +50,7 @@ export default function OurInspiration() {
             </div>
           </ScaleIn>
           {/* First Card - Sri Babuji Quote */}
-          <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.3}>
+          <ScaleIn className="bg-white rounded-lg p-8 md:p-10" delay={0.3}>
             <div className="space-y-6">
               {/* Title */}
               <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center uppercase">
@@ -78,37 +78,41 @@ export default function OurInspiration() {
               </div>
             </div>
           </ScaleIn>
+        </div>
 
-          {/* Second Card - Saibaba Quote */}
-          
-
-          {/* Third Card - Ammagaru */}
-          <ScaleIn className="bg-white rounded-lg p-6 md:p-8" delay={0.5}>
-            <div className="space-y-6">
-              {/* Title */}
-              <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center uppercase">
-                Pujya Ammagaru
-              </h3>
-
-              {/* Image */}
-              <div className="relative w-full h-[250px] md:h-[280px]">
-                <Image
-                  src="/images/pages/about/aboutUs.OurInspiration.Ammagaru.jpeg"
-                  alt="Ammagaru"
-                  fill
-                  className="object-cover object-top rounded-lg"
-                />
-              </div>
-
-              {/* Text */}
+        {/* Third Card - Ammagaru (Horizontal Layout) */}
+        <ScaleIn className="bg-white rounded-lg p-8 md:p-10" delay={0.5}>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+            {/* Image Section */}
+            <div className="w-full md:w-1/3 flex-shrink-0">
               <div className="space-y-4">
-                <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center">
-                  Guiding us with unconditional love and blessings
-                </p>
+                {/* Title */}
+                <h3 className="rubik-medium text-xl md:text-2xl text-[var(--foreground-purple)] text-center uppercase">
+                  Pujya Ammagaru
+                </h3>
+                
+                {/* Image */}
+                <div className="relative w-full h-[250px] md:h-[320px]">
+                  <Image
+                    src="/images/pages/about/aboutUs.OurInspiration.Ammagaru.jpeg"
+                    alt="Ammagaru"
+                    fill
+                    className="object-cover object-top rounded-lg"
+                  />
+                </div>
               </div>
             </div>
-          </ScaleIn>
-        </div>
+
+            {/* Text Section */}
+            <div className="w-full md:w-2/3">
+              <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center md:text-left">
+                  Pujya Ammagaru, whom we lovingly call Ammama, has led a pious life rooted in devoted seva, dedicating her entire life to serving her Guru. Her life itself is a reflection of devotion, grace, and divine presence. Ammagaru is endlessly encouraging and generously shares her creativity and ideas with us, inspiring us to think beyond limits. With wisdom and discretion, she offers thoughtful feedback on our ideas, gently guiding us.
+                <br /><br />
+                Ammama is fiercely loving and unwaveringly supportive of the success of the bakery, never saying no, always encouraging us to try new things and believe in our journey. Her strength, blessings, and constant encouragement guide every step we take. Ammagaru's divine life of devotional service continues to inspire us, grounding our work in faith, courage, and love.
+              </p>
+            </div>
+          </div>
+        </ScaleIn>
       </div>
     </section>
   );

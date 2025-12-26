@@ -6,6 +6,7 @@ import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 import productsData from '@/data/products.json';
 import SlideUp from '@/components/animations/SlideUp';
 import FadeIn from '@/components/animations/FadeIn';
+import Button from '@/components/Button';
 
 interface Product {
   name: string;
@@ -160,6 +161,15 @@ export default function OrderProductsSection() {
                       </p>
                     </div>
                   )}
+
+                  {/* Learn More Button */}
+                  <div className="pt-4">
+                    <Button
+                      buttonOutlineColor="var(--foreground-pink)"
+                      buttonText="Learn More"
+                      href={`/product/${currentProduct.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

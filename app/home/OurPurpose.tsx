@@ -30,7 +30,7 @@ export default function OurPurpose() {
             {/* First paragraph */}
             <StaggerItem>
               <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
-                Haritachala Organics is a non-profit initiative founded by a devoted team of spiritual seekers and volunteers, as a sincere offering of love, devotion, and gratitude to our Gurus: Shirdi Sai Baba and Sri Sainathuni Sarath Babuji.
+                Haritachala Organics is a non-profit initiative founded by a devoted team of spiritual seekers and volunteers, as a sincere offering of love, devotion, and gratitude to our Gurus: Sri Shirdi Sai Baba and Sri Sainathuni Sarath Babuji.
               </p>
             </StaggerItem>
 
@@ -61,7 +61,7 @@ export default function OurPurpose() {
             {/* Remaining paragraphs */}
             <StaggerItem>
               <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
-                100% of proceeds directly support our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women.
+                100% of proceeds directly support Haritachala, our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women.
               </p>
             </StaggerItem>
 
@@ -77,7 +77,7 @@ export default function OurPurpose() {
                 <Button 
                   buttonOutlineColor="#0D4F78"
                   buttonText="Learn More"
-                  href="/about"
+                  href="https://www.youtube.com/watch?v=Y6curd_tVNs&t=1s"
                 />
               </div>
             </StaggerItem>

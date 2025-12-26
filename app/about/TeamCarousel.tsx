@@ -42,7 +42,7 @@ export default function TeamCarousel({ teamMembers }: TeamCarouselProps) {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 320; // Card width + gap
+      const scrollAmount = 420; // Card width + gap
       const newScrollLeft = direction === 'left' 
         ? scrollContainerRef.current.scrollLeft - scrollAmount
         : scrollContainerRef.current.scrollLeft + scrollAmount;
