@@ -5,11 +5,11 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "Loaf at first bite",
-      "images": ["/images/bakery_products/banana_bread.jpeg", "/images/product_detailed/classic_banana_bread/bananabread1.jpg", "/images/product_detailed/classic_banana_bread/bananabread2.jpg", "/images/product_detailed/classic_banana_bread/bananabread3.JPG", "/images/product_detailed/classic_banana_bread/bananabread4.JPG", "/images/product_detailed/classic_banana_bread/bananabread5.JPG", "/images/product_detailed/classic_banana_bread/bananabread6.jpg"],
+      "images": ["/images/bakery_products/banana_bread.jpeg", "/images/product_detailed/classic_banana_bread/bananabread1.jpg", "/images/product_detailed/classic_banana_bread/bananabread2.jpg", "/images/product_detailed/classic_banana_bread/bananabread3.JPG", "/images/product_detailed/classic_banana_bread/bananabread4.JPG", "/images/product_detailed/classic_banana_bread/bananabread6.jpg"],
       "variants": [
         { "size": "2.65 lb", "price": "$14.77"}
       ],
-      "description": "Enjoy the sweet, wholesome goodness of our fresh, organic, homemade banana bread.",
+      "description": "Enjoy the naturally sweet, wholesome goodness of our fresh, organic, homemade banana bread.",
       "ingredients": [
         "Organic all purpose flour",
         "Baking soda",
@@ -23,10 +23,70 @@
         "Walnuts",
         "Zero preservatives"
       ],
-      "guidelines": ["Consume within one week"],
+      "guidelines": ["Consume within one week."],
       "testimonial": "It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!",
-      "whyMonkeys": "Our team resonates with monkeys because of their playful nature and adventurous spirit. During our time in Tiruvannamalai, we had many fun (and a few scary) encounters with these delightful creatures. These moments created cherished memories that we look back on fondly. We wanted to incorporate monkeys into our packaging as a nod to the place where our first banana bread recipe was tested.",
+      "whyMonkeysInOurDesign": "Our team resonates with monkeys because of their playful nature and adventurous spirit. During our time in Tiruvannamalai, we had many fun (and a few scary) encounters with these delightful creatures. These moments created cherished memories that we look back on fondly. We wanted to incorporate monkeys into our packaging as a nod to the place where our first banana bread recipe was tested.",
       "flyer": "/pdfs/BananaBreadFlyer.pdf"
+    },
+
+    {
+      "name": "Organic Double Baked Almond Biscotti",
+      "available": ["US"],
+      "availableThisMonth": true,
+      "tagline": "crunchy, nutty bites made for slow sips and cozy moments",
+      "images": ["/images/bakery_products/almond_biscotti.jpeg", "images/product_detailed/biscotti/b1.jpg", "images/product_detailed/biscotti/b2.jpg", "images/product_detailed/biscotti/b3.jpg", "images/product_detailed/biscotti/b4.jpg", "images/product_detailed/biscotti/b5.jpg", "images/product_detailed/biscotti/b6.jpg", "images/product_detailed/biscotti/b7.jpg", "images/product_detailed/biscotti/b8.jpg"],
+      "variants": [
+        { "size": "16 whole biscotti", "price": "$14.00" }
+      ],
+      "description": "A lightly sweet, twice-baked almond biscotti made with almond flour, whole almonds, and organic ingredients for a satisfying crunch with every bite.",
+      "ingredients": [
+        "Almond Flour",
+        "Organic Eggs",
+        "Almonds",
+        "Vanilla Extract",
+        "Baking Powder",
+        "Salt",
+        "Coconut Oil",
+        "Organic Brown Sugar"
+      ],
+      "guidelines": ["Store in an airtight container for up to 2 weeks."],
+      "flyer": "/pdfs/AlmondBiscottiFlyer.pdf"
+    },
+
+    {
+      "name": "Organic Cranberry Seed Crisps",
+      "available": ["US"],
+      "availableThisMonth": true,
+      "tagline": "tangy, toasty crunch with seeds in every bite",
+      "images": ["/images/bakery_products/cranberry_crisps.PNG", "images/product_detailed/cranberry_crisps/c1.jpg", "images/product_detailed/cranberry_crisps/c2.jpg", "images/product_detailed/cranberry_crisps/c3.jpg", "images/product_detailed/cranberry_crisps/c4.jpg", "images/product_detailed/cranberry_crisps/c5.jpg", "images/product_detailed/cranberry_crisps/c6.jpg", "images/product_detailed/cranberry_crisps/c7.jpg", "images/product_detailed/cranberry_crisps/c8.JPG", "images/product_detailed/cranberry_crisps/c9.png", "images/product_detailed/cranberry_crisps/c10.png"],
+      "variants": [
+        { "size": "35 crackers", "price": "$9.99" }
+      ],
+      "description": "Thin, healthy, crispy crackers baked with a blend of toasted seeds, almonds, and dried cranberries, balanced with a subtle tang and natural sweetness for an addictive crunch.",
+      "ingredients": [
+        "Organic Greek Yogurt",
+        "Organic Brown Sugar",
+        "Organic All-Purpose Flour",
+        "Organic Cane Sugar",
+        "Baking Soda",
+        "Pink Salt",
+        "Organic Pumpkin Seeds",
+        "Organic Flax Seeds",
+        "Organic Sesame Seeds",
+        "Dried Cranberries",
+        "Almonds"
+      ],
+      "guidelines": ["Store in an airtight container for up to 2 weeks."],
+      "about": "Sweet-tart cranberries meet crunchy pumpkin, flax, and sesame seeds in this super-snack that’s as wholesome as it is addictive. Bursting with omega-3s and minerals, these crisps are baked with love — no seed oils, no preservatives, no weird stuff. Treat yourself to snacks that feel good and taste dangerously delicious. You’ve never crunched so consciously.",
+      "theHaritachalaDifference": [
+        "No preservatives or harmful additives",
+        "Freshly made — baked in small batches with love",
+        "100% organic ingredients",
+        "Sweetened naturally — only with organic cane sugar & organic brown sugar (no refined sugar)",
+        "No artificial flavors — just real fruits & seeds",
+        "No seed oils — only nourishing, clean alternatives"
+      ],
+      "flyer": "/pdfs/CranberrySeedCrisps.Flyer.Final.pdf"
     },
 
     {
@@ -38,7 +98,7 @@
       "variants": [
         { "size": "2.65 lb", "price": "$16.00"}
       ],
-      "description": "Enjoy our fresh, organic, gluten-free vegan banana bread, baked in small batches with simple ingredients.",
+      "description": "Enjoy our fresh, organic, gluten-free vegan banana bread, baked in small batches with clean ingredients.",
       "ingredients": [
         "Organic Bananas",
         "Organic Oat Flour",
@@ -55,10 +115,8 @@
         "Nutmeg",
         "Zero preservatives"
       ],
-      "guidelines": ["Consume within one week"],
+      "guidelines": ["Consume within one week."],
       "about": "During our January 21st sale, we introduced samples of this vegan, gluten-free banana walnut bread for everyone to try. The response was overwhelmingly positive, with many of you sharing how much you loved it. One of the Sai Kids even mentioned they couldn't tell the difference between the original and the new recipe—a testament to the flavor, texture, and quality we strive for in every bite. We've poured our heart and soul into crafting this version to ensure it's just as delicious and satisfying as the classic one we all cherish— because great taste should never come with compromises. We're delighted to offer this inclusive treat for everyone to enjoy. Whether you're gluten-free, vegan, or simply a fan of amazing banana bread, this one's for you!",
-      "howToEnjoy": "Savor our Organic Vegan Banana Walnut Bread as a quick, grab-and-go breakfast or a delightful afternoon snack!",
-      "saiKidTestimonial": "“Wait... isn’t this the same as the other banana bread (Organic Banana Walnut Bread)?” - Sai Kid",
       "essential_nutrients": [
         {
           "ingredient": "Bananas",
@@ -85,31 +143,10 @@
           "benefits": "High in fiber, promoting fullness and helping stabilize blood sugar levels."
         }
       ],
+      "howToEnjoy": "Savor our Organic Vegan Banana Walnut Bread as a quick, grab-and-go breakfast or a delightful afternoon snack!",
+      "saiKidTestimonial": "“Wait... isn’t this the same as the other banana bread (Organic Banana Walnut Bread)?” - Sai Kid",
       "flyer": "/pdfs/VeganBananaBreadFlyer.pdf"
       
-    },
-
-    {
-      "name": "Organic Simply Spelt Sandwich Bread",
-      "available": ["US"],
-      "availableThisMonth": false,
-      "tagline": "Made with Ancient Spelt Flour",
-      "images": ["/images/bakery_products/spelt_sandwhich_bread.png", "/images/product_detailed/spelt_bread/sb1.JPG", "/images/product_detailed/spelt_bread/sb2.JPG", "/images/product_detailed/spelt_bread/sb3.JPG", "/images/product_detailed/spelt_bread/sb4.JPG", "/images/product_detailed/spelt_bread/sb5.JPG", "/images/product_detailed/spelt_bread/sb6.JPG", "/images/product_detailed/spelt_bread/sb7.png"],
-      "variants": [
-        { "size": "1.0 lb", "price": "$16.00" }
-      ],
-      "description": "Organic, diabetic-friendly and prebiotic sandwich bread made from ancient spelt.",
-      "ingredients": [
-        "Organic Spelt Flour",
-        "Organic All Purpose Flour",
-        "Homemade Yeast",
-        "Himalayan Pink Salt",
-        "Zero Preservatives"
-      ],
-      "guidelines": ["Consume within 30 days", "Refrigerate after opening"],
-      "speltInfo": "Spelt flour is unique for a variety of reasons. With its mild, nutty flavor, Spelt is an ancient variety of wheat that is more satiating compared to regular wheat and helps prevent blood sugar spikes. Although it contains gluten, its molecular composition is different— more fragile and water soluble—making it easier to digest. Additionally, Spelt is higher in fiber than wheat, aiding in gluten digestion. It also contains magnesium and zinc, which contribute to overall sleep quality and immunity.",
-      "ourDream": "Our dream is to open an artisinal bakery at Haritachala (Tiruvannamalai, India). This Sandwich bread is one of the first products being launched from our Haritachala Bakery lineup. We hope you savor the healthy, high- quality ingredients in these traditional recipes and feel our love and passion in every bite. We wholeheartedly seek your blessings and your valuable feedback. May each bite of our artisanal bread offer a soulful experience, bringing families and friends together in shared moments of culinary joy. Our Artisanal Bakers, Hasita and Tanvi, have dedicated countless hours to cultivating their own mother yeast, experimenting with various wheat flours, and perfecting the recipe. Our Sandwich Bread is just the first of many handcrafted products we want to share with you!",
-      "flyer": "/pdfs/SpeltBreadFlyer.pdf"
     },
 
     {
@@ -117,7 +154,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "Organic and Artisanal",
-      "images": ["/images/bakery_products/strawberry_jam.jpg"],
+      "images": ["/images/bakery_products/strawberry_jam.jpg", "/images/product_detailed/strawberry_jam/sj1.jpg", "/images/product_detailed/strawberry_jam/sj2.JPG", "/images/product_detailed/strawberry_jam/sj3.JPG", "/images/product_detailed/strawberry_jam/sj4.jpg", "/images/product_detailed/strawberry_jam/sj5.png", "/images/product_detailed/strawberry_jam/sj6.jpg", "/images/product_detailed/strawberry_jam/sj7.png"],
       "variants": [
         { "size": "16 oz", "price": "$11.21" }
       ],
@@ -128,7 +165,7 @@
         "Corn Starch",
         "Organic Vinegar"
       ],
-      "guidelines": ["Consume within 30 days", "Refrigerate after opening"]
+      "guidelines": ["Consume within 30 days.", "Refrigerate after opening."]
     },
 
     {
@@ -136,13 +173,13 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Organic and Artisanal",
-      "images": ["/images/bakery_products/peach_jam.jpg"],
+      "images": ["/images/bakery_products/peach_jam.jpg", "/images/product_detailed/peach_jam/pj1.jpg", "/images/product_detailed/peach_jam/pj2.jpg", "/images/product_detailed/peach_jam/pj3.png", "/images/product_detailed/peach_jam/pj4.JPG", "/images/product_detailed/peach_jam/pj5.png", "/images/product_detailed/peach_jam/pj6.jpg", "/images/product_detailed/peach_jam/pj7.png"],
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
       ],
       "description": "Homemade organic peach jam made with ripe, seasonal peaches—no high fructose corn syrup, no preservatives, and no artificial flavors.",
       "ingredients": ["Organic Peaches", "Organic Cane Sugar", "Organic Vinegar"],
-      "guidelines": ["Consume within 30 days", "Refrigerate after opening"]
+      "guidelines": ["Consume within 30 days.", "Refrigerate after opening."]
     },
 
     {
@@ -150,11 +187,11 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "flavors that speak తెలుగు with a cranberry accent",
-      "images": ["/images/bakery_products/cranberry_andhra_pachadi.png"],
+      "images": ["/images/bakery_products/cranberry_andhra_pachadi.png", "/images/product_detailed/cranberry_andhra_pachadi/cp1.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp2.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp3.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp4.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp5.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp6.JPG", "/images/product_detailed/cranberry_andhra_pachadi/cp7.jpg", "/images/product_detailed/cranberry_andhra_pachadi/cp8.png", "/images/product_detailed/cranberry_andhra_pachadi/cp9.JPG", "/images/product_detailed/cranberry_andhra_pachadi/cp10.png", "/images/product_detailed/cranberry_andhra_pachadi/cp11.png", "/images/product_detailed/cranberry_andhra_pachadi/cp12.png"],
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
       ],
-      "description": "An innovative cranberry pachadi created in our kitchen, blending tangy cranberries with traditional Andhra spices using a cherished family recipe.",  
+      "description": "A cherished, seasonal, family recipe created in our kitchen, blending tangy cranberries with traditional Andhra spices.",  
       "ingredients": [
         "Cranberries",
         "Sunflower Oil",
@@ -169,7 +206,7 @@
         "Methi Seeds",
         "Karam Podi"
       ],
-      "guidelines": ["Lasts 3 months when refrigerated"],
+      "guidelines": ["Lasts 3 months when refrigerated."],
       "about": "Cranberry Andhra Pachadi beautifully represents our essence - a fusion of rich Telugu culinary heritage and contemporary western upbringing. Cranberries, native to North America, offer distinct health benefits when grown and consumed locally, ensuring better assimilation into our bodies. Consuming seasonal fruits aligns with healthier living principles, and in this harmonious marriage of flavors, we spotlight locally-sourced ingredients.",
       "servingSuggestions": [
         "Pair it with dosa, idli, or vada for a tangy twist",
@@ -177,7 +214,62 @@
         "Spread it on bread or use as a dip for a zesty snack",
         "Serve as a flavorful accompaniment with pappu and curd rice",
         "Mix it into steaming hot rice, drizzle ghee on top, and savor true Andhra bliss"
-      ]
+      ],
+
+  "benefitsOfCranberries": [
+    {
+      "name": "Rich in Vitamin C",
+      "details": "Enhances immunity and overall health."
+    },
+    {
+      "name": "Antioxidants",
+      "details": "Contains flavonols and anthocyanins that protect against oxidative damage to cells."
+    },
+    {
+      "name": "Anti-inflammatory properties",
+      "details": "Helps reduce inflammatory conditions such as arthritis."
+    },
+    {
+      "name": "Digestive and urinary health",
+      "details": "Prevents urinary tract infections and stomach ulcers by inhibiting H. pylori bacteria from attaching to the stomach lining."
+    },
+    {
+      "name": "Heart health",
+      "details": "Lowers LDL cholesterol and increases HDL cholesterol."
+    },
+    {
+      "name": "Eye health",
+      "details": "Improves eyesight and contains vitamins C, K, E, manganese, B vitamins, and copper."
+    }
+  ],
+
+  "historicalUses": [
+    {
+      "group": "Native Americans and early settlers",
+      "usage": "Used to treat bladder and kidney diseases and to heal arrow wounds."
+    },
+    {
+      "group": "Early English settlers",
+      "usage": "Used to treat blood disorders, scurvy, and stomach pain."
+    },
+    {
+      "group": "Oral health",
+      "usage": "Reduces bacteria buildup in the mouth, lowering the risk of gum disease and cavities."
+    },
+    {
+      "group": "Traditional remedy",
+      "usage": "Unsweetened cranberry juice was commonly recommended to prevent urinary tract infections due to antibacterial properties."
+    }
+  ],
+
+  "how_to_enjoy": [
+    "Pair it with dosa, idli, or vada for a tangy twist.",
+    "Swap it for your regular pachadis for a vitamin-packed punch.",
+    "Spread it on bread or use as a dip for a zesty snack.",
+    "Serve as a flavorful accompaniment with pappu and curd rice.",
+    "Mix it into steaming hot rice, drizzle ghee on top, and savor true Andhra bliss."
+  ],
+  "flyer": "/pdfs/CranberryPachadiFlyer.pdf"
     },
 
     {
@@ -185,7 +277,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Where తెలుగు Flavors Meet a Citrusy Zen Handshake",
-      "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png"],
+      "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png", "images/product_detailed/buddhas_hand/bh1.JPG", "/images/product_detailed/buddhas_hand/bh2.jpg", "/images/product_detailed/buddhas_hand/bh3.jpg", "/images/product_detailed/buddhas_hand/bh4.jpg", "/images/product_detailed/buddhas_hand/bh5.jpg", "/images/product_detailed/buddhas_hand/bh6.jpg", "/images/product_detailed/buddhas_hand/bh7.jpg", "images/product_detailed/bh8.jpg"],
       "variants": [
         { "size": "16 oz", "price": "$12.12" }
       ],
@@ -206,56 +298,47 @@
         "Tamarind",
         "Zero Preservatives"
       ],
-      "guidelines": ["Lasts 3 months when refrigerated"]
+      "guidelines": ["Lasts 3 months when refrigerated."],
+       "about": {
+    "uniqueShapeAndFragrance": "Known for its distinct appearance and citrus aroma.",
+    "culturalSignificanceEastAsia": "Holds spiritual significance and is used as an offering in temples, referred to as \"fushu\" or \"lucky hand\" in Chinese culture.",
+    "japaneseCulture": "Known as \"Buddha’s Hand Citrus,\" it is used in teas, desserts, and ceremonial practices.",
+    "aromatherapy": "Utilized in Indian and Japanese cultures for its aromatic properties."
+  },
+  "benefits": {
+    "richInAntioxidants": "High in Vitamin C, which boosts immunity, improves skin health, and aids digestion.",
+    "aromatherapy": "Its fragrance reduces stress and anxiety and is often used in oils as a mood booster.",
+    "ayurvedicUses": "The paste is used to soothe skin irritants and promote healing.",
+    "antiInflammatory": "Improves respiratory health with natural anti-inflammatory properties."
+  },
+  "historicalUses": {
+    "herbalTeas": "Dried Buddha’s Hand peel is steeped in water to create herbal teas for respiratory and digestive relief.",
+    "traditionalChineseMedicine": "Used to treat indigestion, congestion, and alleviate pain and discomfort during menstruation."
+  },
+      "flyer": "/pdfs/BuddhasHandPachadiFlyer.pdf"
     },
 
     {
-      "name": "Organic Double Baked Almond Biscotti",
+      "name": "Organic Simply Spelt Sandwich Bread",
       "available": ["US"],
-      "availableThisMonth": true,
-      "tagline": "crunchy, nutty bites made for slow sips and cozy moments",
-      "images": ["/images/bakery_products/almond_biscotti.jpeg"],
+      "availableThisMonth": false,
+      "tagline": "Made with Ancient Spelt Flour",
+      "images": ["/images/bakery_products/spelt_sandwhich_bread.png", "/images/product_detailed/spelt_bread/sb1.JPG", "/images/product_detailed/spelt_bread/sb2.JPG", "/images/product_detailed/spelt_bread/sb3.JPG", "/images/product_detailed/spelt_bread/sb4.JPG", "/images/product_detailed/spelt_bread/sb5.JPG", "/images/product_detailed/spelt_bread/sb6.JPG", "/images/product_detailed/spelt_bread/sb7.png"],
       "variants": [
-        { "size": "16 whole biscotti", "price": "$14.00" }
+        { "size": "1.0 lb", "price": "$16.00" }
       ],
-      "description": "A lightly sweet, twice-baked almond biscotti made with almond flour, whole almonds, and organic ingredients for a satisfying crunch with every bite. A healthier alternative to Almond House Bisticks!",
+      "description": "Organic, diabetic-friendly and prebiotic sandwich bread made from ancient spelt.",
       "ingredients": [
-        "Almond Flour",
-        "Organic Eggs",
-        "Almonds",
-        "Vanilla Extract",
-        "Baking Powder",
-        "Salt",
-        "Coconut Oil",
-        "Organic Brown Sugar"
+        "Organic Spelt Flour",
+        "Organic All Purpose Flour",
+        "Homemade Yeast",
+        "Himalayan Pink Salt",
+        "Zero Preservatives"
       ],
-      "guidelines": ["Store in an airtight container for up to 2 weeks"]
-    },
-
-    {
-      "name": "Organic Cranberry Seed Crisps",
-      "available": ["US"],
-      "availableThisMonth": true,
-      "tagline": "tangy, toasty crunch with seeds in every bite",
-      "images": ["/images/bakery_products/cranberry_crisps.PNG"],
-      "variants": [
-        { "size": "35 crackers", "price": "$9.99" }
-      ],
-      "description": "Thin, healthy, crispy crackers baked with a blend of toasted seeds, almonds, and dried cranberries, balanced with a subtle tang and natural sweetness for an addictive crunch.",
-      "ingredients": [
-        "Organic Greek Yogurt",
-        "Organic Brown Sugar",
-        "Organic All-Purpose Flour",
-        "Organic Cane Sugar",
-        "Baking Soda",
-        "Pink Salt",
-        "Organic Pumpkin Seeds",
-        "Organic Flax Seeds",
-        "Organic Sesame Seeds",
-        "Dried Cranberries",
-        "Almonds"
-      ],
-      "guidelines": ["Store in an airtight container for up to 2 weeks"]
+      "guidelines": ["Consume within 30 days.", "Refrigerate after opening."],
+      "whySpelt": "Spelt flour is unique for a variety of reasons. With its mild, nutty flavor, Spelt is an ancient variety of wheat that is more satiating compared to regular wheat and helps prevent blood sugar spikes. Although it contains gluten, its molecular composition is different— more fragile and water soluble—making it easier to digest. Additionally, Spelt is higher in fiber than wheat, aiding in gluten digestion. It also contains magnesium and zinc, which contribute to overall sleep quality and immunity.",
+      "ourBackstory": "Our dream is to open an artisinal bakery at Haritachala (Tiruvannamalai, India). This Sandwich bread is one of the first products being launched from our Haritachala Bakery lineup. We hope you savor the healthy, high- quality ingredients in these traditional recipes and feel our love and passion in every bite. We wholeheartedly seek your blessings and your valuable feedback. May each bite of our artisanal bread offer a soulful experience, bringing families and friends together in shared moments of culinary joy. Our Artisanal Bakers, Hasita and Tanvi, have dedicated countless hours to cultivating their own mother yeast, experimenting with various wheat flours, and perfecting the recipe. Our Sandwich Bread is just the first of many handcrafted products we want to share with you!",
+      "flyer": "/pdfs/SpeltBreadFlyer.pdf"
     }
     
   ]
