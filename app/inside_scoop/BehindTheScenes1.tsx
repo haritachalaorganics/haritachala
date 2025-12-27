@@ -1,20 +1,27 @@
+'use client';
+
 import Image from 'next/image';
 import Button from '@/components/Button';
+import FadeIn from '@/components/animations/FadeIn';
+import SlideUp from '@/components/animations/SlideUp';
 
 export default function BehindTheScenes1() {
   return (
     <section className="bg-[var(--background-pink)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         {/* Title */}
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="afacad-regular text-3xl md:text-4xl text-[var(--foreground-pink)] mb-6 uppercase text-center sm:text-center md:text-center">
-            The Inside Scoop
-          </h2>
-          <div className="w-full h-[1px] bg-[var(--foreground-pink)]"></div>
-        </div>
+        <SlideUp>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="afacad-regular text-3xl md:text-4xl text-[var(--foreground-pink)] mb-6 uppercase text-center sm:text-center md:text-center">
+              The Inside Scoop
+            </h2>
+            <div className="w-full h-[1px] bg-[var(--foreground-pink)]"></div>
+          </div>
+        </SlideUp>
 
         {/* First Card - Bakery Beginnings Documentary */}
-        <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-8">
+        <FadeIn delay={0.2}>
+          <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Text Content - LEFT side */}
             <div className="space-y-6 order-2 md:order-1">
@@ -48,10 +55,12 @@ export default function BehindTheScenes1() {
               />
             </div>
           </div>
-        </div>
+          </div>
+        </FadeIn>
 
         {/* Second Card - Designs Album */}
-        <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-8">
+        <FadeIn delay={0.3}>
+          <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Image - LEFT side */}
             <div className="relative w-full h-[350px] md:h-[450px] lg:h-[550px]">
@@ -84,10 +93,12 @@ export default function BehindTheScenes1() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </FadeIn>
 
         {/* Third Card - Bakery Beginnings Newsletter */}
-        <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mt-6 md:mt-8">
+        <FadeIn delay={0.4}>
+          <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mt-6 md:mt-8">
           <div className="space-y-6">
             {/* Title */}
             <h3 className="afacad-regular text-2xl md:text-3xl text-[var(--foreground-pink)] text-center">
@@ -112,7 +123,8 @@ export default function BehindTheScenes1() {
               />
             </div>
           </div>
-        </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

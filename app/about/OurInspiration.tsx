@@ -106,7 +106,7 @@ export default function OurInspiration() {
             {/* Text Section */}
             <div className="w-full md:w-2/3">
               <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center md:text-left">
-                  Pujya Ammagaru, whom we lovingly call Ammama, has led a pious life rooted in devoted seva, dedicating her entire life to serving her Guru. Her life itself is a reflection of devotion, grace, and divine presence. Ammagaru is endlessly encouraging and generously shares her creativity and ideas with us, inspiring us to think beyond limits. With wisdom and discretion, she offers thoughtful feedback on our ideas, gently guiding us.
+                  Pujya Ammagaru, whom we lovingly call Ammama, has led a pious life rooted in devoted seva, dedicating her entire life to serving her Guru. Her life itself is a reflection of devotion, grace, and divine presence. Ammagaru is endlessly encouraging and generously shares her creativity and ideas with us, inspiring us to think beyond limits. With wisdom, she offers thoughtful feedback on our ideas, gently guiding us.
                 <br /><br />
                 Ammama is fiercely loving and unwaveringly supportive of the success of the bakery, never saying no, always encouraging us to try new things and believe in our journey. Her strength, blessings, and constant encouragement guide every step we take. Ammagaru's divine life of devotional service continues to inspire us, grounding our work in faith, courage, and love.
               </p>
