@@ -42,7 +42,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
     },
     {
       icon: FaFacebookF,
-      href: 'https://www.facebook.com/haritachalabakery',
+      href: 'https://m.facebook.com/profile.php?id=61585366692415',
       label: 'Facebook'
     },
     {

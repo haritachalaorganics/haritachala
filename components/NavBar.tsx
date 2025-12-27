@@ -74,7 +74,7 @@ export default function NavBar() {
                   <FaInstagram size={20} />
                 </a>
                 <a
-                  href="https://www.facebook.com"
+                  href="https://m.facebook.com/profile.php?id=61585366692415"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#645DAB] hover:opacity-70 transition-opacity"
