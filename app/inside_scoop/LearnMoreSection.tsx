@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
+import Image from 'next/image';
 import Button from '@/components/Button';
 import ScrollButton from '@/components/ScrollButton';
 import SlideUp from '@/components/animations/SlideUp';
@@ -18,26 +19,32 @@ export default function LearnMoreSection() {
     {
       title: 'Self Sustainability at Haritachala',
       url: 'https://www.livinginlaughter.org/self-sustainability',
+      image: '/images/pages/learn_more_articles/Sustainability.jpg',
     },
     {
       title: 'How Sustainable Cooking is Practiced at Haritachala',
       url: 'https://www.livinginlaughter.org/sustainable-cooking',
+      image: '/images/pages/learn_more_articles/sustainableCooking.jpg',
     },
     {
       title: 'The Beginnings of the Haritachala Bakery',
       url: 'https://www.livinginlaughter.org/hasi-bakery',
+      image: '/images/pages/learn_more_articles/begginingsofhcbakery.jpg',
     },
     {
       title: "Meeting the Staff of Haritachala",
       url: 'https://www.livinginlaughter.org/staff-meeting',
+      image: '/images/pages/learn_more_articles/staffmeeting.jpg',
     },
     {
       title: 'Summer Camp Daily Blogposts',
       url: 'https://www.livinginlaughter.org/summer-camp#camp',
+      image: '/images/pages/learn_more_articles/summercamp.png',
     },
     {
       title: 'Unique Layered Mulching at Haritachala',
       url: 'https://www.livinginlaughter.org/layered-mulching',
+      image: '/images/pages/learn_more_articles/layeredMulching.jpg',
     },
   ];
 
@@ -142,16 +149,26 @@ export default function LearnMoreSection() {
                   key={index}
                   className="flex-shrink-0 w-[280px] md:w-[300px]"
                 >
-                  <div className="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
-                    <h3 className="afacad-regular text-xl md:text-2xl text-[var(--foreground-purple)] text-center mb-6">
-                      {article.title}
-                    </h3>
-                    <div className="flex justify-center">
-                      <Button
-                        buttonOutlineColor="var(--foreground-purple)"
-                        buttonText="READ ARTICLE"
-                        href={article.url}
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
+                    <div className="relative w-full h-[180px] mb-4">
+                      <Image
+                        src={article.image}
+                        alt={article.title}
+                        fill
+                        className="object-cover"
                       />
+                    </div>
+                    <div className="px-6 pb-6 flex flex-col justify-between flex-grow">
+                      <h3 className="afacad-regular text-xl md:text-2xl text-[var(--foreground-purple)] text-center mb-6">
+                        {article.title}
+                      </h3>
+                      <div className="flex justify-center">
+                        <Button
+                          buttonOutlineColor="var(--foreground-purple)"
+                          buttonText="READ ARTICLE"
+                          href={article.url}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

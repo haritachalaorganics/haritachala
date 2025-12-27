@@ -21,12 +21,12 @@ export default function AboutHeroSection() {
       </div>
 
       {/* Mobile/Tablet Hero Image */}
-      <div className="block lg:hidden absolute inset-0">
+      <div className="block lg:hidden absolute inset-0 bg-white">
         <Image
           src="/images/pages/about/aboutUs.HeroSection.jpg"
           alt="About Haritachala Organics"
           fill
-          className="object-cover object-top"
+          className="object-contain"
           priority
         />
       </div>

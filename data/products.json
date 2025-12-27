@@ -50,7 +50,7 @@
         "Organic Brown Sugar"
       ],
       "guidelines": ["Store in an airtight container for up to 2 weeks."],
-      "flyer": "/pdfs/AlmondBiscottiFlyer.pdf"
+      "flyer": "/pdfs/AlmondBisticksFlyer.pdf"
     },
 
     {
@@ -60,7 +60,7 @@
       "tagline": "tangy, toasty crunch with seeds in every bite",
       "images": ["/images/bakery_products/cranberry_crisps.PNG", "/images/product_detailed/cranberry_crisps/c1.jpg", "/images/product_detailed/cranberry_crisps/c2.jpg", "/images/product_detailed/cranberry_crisps/c3.jpg", "/images/product_detailed/cranberry_crisps/c4.jpg", "/images/product_detailed/cranberry_crisps/c5.jpg", "/images/product_detailed/cranberry_crisps/c8.JPG", "/images/product_detailed/cranberry_crisps/c9.png", "/images/product_detailed/cranberry_crisps/c10.png"],
       "variants": [
-        { "size": "35 crackers", "price": "$9.99" }
+        { "size": "35 crackers", "price": "$11.00" }
       ],
       "description": "Thin, healthy, crispy crackers baked with a blend of toasted seeds, almonds, and dried cranberries, balanced with a subtle tang and natural sweetness for an addictive crunch.",
       "ingredients": [
