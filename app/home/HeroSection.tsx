@@ -8,7 +8,7 @@ import StaggerItem from '@/components/animations/StaggerItem';
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden bg-white">
       {/* Desktop/Large Tablet Hero Video */}
       <div className="hidden md:block absolute inset-0">
         <video
@@ -16,7 +16,7 @@ export default function HeroSection() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-center"
         >
           <source src="/images/pages/home/hero_section_video.mp4" type="video/mp4" />
         </video>

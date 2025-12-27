@@ -6,7 +6,7 @@ import SlideUp from '@/components/animations/SlideUp';
 
 export default function AboutHeroSection() {
   return (
-    <section className="relative w-full h-[50vh] md:h-[70vh] lg:h-[85vh] overflow-hidden">
+    <section className="relative w-full h-[50vh] md:h-[70vh] lg:h-[85vh] overflow-hidden bg-white">
       {/* Hero Video - All Screen Sizes */}
       <div className="absolute inset-0">
         <video
@@ -14,7 +14,7 @@ export default function AboutHeroSection() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-center"
         >
           <source src="/images/pages/about/aboutUs.heroSectionVideo.mp4" type="video/mp4" />
         </video>

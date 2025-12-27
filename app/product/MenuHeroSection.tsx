@@ -23,7 +23,7 @@ export default function MenuHeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden" style={{ backgroundColor: 'var(--background-pink)' }}>
+    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden bg-white" style={{ backgroundColor: 'var(--background-pink)' }}>
       {/* Hero Video - All Screen Sizes */}
       <div className="absolute inset-0">
         <video
@@ -31,7 +31,7 @@ export default function MenuHeroSection() {
           autoPlay
           muted
           playsInline
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-center"
         >
           <source src="/images/pages/our_products/ourProducts.heroSectionVideo.mp4" type="video/mp4" />
         </video>
