@@ -34,7 +34,7 @@ export default function ProductSection({
   emptyMessage = 'No products found matching your search.'
 }: ProductSectionProps) {
   return (
-    <section className={`w-full pb-12 md:pb-16 lg:pb-20`} style={{ backgroundColor }}>
+    <section className={`w-full py-12 md:py-16 lg:py-20`} style={{ backgroundColor }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <SlideUp>

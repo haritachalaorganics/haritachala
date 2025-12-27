@@ -7,28 +7,19 @@ import SlideUp from '@/components/animations/SlideUp';
 export default function AboutHeroSection() {
   return (
     <section className="relative w-full h-[50vh] md:h-[70vh] lg:h-[85vh] overflow-hidden">
-      {/* Desktop/Large Screen Hero Video */}
-      <div className="hidden lg:block absolute inset-0">
+      {/* Hero Video - All Screen Sizes */}
+      <div className="absolute inset-0">
         <video
           autoPlay
           loop
           muted
           playsInline
+          preload="auto"
+          poster="/images/pages/about/aboutUs.HeroSection.jpg"
           className="w-full h-full object-cover object-top"
         >
           <source src="/images/pages/about/aboutUs.heroSectionVideo.mp4" type="video/mp4" />
         </video>
-      </div>
-
-      {/* Mobile/Tablet Hero Image */}
-      <div className="block lg:hidden absolute inset-0 bg-white">
-        <Image
-          src="/images/pages/about/aboutUs.HeroSection.jpg"
-          alt="About Haritachala Organics"
-          fill
-          className="object-contain"
-          priority
-        />
       </div>
 
       {/* White Gradient Overlay for Navbar */}

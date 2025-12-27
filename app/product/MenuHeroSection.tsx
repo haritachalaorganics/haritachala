@@ -24,28 +24,19 @@ export default function MenuHeroSection() {
 
   return (
     <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden" style={{ backgroundColor: 'var(--background-pink)' }}>
-      {/* Desktop/Large Screen Hero Video */}
-      <div className="hidden lg:block absolute inset-0">
+      {/* Hero Video - All Screen Sizes */}
+      <div className="absolute inset-0">
         <video
           ref={videoRef}
           autoPlay
           muted
           playsInline
+          preload="auto"
+          poster="/images/pages/our_products/ourProducts.heroSection.JPG"
           className="w-full h-full object-cover object-top"
         >
           <source src="/images/pages/our_products/ourProducts.heroSectionVideo.mp4" type="video/mp4" />
         </video>
-      </div>
-
-      {/* Mobile/Tablet Hero Image */}
-      <div className="block lg:hidden absolute inset-0">
-        <Image
-          src="/images/pages/our_products/ourProducts.heroSection.JPG"
-          alt="Our Products"
-          fill
-          className="object-cover object-top"
-          priority
-        />
       </div>
 
       {/* White Gradient Overlay for Navbar */}
