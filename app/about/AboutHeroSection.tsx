@@ -14,8 +14,6 @@ export default function AboutHeroSection() {
           loop
           muted
           playsInline
-          preload="auto"
-          poster="/images/pages/about/aboutUs.HeroSection.jpg"
           className="w-full h-full object-cover object-top"
         >
           <source src="/images/pages/about/aboutUs.heroSectionVideo.mp4" type="video/mp4" />

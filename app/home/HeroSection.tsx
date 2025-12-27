@@ -16,8 +16,6 @@ export default function HeroSection() {
           loop
           muted
           playsInline
-          preload="auto"
-          poster="/images/pages/home/homepage.herosection.img.png"
           className="w-full h-full object-cover object-top"
         >
           <source src="/images/pages/home/hero_section_video.mp4" type="video/mp4" />
