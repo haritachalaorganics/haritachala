@@ -134,7 +134,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
         {bottomImage && (
           <FadeIn delay={0.6}>
             <div className="flex justify-center">
-            <div className="relative w-48 h-48 md:w-56 md:h-56">
+            <div className="relative w-36 h-36 md:w-44 md:h-44">
               <Image
                 src={bottomImage}
                 alt="Decorative element"
