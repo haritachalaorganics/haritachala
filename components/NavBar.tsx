@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
-import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import FadeIn from './animations/FadeIn';
 import Stagger from './animations/Stagger';
 import StaggerItem from './animations/StaggerItem';
@@ -33,7 +33,7 @@ export default function NavBar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="afacad-italic text-xl md:text-3xl lg:text-4xl xl:text-5xl text-[#645DAB]">
+            <Link href="/" className="afacad-italic text-lg md:text-2xl lg:text-2xl xl:text-3xl text-[#645DAB]">
               Haritachala Organics
             </Link>
 
@@ -90,6 +90,15 @@ export default function NavBar() {
                   aria-label="TikTok"
                 >
                   <FaTiktok size={20} />
+                </a>
+                <a
+                  href="https://wa.me/19452890980"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp size={20} />
                 </a>
               </div>
             </div>

@@ -60,7 +60,7 @@ export default function OurInspiration() {
               {/* Image */}
               <div className="relative w-full h-[250px] md:h-[280px]">
                 <Image
-                  src="/images/pages/about/aboutUs.OurInspiration.png"
+                  src="/images/pages/about/ourInspiration.Gurugaru.jpeg"
                   alt="Our Inspiration"
                   fill
                   className="object-cover object-top rounded-lg"

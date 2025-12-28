@@ -76,7 +76,7 @@ export default function OurPurpose() {
               <div className="pt-4 flex justify-center md:justify-start">
                 <Button 
                   buttonOutlineColor="#0D4F78"
-                  buttonText="Learn More"
+                  buttonText="Watch Our Story"
                   href="https://www.youtube.com/watch?v=Y6curd_tVNs&t=1s"
                 />
               </div>
