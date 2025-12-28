@@ -106,9 +106,11 @@ export default function OurInspiration() {
             {/* Text Section */}
             <div className="w-full md:w-2/3">
               <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center md:text-left">
-                  Pujya Ammagaru, whom we lovingly call Ammama, has led a pious life rooted in devoted seva, dedicating her entire life to serving her Guru. Her life itself is a reflection of devotion, grace, and divine presence. Ammagaru is endlessly encouraging and generously shares her creativity and ideas with us, inspiring us to think beyond limits. With wisdom, she offers thoughtful feedback on our ideas, gently guiding us.
+                  Pujya Ammagaru — our beloved Ammamma — is a living symbol of pure devotion, pious living, and unencumbered joy. Her life has been offered entirely at the feet of her Guru, and through her presence we glimpse what devotion looks like when it becomes one's way of being — natural, effortless, and unwavering.
                 <br /><br />
-                Ammama is fiercely loving and unwaveringly supportive of the success of the bakery, never saying no, always encouraging us to try new things and believe in our journey. Her strength, blessings, and constant encouragement guide every step we take. Ammagaru's divine life of devotional service continues to inspire us, grounding our work in faith, courage, and love.
+                Ammagaru is endlessly encouraging — she urges us forward, invites us to dream, to try, to trust. With wisdom she offers thoughtful feedback, guiding us with clarity and compassion. She is fiercely loving and unwaveringly supportive of the bakery efforts. She shares her creativity and ideas with such generosity that we often find ourselves inspired to think beyond our limits.
+                <br /><br />
+                With Ammama's love behind us, the bakery feels like a blessing in motion — more than a project, it becomes an offering of gratitude. Her blessings are the foundation on which we walk, and her example reminds us that work becomes worship when done with love.
               </p>
             </div>
           </div>
