@@ -24,7 +24,7 @@
         "Zero preservatives"
       ],
       "guidelines": ["Consume within one week."],
-      "testimonial": "It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!",
+      "testimonial": "\"It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!\" - Sai Sphurana",
       "whyMonkeysInOurDesign": "Our team resonates with monkeys because of their playful nature and adventurous spirit. During our time in Tiruvannamalai, we had many fun (and a few scary) encounters with these delightful creatures. These moments created cherished memories that we look back on fondly. We wanted to incorporate monkeys into our packaging as a nod to the place where our first banana bread recipe was tested.",
       "flyer": "/pdfs/BananaBreadFlyer.pdf"
     },
@@ -50,6 +50,7 @@
         "Organic Brown Sugar"
       ],
       "guidelines": ["Store in an airtight container for up to 2 weeks."],
+      "about":"Inspired by classic Italian biscotti but with a healthy twist, these golden, nutty sticks are made with premium Californian almonds, organic coconut oil, and just a hint of vanilla sweetness. Gluten-free, dairy-free, and guilt-free. Perfect for dunking into your chai, coffee, or cravings. Treat yourself to snacks that feel good and taste delicious. You’ve never crunched so consciously.",
       "flyer": "/pdfs/AlmondBisticksFlyer.pdf"
     },
 
@@ -94,7 +95,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "Loaf at first bite",
-      "images": ["/images/bakery_products/vegan_banana_bread.jpeg", "/images/product_detailed/vegan_banana_bread/vb1.JPG", "/images/product_detailed/vegan_banana_bread/vb2.png", "/images/product_detailed/vegan_banana_bread/vb3.jpeg", "/images/product_detailed/vegan_banana_bread/vb4.jpeg"],
+      "images": ["/images/bakery_products/vegan_banana_bread.jpeg", "/images/product_detailed/vegan_banana_bread/vb2.png", "/images/product_detailed/vegan_banana_bread/vb3.jpeg", "/images/product_detailed/vegan_banana_bread/vb4.jpeg"],
       "variants": [
         { "size": "2.65 lb", "price": "$16.00"}
       ],
@@ -165,7 +166,7 @@
         "Corn Starch",
         "Organic Vinegar"
       ],
-      "guidelines": ["Consume within 30 days.", "Refrigerate after opening."]
+      "guidelines": ["Consume within 30 days", "Refrigerate after opening."]
     },
 
     {
@@ -179,7 +180,7 @@
       ],
       "description": "Homemade organic peach jam made with ripe, seasonal peaches—no high fructose corn syrup, no preservatives, and no artificial flavors.",
       "ingredients": ["Organic Peaches", "Organic Cane Sugar", "Organic Vinegar"],
-      "guidelines": ["Consume within 30 days.", "Refrigerate after opening."]
+      "guidelines": ["Consume within 30 days", "Refrigerate after opening."]
     },
 
     {
@@ -262,7 +263,7 @@
     }
   ],
 
-  "how_to_enjoy": [
+  "howToEnjoy": [
     "Pair it with dosa, idli, or vada for a tangy twist.",
     "Swap it for your regular pachadis for a vitamin-packed punch.",
     "Spread it on bread or use as a dip for a zesty snack.",

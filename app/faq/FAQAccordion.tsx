@@ -24,11 +24,11 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
   };
 
   return (
-    <section className="w-full bg-[var(--background-pink)] py-12 md:py-16 lg:py-20">
+    <section className="w-full bg-[var(--background-purple)] py-12 md:py-16 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <SlideUp>
-          <h2 className="afacad-regular text-2xl md:text-3xl lg:text-4xl text-[var(--foreground-pink)] text-center mb-8 md:mb-12">
+          <h2 className="afacad-regular text-2xl md:text-3xl lg:text-4xl text-white text-center mb-8 md:mb-12">
             You Have Questions? We Have Answers.
           </h2>
         </SlideUp>
@@ -43,15 +43,15 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
               {/* Question Button */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 md:px-8 md:py-5 flex justify-between items-center text-left focus:outline-none focus:ring-2 focus:ring-[var(--foreground-pink)] focus:ring-opacity-50"
+                className="w-full px-6 py-4 md:px-8 md:py-5 flex justify-between items-center text-left focus:outline-none focus:ring-2 focus:ring-[var(--foreground-purple)] focus:ring-opacity-50"
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >
-                <span className="afacad-regular text-base md:text-lg lg:text-xl text-[var(--foreground-pink)] pr-4 text-left sm:text-center md:text-center lg:text-left">
+                <span className="afacad-regular text-base md:text-lg lg:text-xl text-[var(--foreground-purple)] pr-4 text-left sm:text-center md:text-center lg:text-left">
                   {faq.question}
                 </span>
                 <IoChevronDown
-                  className={`flex-shrink-0 w-5 h-5 md:w-6 md:h-6 text-[var(--foreground-pink)] transition-transform duration-300 ${
+                  className={`flex-shrink-0 w-5 h-5 md:w-6 md:h-6 text-[var(--foreground-purple)] transition-transform duration-300 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                   aria-hidden="true"
@@ -68,7 +68,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                 aria-labelledby={`faq-question-${index}`}
               >
                 <div className="px-6 pb-4 md:px-8 md:pb-5 pt-2">
-                  <p className="rubik-light text-base md:text-lg text-[var(--foreground-pink)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+                  <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
                     {faq.answer}
                   </p>
                 </div>

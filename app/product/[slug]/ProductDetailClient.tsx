@@ -299,25 +299,35 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                             {value.join(', ')}
                           </p>
                         ) : (
-                          // Check if array contains objects (like essential_nutrients)
+                          // Check if array contains objects (like essential_nutrients, benefitsOfCranberries, historicalUses)
                           value.length > 0 && typeof value[0] === 'object' && value[0] !== null ? (
                             <div className="space-y-4">
-                              {value.map((item, i) => (
-                                <div key={i} className="space-y-1">
-                                  <p 
-                                    className="rubik-medium text-base md:text-lg"
-                                    style={{ color: textColor, opacity: 0.9 }}
-                                  >
-                                    {item.ingredient}
-                                  </p>
-                                  <p 
-                                    className="rubik-light text-base md:text-lg leading-7"
-                                    style={{ color: textColor, opacity: 0.75 }}
-                                  >
-                                    {item.benefits}
-                                  </p>
-                                </div>
-                              ))}
+                              {value.map((item, i) => {
+                                // Determine the title and description keys based on what's available
+                                const titleKey = item.ingredient || item.name || item.group || '';
+                                const descriptionKey = item.benefits || item.details || item.usage || '';
+                                
+                                return (
+                                  <div key={i} className="space-y-1">
+                                    {titleKey && (
+                                      <p 
+                                        className="rubik-medium text-base md:text-lg"
+                                        style={{ color: textColor, opacity: 0.9 }}
+                                      >
+                                        {titleKey}
+                                      </p>
+                                    )}
+                                    {descriptionKey && (
+                                      <p 
+                                        className="rubik-light text-base md:text-lg leading-7"
+                                        style={{ color: textColor, opacity: 0.75 }}
+                                      >
+                                        {descriptionKey}
+                                      </p>
+                                    )}
+                                  </div>
+                                );
+                              })}
                             </div>
                           ) : (
                             // Render other arrays as bullet lists

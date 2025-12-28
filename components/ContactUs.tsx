@@ -123,7 +123,7 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
               <p className="rubik-light text-base md:text-lg text-[#0D4F78] text-center mb-1">
                 +1 945 289 0980
               </p>
-              <p className="rubik-light text-sm md:text-base text-[#0D4F78] text-center">
+              <p className="rubik-light text-base md:text-lg text-[#0D4F78] text-center">
                 Call or Message us on WhatsApp
               </p>
             </div>
