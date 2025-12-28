@@ -345,6 +345,26 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                             </ul>
                           )
                         )
+                      ) : typeof value === 'object' && value !== null ? (
+                        // Handle objects (like Buddha's Hand about, benefits, historicalUses)
+                        <div className="space-y-4">
+                          {Object.entries(value).map(([objKey, objValue], i) => (
+                            <div key={i} className="space-y-1">
+                              <p 
+                                className="rubik-medium text-base md:text-lg"
+                                style={{ color: textColor, opacity: 0.9 }}
+                              >
+                                {formatFieldName(objKey)}
+                              </p>
+                              <p 
+                                className="rubik-light text-base md:text-lg leading-7"
+                                style={{ color: textColor, opacity: 0.75 }}
+                              >
+                                {String(objValue)}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
                       ) : (
                         <div 
                           className="rubik-light text-base md:text-lg leading-7 space-y-4"

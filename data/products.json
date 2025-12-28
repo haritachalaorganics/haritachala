@@ -278,7 +278,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Where తెలుగు Flavors Meet a Citrusy Zen Handshake",
-      "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png", "/images/product_detailed/buddhas_hand/bh2.jpg", "/images/product_detailed/buddhas_hand/bh3.jpg", "/images/product_detailed/buddhas_hand/bh4.jpg", "/images/product_detailed/buddhas_hand/bh5.jpg", "/images/product_detailed/buddhas_hand/bh6.jpg", "/images/product_detailed/buddhas_hand/bh7.jpg", "/images/product_detailed/buddhas_hand/bh8.jpg"],
+      "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png", "/images/product_detailed/buddhas_hand/bh1.JPG", "/images/product_detailed/buddhas_hand/bh3.jpg", "/images/product_detailed/buddhas_hand/bh4.jpg", "/images/product_detailed/buddhas_hand/bh5.jpg", "/images/product_detailed/buddhas_hand/bh6.jpg", "/images/product_detailed/buddhas_hand/bh7.jpg", "/images/product_detailed/buddhas_hand/bh8.jpg"],
       "variants": [
         { "size": "16 oz", "price": "$12.12" }
       ],
