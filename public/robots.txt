@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://haritachalaorganics.org
+
+# Sitemaps
+Sitemap: https://haritachalaorganics.org/sitemap.xml
+Sitemap: https://haritachalaorganics.org/server-sitemap.xml

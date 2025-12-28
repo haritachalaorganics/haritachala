@@ -9,6 +9,36 @@ import OurProducts from "./home/OurProducts";
 import HaveQuestions from "./home/HaveQuestions";
 import AboutSection from "./about/AboutSection";
 import JoinBroadcastList from "./home/JoinBroadcastList";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home - Handcrafted Organic Foods & Artisanal Bakery",
+  description: "Welcome to Haritachala Organics - your source for handcrafted organic foods, artisanal baked goods, and preserves. Discover our passion for sustainable, delicious food made with care.",
+  keywords: ["organic bakery", "handcrafted food", "artisanal products", "organic preserves", "sustainable food", "California organic bakery", "homemade jams", "organic bread"],
+  openGraph: {
+    title: "Haritachala Organics - Handcrafted Organic Foods",
+    description: "Welcome to Haritachala Organics - your source for handcrafted organic foods, artisanal baked goods, and preserves.",
+    type: "website",
+    url: "/",
+    images: [
+      {
+        url: "/images/pages/home/homepage.herosection.img.png",
+        width: 1200,
+        height: 630,
+        alt: "Haritachala Organics Home",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Haritachala Organics - Handcrafted Organic Foods",
+    description: "Welcome to Haritachala Organics - your source for handcrafted organic foods, artisanal baked goods, and preserves.",
+    images: ["/images/pages/home/homepage.herosection.img.png"],
+  },
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
