@@ -187,7 +187,7 @@
       "name": "Artisinal Cranberry Andhra Pachadi",
       "available": ["US"],
       "availableThisMonth": false,
-      "tagline": "flavors that speak తెలుగు with a cranberry accent",
+      "tagline": "Where flavors that speak తెలుగు with a cranberry accent",
       "images": ["/images/bakery_products/cranberry_andhra_pachadi.png", "/images/product_detailed/cranberry_pachadi/cp6.JPG", "/images/product_detailed/cranberry_pachadi/cp7.jpg", "/images/product_detailed/cranberry_pachadi/cp9.JPG", "/images/product_detailed/cranberry_pachadi/cp10.png", "/images/product_detailed/cranberry_pachadi/cp11.png", "/images/product_detailed/cranberry_pachadi/cp12.png"],
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
@@ -277,7 +277,7 @@
       "name": "Artisinal Buddha's Hand Andhra Pachadi",
       "available": ["US"],
       "availableThisMonth": false,
-      "tagline": "Where తెలుగు Flavors Meet a Citrusy Zen Handshake",
+      "tagline": "Where తెలుగు flavors meet a citrusy zen handshake",
       "images": ["/images/bakery_products/buddhas_hand_andhra_pachadi.png", "/images/product_detailed/buddhas_hand/bh1.JPG", "/images/product_detailed/buddhas_hand/bh3.jpg", "/images/product_detailed/buddhas_hand/bh4.jpg", "/images/product_detailed/buddhas_hand/bh5.jpg", "/images/product_detailed/buddhas_hand/bh6.jpg", "/images/product_detailed/buddhas_hand/bh7.jpg", "/images/product_detailed/buddhas_hand/bh8.jpg"],
       "variants": [
         { "size": "16 oz", "price": "$12.12" }
@@ -323,7 +323,7 @@
       "name": "Organic Simply Spelt Sandwich Bread",
       "available": ["US"],
       "availableThisMonth": false,
-      "tagline": "Made with Ancient Spelt Flour",
+      "tagline": "Made with ancient Spelt flour",
       "images": ["/images/bakery_products/spelt_sandwhich_bread.png", "/images/product_detailed/spelt_bread/sb1.JPG", "/images/product_detailed/spelt_bread/sb2.JPG", "/images/product_detailed/spelt_bread/sb3.JPG", "/images/product_detailed/spelt_bread/sb4.JPG", "/images/product_detailed/spelt_bread/sb5.JPG", "/images/product_detailed/spelt_bread/sb6.JPG", "/images/product_detailed/spelt_bread/sb7.png"],
       "variants": [
         { "size": "1.0 lb", "price": "$16.00" }
@@ -336,7 +336,7 @@
         "Himalayan Pink Salt",
         "Zero Preservatives"
       ],
-      "guidelines": ["Consume within 30 days.", "Refrigerate after opening."],
+      "guidelines": ["Consume within 30 days", "Refrigerate after opening."],
       "whySpelt": "Spelt flour is unique for a variety of reasons. With its mild, nutty flavor, Spelt is an ancient variety of wheat that is more satiating compared to regular wheat and helps prevent blood sugar spikes. Although it contains gluten, its molecular composition is different— more fragile and water soluble—making it easier to digest. Additionally, Spelt is higher in fiber than wheat, aiding in gluten digestion. It also contains magnesium and zinc, which contribute to overall sleep quality and immunity.",
       "ourBackstory": "Our dream is to open an artisinal bakery at Haritachala (Tiruvannamalai, India). This Sandwich bread is one of the first products being launched from our Haritachala Bakery lineup. We hope you savor the healthy, high- quality ingredients in these traditional recipes and feel our love and passion in every bite. We wholeheartedly seek your blessings and your valuable feedback. May each bite of our artisanal bread offer a soulful experience, bringing families and friends together in shared moments of culinary joy. Our Artisanal Bakers, Hasita and Tanvi, have dedicated countless hours to cultivating their own mother yeast, experimenting with various wheat flours, and perfecting the recipe. Our Sandwich Bread is just the first of many handcrafted products we want to share with you!",
       "flyer": "/pdfs/SpeltBreadFlyer.pdf"
