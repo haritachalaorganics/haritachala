@@ -179,7 +179,7 @@ export default function OrderProductsSection() {
               <>
                 <button
                   onClick={prevSlide}
-                  className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg hover:scale-110 transition-transform z-10 text-white"
+                  className="absolute left-2 md:left-4 top-[25%] lg:top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg hover:scale-110 transition-transform z-10 text-white"
                   style={{ backgroundColor: 'var(--foreground-pink)' }}
                   aria-label="Previous product"
                 >
@@ -187,7 +187,7 @@ export default function OrderProductsSection() {
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg hover:scale-110 transition-transform z-10 text-white"
+                  className="absolute right-2 md:right-4 top-[25%] lg:top-1/2 -translate-y-1/2 rounded-full p-3 shadow-lg hover:scale-110 transition-transform z-10 text-white"
                   style={{ backgroundColor: 'var(--foreground-pink)' }}
                   aria-label="Next product"
                 >
