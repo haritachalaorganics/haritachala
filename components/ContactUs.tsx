@@ -10,6 +10,7 @@ import StaggerItem from './animations/StaggerItem';
 
 interface ContactUsProps {
   bottomImage?: string;
+  imageSize?: 'small' | 'medium' | 'large';
 }
 
 interface SocialLink {
@@ -18,7 +19,7 @@ interface SocialLink {
   label: string;
 }
 
-export default function ContactUs({ bottomImage }: ContactUsProps) {
+export default function ContactUs({ bottomImage, imageSize = 'medium' }: ContactUsProps) {
   const socialLinks: SocialLink[] = [
     {
       icon: FaInstagram,
@@ -134,13 +135,22 @@ export default function ContactUs({ bottomImage }: ContactUsProps) {
         {bottomImage && (
           <FadeIn delay={0.6}>
             <div className="flex justify-center">
-            <div className="relative w-36 h-36 md:w-44 md:h-44">
-              <Image
-                src={bottomImage}
-                alt="Decorative element"
-                fill
-                className="object-contain"
-              />
+              <div className={
+                imageSize === 'small' ? 'relative w-32 h-32 md:w-40 md:h-40' :
+                imageSize === 'large' ? 'relative w-48 h-48 md:w-60 md:h-60' :
+                'relative w-36 h-36 md:w-44 md:h-44'
+              }>
+                <Image
+                  src={bottomImage}
+                  alt="Decorative element"
+                  fill
+                  sizes={
+                    imageSize === 'small' ? '(max-width: 768px) 128px, 160px' :
+                    imageSize === 'large' ? '(max-width: 768px) 192px, 240px' :
+                    '(max-width: 768px) 144px, 176px'
+                  }
+                  className="object-contain"
+                />
               </div>
             </div>
           </FadeIn>

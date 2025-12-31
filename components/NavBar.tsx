@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
-import { FaInstagram, FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa';
+import { RiInstagramFill, RiFacebookFill, RiTiktokFill, RiWhatsappFill } from 'react-icons/ri';
 import FadeIn from './animations/FadeIn';
 import Stagger from './animations/Stagger';
 import StaggerItem from './animations/StaggerItem';
@@ -65,13 +65,22 @@ export default function NavBar() {
               {/* Social Media Icons */}
               <div className="flex items-center gap-4 ml-2">
                 <a
+                  href="https://wa.me/19452890980"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  aria-label="WhatsApp"
+                >
+                  <RiWhatsappFill size={24} />
+                </a>
+                <a
                   href="https://www.instagram.com/haritachalaorganics/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#645DAB] hover:opacity-70 transition-opacity"
                   aria-label="Instagram"
                 >
-                  <FaInstagram size={20} />
+                  <RiInstagramFill size={24} />
                 </a>
                 <a
                   href="https://m.facebook.com/profile.php?id=61585366692415"
@@ -80,7 +89,7 @@ export default function NavBar() {
                   className="text-[#645DAB] hover:opacity-70 transition-opacity"
                   aria-label="Facebook"
                 >
-                  <FaFacebookF size={20} />
+                  <RiFacebookFill size={24} />
                 </a>
                 <a
                   href="http://www.tiktok.com/@haritachalaorganics"
@@ -89,17 +98,9 @@ export default function NavBar() {
                   className="text-[#645DAB] hover:opacity-70 transition-opacity"
                   aria-label="TikTok"
                 >
-                  <FaTiktok size={20} />
+                  <RiTiktokFill size={24} />
                 </a>
-                <a
-                  href="https://wa.me/19452890980"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
-                  aria-label="WhatsApp"
-                >
-                  <FaWhatsapp size={20} />
-                </a>
+                
               </div>
             </div>
 

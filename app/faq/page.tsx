@@ -49,7 +49,7 @@ export default function FAQPage() {
       <FAQAccordion faqs={faqData} />
       
       {/* Contact Us Section */}
-      <ContactUs bottomImage="/images/pages/faq/faq.contactUs.namaste.png" />
+      <ContactUs bottomImage="/images/pages/faq/faq.contactUs.namaste.png" imageSize="large" />
     </div>
   );
 }

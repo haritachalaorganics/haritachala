@@ -86,7 +86,7 @@ export default function MenuPage() {
       
 
       {/* Contact Us Section */}
-      <ContactUs bottomImage="/images/pages/our_products/ourProducts.contactUs.png" />
+      <ContactUs bottomImage="/images/pages/our_products/ourProducts.contactUs.png" imageSize="large" />
     </div>
   );
 }

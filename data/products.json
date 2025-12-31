@@ -24,7 +24,7 @@
         "Zero preservatives"
       ],
       "guidelines": ["Consume within one week."],
-      "testimonial": "\"It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!\" - Sai Sphurana",
+      "testimonial": ["\"It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!\"", "\"Both the Organic Banana Walnut Bread and Organic Almond Bisticks have excellent taste, quantity, and quality. I especially love that the Banana Walnut Bread comes pre-sliced like Starbucks—soft and absolutely delicious!\"", "\"It's royal product of our bakery , we enjoyed every bite which was lasted well and it's good till last week , it's wholesome recipe (Ordered by my brother we also have enjoyed)\""],
       "whyMonkeysInOurDesign": "Our team resonates with monkeys because of their playful nature and adventurous spirit. During our time in Tiruvannamalai, we had many fun (and a few scary) encounters with these delightful creatures. These moments created cherished memories that we look back on fondly. We wanted to incorporate monkeys into our packaging as a nod to the place where our first banana bread recipe was tested.",
       "flyer": "/pdfs/BananaBreadFlyer.pdf"
     },
@@ -50,7 +50,7 @@
         "Organic Brown Sugar"
       ],
       "guidelines": ["Store in an airtight container for up to 2 weeks."],
-      "about":"Inspired by classic Italian biscotti but with a healthy twist, these golden, nutty sticks are made with premium Californian almonds, organic coconut oil, and just a hint of vanilla sweetness. Gluten-free, dairy-free, and guilt-free. Perfect for dunking into your chai, coffee, or cravings. Treat yourself to snacks that feel good and taste delicious. You’ve never crunched so consciously.",
+      "testimonial": ["\"I loved the Haritachala bakery products. The taste is excellent. The Almond Bisticks in particular. Much superior to prominent bakery products.\"", "\"I just wanted to express my delight with the Bisticks - they're superb! We finished them within two days.\""],      "about":"Inspired by classic Italian biscotti but with a healthy twist, these golden, nutty sticks are made with premium Californian almonds, organic coconut oil, and just a hint of vanilla sweetness. Gluten-free, dairy-free, and guilt-free. Perfect for dunking into your chai, coffee, or cravings. Treat yourself to snacks that feel good and taste delicious. You’ve never crunched so consciously.",
       "flyer": "/pdfs/AlmondBisticksFlyer.pdf"
     },
 
@@ -59,7 +59,7 @@
       "available": ["US"],
       "availableThisMonth": true,
       "tagline": "tangy, toasty crunch with seeds in every bite",
-      "images": ["/images/bakery_products/cranberry_crisps.PNG", "/images/product_detailed/cranberry_crisps/c1.jpg", "/images/product_detailed/cranberry_crisps/c2.jpg", "/images/product_detailed/cranberry_crisps/c3.jpg", "/images/product_detailed/cranberry_crisps/c4.jpg", "/images/product_detailed/cranberry_crisps/c5.jpg", "/images/product_detailed/cranberry_crisps/c8.JPG", "/images/product_detailed/cranberry_crisps/c9.png", "/images/product_detailed/cranberry_crisps/c10.png"],
+      "images": ["/images/bakery_products/cranberry_crisps.PNG", "/images/product_detailed/cranberry_crisps/c1.jpg", "/images/product_detailed/cranberry_crisps/c2.jpg",  "/images/product_detailed/cranberry_crisps/c5.jpg", "/images/product_detailed/cranberry_crisps/c8.JPG", "/images/product_detailed/cranberry_crisps/c9.png", "/images/product_detailed/cranberry_crisps/c10.png"],
       "variants": [
         { "size": "35 crackers", "price": "$11.00" }
       ],
@@ -78,6 +78,7 @@
         "Almonds"
       ],
       "guidelines": ["Store in an airtight container for up to 2 weeks."],
+      "testimonial": ["\"The crispy dry breads are a new favorite. Everything is good, and it's clear that the organic ingredients and love that go into making them really shine through. Well done!\""],
       "about": "Sweet-tart cranberries meet crunchy pumpkin, flax, and sesame seeds in this super-snack that’s as wholesome as it is addictive. Bursting with omega-3s and minerals, these crisps are baked with love — no seed oils, no preservatives, no weird stuff. Treat yourself to snacks that feel good and taste dangerously delicious. You’ve never crunched so consciously.",
       "theHaritachalaDifference": [
         "No preservatives or harmful additives",
@@ -188,7 +189,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Where flavors that speak తెలుగు with a cranberry accent",
-      "images": ["/images/bakery_products/cranberry_andhra_pachadi.png", "/images/product_detailed/cranberry_pachadi/cp6.JPG", "/images/product_detailed/cranberry_pachadi/cp7.jpg", "/images/product_detailed/cranberry_pachadi/cp9.JPG", "/images/product_detailed/cranberry_pachadi/cp10.png", "/images/product_detailed/cranberry_pachadi/cp11.png", "/images/product_detailed/cranberry_pachadi/cp12.png"],
+      "images": ["/images/bakery_products/cranberry_andhra_pachadi.png", "/images/product_detailed/cranberry_pachadi/cp6.JPG", "/images/product_detailed/cranberry_pachadi/cp3.jpeg", "/images/product_detailed/cranberry_pachadi/cp4.jpeg", "/images/product_detailed/cranberry_pachadi/cp7.jpg", "/images/product_detailed/cranberry_pachadi/cp9.JPG", "/images/product_detailed/cranberry_pachadi/cp10.png", "/images/product_detailed/cranberry_pachadi/cp11.png", "/images/product_detailed/cranberry_pachadi/cp12.png"],
       "variants": [
         { "size": "16 oz", "price": "$11.00" }
       ],
