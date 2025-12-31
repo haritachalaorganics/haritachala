@@ -12,9 +12,9 @@ import JoinBroadcastList from "./home/JoinBroadcastList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home - Handcrafted Organic Foods & Artisanal Bakery",
+  title: "Haritachala Organics",
   description: "Welcome to Haritachala Organics - your source for handcrafted organic foods, artisanal baked goods, and preserves. Discover our passion for sustainable, delicious food made with care.",
-  keywords: ["organic bakery", "handcrafted food", "artisanal products", "organic preserves", "sustainable food", "California organic bakery", "homemade jams", "organic bread"],
+  keywords: ["organic bakery", "Haritachala Organics", "Haritachala", "handcrafted food", "artisanal products", "organic preserves", "sustainable food", "organic bakery", "homemade jams", "organic bread", "Tiruvanamalai", "Dallas Bakery"],
   openGraph: {
     title: "Haritachala Organics - Handcrafted Organic Foods",
     description: "Welcome to Haritachala Organics - your source for handcrafted organic foods, artisanal baked goods, and preserves.",
