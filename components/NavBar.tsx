@@ -33,7 +33,7 @@ export default function NavBar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="afacad-italic text-lg md:text-2xl lg:text-2xl xl:text-3xl text-[#645DAB]">
+            <Link href="/" className="afacad-italic text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-[#645DAB]">
               Haritachala Organics
             </Link>
 

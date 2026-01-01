@@ -105,13 +105,28 @@ export default function BehindTheScenes1() {
               Bakery Beginnings Newsletter
             </h3>
 
-            {/* PDF Viewer */}
-            <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px]">
+            {/* PDF Viewer - Desktop */}
+            <div className="hidden md:block relative w-full h-[600px] lg:h-[700px]">
               <iframe
-                src="/pdfs/bakery_newsletter_1.pdf"
+                src="/pdfs/bakery_newsletter_1.pdf#view=FitH"
                 className="w-full h-full rounded-lg border-2 border-gray-200"
                 title="Bakery Beginnings Newsletter"
               />
+            </div>
+
+            {/* Mobile Preview - Shows download prompt */}
+            <div className="md:hidden space-y-4">
+              <div className="bg-gray-50 border-2 border-gray-200 rounded-lg p-8 text-center">
+                <svg className="w-16 h-16 mx-auto mb-4 text-[var(--foreground-pink)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                <p className="rubik-light text-[var(--foreground-pink)] mb-2">
+                  PDF viewing works best on larger screens
+                </p>
+                <p className="rubik-light text-sm text-gray-600">
+                  Download the newsletter to view on your device
+                </p>
+              </div>
             </div>
 
             {/* Download Button */}
