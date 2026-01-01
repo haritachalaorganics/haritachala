@@ -23,10 +23,10 @@ export default function OurPurpose() {
         <div className="w-full h-[1px] bg-[#0D4F78] mb-8 md:mb-10"></div>
 
         {/* Content Container */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 md:items-center">
           
           {/* Image Container - Only visible on medium screens and up - LEFT SIDE */}
-          <ScaleIn className="hidden md:block" delay={0.4}>
+          <ScaleIn className="hidden md:flex md:items-center" delay={0.4}>
             <div className="relative w-full h-[400px] lg:h-[500px]">
               <Image
                 src="/images/pages/home/homepage.ourpurpose.img.jpg"
@@ -38,7 +38,7 @@ export default function OurPurpose() {
           </ScaleIn>
 
           {/* Text Content - RIGHT SIDE */}
-          <div>
+          <div className="flex flex-col">
             <Stagger className="space-y-6 text-[#0D4F78]" staggerDelay={0.15}>
               {/* First paragraph */}
               <StaggerItem>
@@ -84,16 +84,19 @@ export default function OurPurpose() {
                 </p>
               </StaggerItem>
             </Stagger>
+          </div>
 
-            {/* Button - Centered below text */}
-            <div className="mt-6 flex justify-center">
-              <div className="text-base md:text-lg">
-                <Button 
-                  buttonOutlineColor="#0D4F78"
-                  buttonText="Watch Our Story"
-                  href="https://www.youtube.com/watch?v=Y6curd_tVNs&t=1s"
-                />
-              </div>
+          {/* Empty div for grid alignment on left */}
+          <div className="hidden md:block"></div>
+
+          {/* Button - Positioned under text on the right */}
+          <div className="flex justify-center">
+            <div className="text-base md:text-lg">
+              <Button 
+                buttonOutlineColor="#0D4F78"
+                buttonText="Watch Our Story"
+                href="https://www.youtube.com/watch?v=Y6curd_tVNs&t=1s"
+              />
             </div>
           </div>
         </div>
