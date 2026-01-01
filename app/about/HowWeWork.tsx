@@ -44,7 +44,7 @@ export default function HowWeWork() {
               
               <StaggerItem>
                 <p>
-                  Our small team, spread across the world but united in spirit, brings together diverse skills—from growing to baking to designing to packaging. We meet twice a week on Google Meet to collaborate as a team and bring our ideas to life. These meetings are not just about work—they're a space to strengthen our friendships and nurture our shared spirit.
+                  Our small team, spread across the US and India, brings together diverse skills—from baking to designing to packaging. We meet twice a week on Google Meet to collaborate as a team and bring our ideas to life. These meetings are not just about work—they're a space to strengthen our friendships and nurture our shared spirit.
                 </p>
               </StaggerItem>
               
