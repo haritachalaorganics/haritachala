@@ -25,54 +25,7 @@ export default function OurPurpose() {
         {/* Content Container */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           
-          {/* Text Content */}
-          <Stagger className="space-y-6 text-[#0D4F78]" staggerDelay={0.15}>
-            {/* First paragraph */}
-            <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
-                Haritachala Organics is a non-profit initiative founded by a devoted team of spiritual seekers and volunteers, as a sincere offering of love, devotion, and gratitude to our Gurus: Sri Shirdi Sai Baba and Sri Sainathuni Sarath Babuji.
-              </p>
-            </StaggerItem>
-
-            <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
-                Located on Girivalam Road at the sacred foothills of Arunachala in Tiruvannamalai, India, Haritachala is more than just a farm - it's a living expression of spirituality, community living, sustainability and empowerment. We offer high-quality, organic, and wholesome products.
-              </p>
-            </StaggerItem>
-
-            {/* Image Container - Only visible on small screens, positioned after first two paragraphs */}
-            <StaggerItem>
-              <ScaleIn className="lg:hidden flex flex-col items-center my-6" delay={0.3}>
-                <div className="relative w-48 aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src="/images/pages/home/homepage.ourpurpose.img.jpg"
-                    alt="Haritachala Sainathuni Dhyana Mandiram"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                {/* Image Caption */}
-                <p className="rubik-light-italic text-[#0D4F78] text-xs mt-3 text-center max-w-xs">
-                  Image: Haritachala, Sainathuni Dhyana Mandiram, Tiruvannamalai
-                </p>
-              </ScaleIn>
-            </StaggerItem>
-
-            {/* Remaining paragraphs */}
-            <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
-                100% of proceeds directly support Haritachala, our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women.
-              </p>
-            </StaggerItem>
-
-            <StaggerItem>
-              <p className="rubik-light text-sm md:text-base lg:text-base leading-relaxed text-center sm:text-center md:text-center lg:text-left">
-                Inspired by our connection to Haritachala, we blend our love for healthy living, sustainability, baking skills, and design skills in joyful service, crafting each product with Baba and Guruji's blessings to nourish body and soul.
-              </p>
-            </StaggerItem>
-          </Stagger>
-
-          {/* Image Container - Only visible on medium screens and up */}
+          {/* Image Container - Only visible on medium screens and up - LEFT SIDE */}
           <ScaleIn className="hidden md:block" delay={0.4}>
             <div className="relative w-full h-[400px] lg:h-[500px]">
               <Image
@@ -83,15 +36,66 @@ export default function OurPurpose() {
               />
             </div>
           </ScaleIn>
-        </div>
 
-        {/* Button - Below text and image */}
-        <div className="mt-8 flex justify-center">
-          <Button 
-            buttonOutlineColor="#0D4F78"
-            buttonText="Watch Our Story"
-            href="https://www.youtube.com/watch?v=Y6curd_tVNs&t=1s"
-          />
+          {/* Text Content - RIGHT SIDE */}
+          <div>
+            <Stagger className="space-y-6 text-[#0D4F78]" staggerDelay={0.15}>
+              {/* First paragraph */}
+              <StaggerItem>
+                <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+                  Haritachala Organics is a non-profit initiative founded by a devoted team of spiritual seekers and volunteers, as a sincere offering of love, devotion, and gratitude to our Gurus: Sri Shirdi Sai Baba and Sri Sainathuni Sarath Babuji.
+                </p>
+              </StaggerItem>
+
+              <StaggerItem>
+                <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+                  Located on Girivalam Road at the sacred foothills of Arunachala in Tiruvannamalai, India, Haritachala is more than just a farm - it's a living expression of spirituality, community living, sustainability and empowerment. We offer high-quality, organic, and wholesome products.
+                </p>
+              </StaggerItem>
+
+              {/* Image Container - Only visible on small screens, positioned after first two paragraphs */}
+              <StaggerItem>
+                <ScaleIn className="lg:hidden flex flex-col items-center my-6" delay={0.3}>
+                  <div className="relative w-48 aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
+                    <Image
+                      src="/images/pages/home/homepage.ourpurpose.img.jpg"
+                      alt="Haritachala Sainathuni Dhyana Mandiram"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  {/* Image Caption */}
+                  <p className="rubik-light-italic text-[#0D4F78] text-xs mt-3 text-center max-w-xs">
+                    Image: Haritachala, Sainathuni Dhyana Mandiram, Tiruvannamalai
+                  </p>
+                </ScaleIn>
+              </StaggerItem>
+
+              {/* Remaining paragraphs */}
+              <StaggerItem>
+                <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+                  100% of proceeds directly support Haritachala, our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women.
+                </p>
+              </StaggerItem>
+
+              <StaggerItem>
+                <p className="rubik-light text-base md:text-lg leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+                  Inspired by our connection to Haritachala, we blend our love for healthy living, sustainability, baking skills, and design skills in joyful service, crafting each product with Baba and Guruji's blessings to nourish body and soul.
+                </p>
+              </StaggerItem>
+            </Stagger>
+
+            {/* Button - Centered below text */}
+            <div className="mt-6 flex justify-center">
+              <div className="text-base md:text-lg">
+                <Button 
+                  buttonOutlineColor="#0D4F78"
+                  buttonText="Watch Our Story"
+                  href="https://www.youtube.com/watch?v=Y6curd_tVNs&t=1s"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
