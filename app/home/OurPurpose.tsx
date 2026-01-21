@@ -16,7 +16,7 @@ export default function OurPurpose() {
         <SlideUp>
           <div className="text-center">
             <h2 className="afacad-regular text-3xl md:text-4xl lg:text-4xl text-[#0D4F78] mb-6 text-center sm:text-center md:text-center">
-              OUR PURPOSE
+              ABOUT US
             </h2>
           </div>
         </SlideUp>
