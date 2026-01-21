@@ -61,16 +61,25 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
               {/* Answer */}
               <div
                 id={`faq-answer-${index}`}
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                className={`transition-all duration-300 ease-in-out ${
+                  openIndex === index
+                    ? 'max-h-[2000px] opacity-100 overflow-auto'
+                    : 'max-h-0 opacity-0 overflow-hidden'
                 }`}
                 role="region"
                 aria-labelledby={`faq-question-${index}`}
               >
                 <div className="px-6 py-6 md:px-8 md:py-8">
-                  <p className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
-                    {faq.answer}
-                  </p>
+                  <div className="rubik-light text-base md:text-lg text-[var(--foreground-purple)] leading-relaxed text-center sm:text-center md:text-center lg:text-left">
+                    {faq.answer
+                      .split(/\r?\n\s*\r?\n/) // split on blank lines
+                      .map((para, i, arr) => (
+                        <div key={i} className="m-0">
+                          <p className="m-0">{para.trim()}</p>
+                          {i < arr.length - 1 && <br />}
+                        </div>
+                      ))}
+                  </div>
                 </div>
               </div>
             </div>
