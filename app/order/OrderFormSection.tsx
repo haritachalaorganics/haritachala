@@ -12,9 +12,9 @@ export default function OrderFormSection() {
               Monthly Order Form
             </h2>
             <p className="rubik-light text-base md:text-lg text-white text-center sm:text-center md:text-center">
-              Form Open From December 29th - January 13th
+              Form Open Until February 13th
               <br />
-              Pick Up in Dallas, TX on January 18th
+              Pick Up in Dallas, TX on February 22nd
             </p>
           </div>
         </FadeIn>
@@ -22,7 +22,7 @@ export default function OrderFormSection() {
         <FadeIn delay={0.3}>
           <div className="rounded-lg shadow-lg overflow-hidden" style={{ backgroundColor: 'var(--background-purple)' }}>
             <iframe
-              src="https://forms.fillout.com/t/beLwsAC4NEus"
+              src="https://forms.fillout.com/t/qeCGWSRirPus"
               style={{
                 width: '100%',
                 height: '800px',
