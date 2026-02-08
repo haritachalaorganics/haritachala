@@ -191,7 +191,7 @@
       "variants": [
         { "size": "4 oz", "price": "$6.50" }
       ],
-      "images": ["https://placehold.co/1200x1200/FFDCDC/C4735A?text=Haritachala+Organics"],
+      "images": ["/images/bakery_products/nut_butters/pistacashew.png"],
       "description": "Smoother and creamier than our other nut butters, it’s less sweet, a little more savory, and perfectly comforting in a way that feels both indulgent and wholesome. Packed with nourishing fats, plant protein, and antioxidants from pistachios, this is a little jar of comfort crafted to taste as dreamy as it looks.",
       "ingredients": [
         "Cashews",
@@ -200,6 +200,7 @@
         "Coconut Oil",
         "Sundried Edible Flowers"
       ],
+      "guidelines": ["Lasts 3 months when stored in the fridge."],
       "poem": "Creamy cashew, pistachio green,\nA dreamy spread so soft, serene.\nPistachio whispers, cashew hums,\nA nutty duet, a taste that drums.\n\nSpread it heavy on morning toast,\nOr sneak a spoon—it’s what we love most.\nRich and buttery, soft delight,\nA floral hint to make it right.\n\nFrom snack-time joys to midnight cheer,\nEvery dollop brings flavors near.\nNutty magic, smooth and sweet,\nPistachio-cashew can’t be beat!",
       "howToEnjoy": [
         "Pairs well with our Cranberry Crisps.",
@@ -212,17 +213,18 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "guidelines": ["Lasts 3 months when stored in the fridge."]
+      "flyer": "/pdfs/Artisanal Cashew Pistachio Nut Butter.pdf"
+
     },
 
     {
       "name": "Cashew and Coconut-Cardamom Nut Butter with Flower Sprinkles",
       "available": ["US"],
       "availableThisMonth": true,
+      "images": ["/images/bakery_products/nut_butters/cococardamom.png"],
       "variants": [
         { "size": "4 oz", "price": "$6.00" }
       ],
-      "images": ["https://placehold.co/1200x1200/FFDCDC/C4735A?text=Haritachala+Organics"],
       "description": "Experience the nostalgic flavor of Kaju Katli in this velvety spread, naturally sweetened by cashews and coconut with no added sugar or preservatives and infused with edible wildflowers to provide a vibrant boost of essential micronutrients.",
       "ingredients": [
         "Cashews",
@@ -230,6 +232,7 @@
         "Cardamom",
         "Sundried Edible Flowers"
       ],
+      "guidelines": ["Lasts 3 months when stored in the fridge."],
       "poem": "A whisper of cardamom, a cashew’s rich heart,\nWhere the comfort of tradition and nature brings art.\nSmooth as a memory, like velvet it spreads,\nOver warm morning toast or fresh, crusty breads.\n\nLike Kaju Katli melted to a creamy delight,\nIt’s a fudge-like surrender, a sweet, soft bite.\nWe’ve woven in wildflowers, a petal-soft kiss,\nTo color your palate with moments of bliss.\n\nNot for the skillet, but for the spoon and the soul,\nA jar full of warmth to make the spirit feel whole.\nFrom our home to yours, a nourishing treat,\nWhere the wild and whole lovingly meet.",
       "howToEnjoy": [
         "Pairs well with our Cranberry Crisps.",
@@ -242,17 +245,17 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "guidelines": ["Lasts 3 months when stored in the fridge."]
+      "flyer": "/pdfs/Artisinal Cashew Coconut Cardamom Nut Butter.pdf"
     },
 
     {
       "name": "Cashew and Cacao Nut Butter with Flower Sprinkles",
       "available": ["US"],
       "availableThisMonth": true,
+      "images": ["/images/bakery_products/nut_butters/cacaocashew.png"],
       "variants": [
         { "size": "4 oz", "price": "$7.00" }
       ],
-      "images": ["https://placehold.co/1200x1200/FFDCDC/C4735A?text=Haritachala+Organics"],
       "description": "Relive the comfort of classic chocolate flavors through this smooth cashew-cacao spread, where creamy cashews meet rich cacao for a naturally indulgent treat. Free from added sugar or preservatives, it’s pure, simple, and irresistibly comforting.",
       "ingredients": [
         "Cashews",
@@ -262,6 +265,7 @@
         "Sundried Edible Flowers",
         "Himalayan Pink Salt"
       ],
+      "guidelines": ["Lasts 3 months when stored in the fridge."],
       "poem": "Cacao deep in velvet tone,\nDarkness rich and fully grown,\nBitterness held, not overplayed,\nA patient warmth that slowly stayed.\n\nA whisper of cashew, soft and mild,\nRounds the dark and leaves it styled—\nIt melts, it lingers, unconfessed,\nA pleasure savored, not expressed.\n\nLet it melt, let it pause,\nLet the moment deepen—\nSome pleasures are meant\nTo be savored, not spoken.",
       "howToEnjoy": [
         "Pairs well with our Cranberry Crisps.",
@@ -274,7 +278,7 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "guidelines": ["Lasts 3 months when stored in the fridge."]
+      "flyer": "/pdfs/Artisinal Cacao Cashew Nut Butter.pdf"
     },
 
     {
