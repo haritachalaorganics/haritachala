@@ -4,6 +4,7 @@ import React from "react";
 import Button from "../components/Button";
 import NavBar from "../components/NavBar";
 import HeroSection from "./home/HeroSection";
+import NewProductsAlert from "./home/NewProductsAlert";
 import OurPurpose from "./home/OurPurpose";
 import OurProducts from "./home/OurProducts";
 import HaveQuestions from "./home/HaveQuestions";
@@ -50,6 +51,9 @@ export default function Home() {
       
       {/* Hero Section with images and gradient */}
       <HeroSection />
+
+      {/* New Products Alert Section */}
+      <NewProductsAlert />
       
       {/* About Section */}
       <AboutSection />

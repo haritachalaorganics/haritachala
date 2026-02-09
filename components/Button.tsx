@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   openInNewTab?: boolean;
   variant?: 'default' | 'product-view' | 'all-products';
+  className?: string;
 }
 
 export default function Button({ 
@@ -17,7 +18,8 @@ export default function Button({
   href,
   onClick,
   openInNewTab = false,
-  variant = 'default'
+  variant = 'default',
+  className = ''
 }: ButtonProps) {
   // Determine hover class based on variant
   const getHoverClass = () => {
@@ -29,7 +31,7 @@ export default function Button({
     return 'hover:opacity-80';
   };
 
-  const buttonClasses = `rubik-regular px-8 md:px-12 lg:px-16 py-3 md:py-4 border-2 bg-transparent uppercase text-sm md:text-base lg:text-lg tracking-wide hover:scale-105 transition-all duration-300 text-center sm:text-center md:text-center inline-block rounded-lg ${getHoverClass()}`;
+  const buttonClasses = `rubik-regular px-8 md:px-12 lg:px-16 py-3 md:py-4 border-2 bg-transparent uppercase text-sm md:text-base lg:text-lg tracking-wide hover:scale-105 transition-all duration-300 text-center sm:text-center md:text-center inline-block rounded-lg ${getHoverClass()} ${className}`;
   
   const buttonStyle = {
     borderColor: buttonOutlineColor,
