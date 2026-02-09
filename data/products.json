@@ -213,7 +213,7 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "flyer": "/pdfs/Artisanal Cashew Pistachio Nut Butter.pdf"
+      "flyer": "/pdfs/CashewPista.pdf"
 
     },
 
@@ -245,7 +245,7 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "flyer": "/pdfs/Artisinal Cashew Coconut Cardamom Nut Butter.pdf"
+      "flyer": "/pdfs/CocoCardamom.pdf"
     },
 
     {
@@ -278,11 +278,11 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "flyer": "/pdfs/Artisinal Cacao Cashew Nut Butter.pdf"
+      "flyer": "/pdfs/CacaoCashew.pdf"
     },
 
     {
-      "name": "Artisinal Cranberry Andhra Pachadi",
+      "name": "Artisanal Cranberry Andhra Pachadi",
       "available": ["US"],
       "availableThisMonth": false,
       "tagline": "Where flavors that speak తెలుగు with a cranberry accent",
