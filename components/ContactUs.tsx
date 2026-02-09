@@ -43,7 +43,7 @@ export default function ContactUs({ bottomImage, imageSize = 'medium' }: Contact
     },
     {
       icon: FaFacebookF,
-      href: 'https://m.facebook.com/profile.php?id=61585366692415',
+      href: 'https://www.facebook.com/haritachalaorganicsusa',
       label: 'Facebook'
     },
     {

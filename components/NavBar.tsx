@@ -83,7 +83,7 @@ export default function NavBar() {
                   <RiInstagramFill className="w-6 h-6 lg:w-7 lg:h-7" />
                 </a>
                 <a
-                  href="https://m.facebook.com/profile.php?id=61585366692415"
+                  href="https://www.facebook.com/haritachalaorganicsusa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#645DAB] hover:opacity-70 transition-opacity"
