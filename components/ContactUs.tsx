@@ -5,12 +5,15 @@ import { FaInstagram, FaYoutube, FaPhone, FaTiktok, FaFacebookF } from 'react-ic
 import { MdEmail } from 'react-icons/md';
 import SlideUp from './animations/SlideUp';
 import FadeIn from './animations/FadeIn';
-import Stagger from './animations/Stagger';
-import StaggerItem from './animations/StaggerItem';
 
 interface ContactUsProps {
   bottomImage?: string;
   imageSize?: 'small' | 'medium' | 'large';
+  locationTitle?: string;
+  address?: string;
+  phoneNumber?: string;
+  phoneSubtext?: string;
+  socialPhoneHref?: string;
 }
 
 interface SocialLink {
@@ -19,7 +22,15 @@ interface SocialLink {
   label: string;
 }
 
-export default function ContactUs({ bottomImage, imageSize = 'medium' }: ContactUsProps) {
+export default function ContactUs({
+  bottomImage,
+  imageSize = 'medium',
+  locationTitle = 'United States',
+  address = 'Dallas, Texas, United States',
+  phoneNumber = '+1 945 289 0980',
+  phoneSubtext = 'Call or Message us on WhatsApp',
+  socialPhoneHref = 'tel:+19452890980'
+}: ContactUsProps) {
   const socialLinks: SocialLink[] = [
     {
       icon: FaInstagram,
@@ -48,7 +59,7 @@ export default function ContactUs({ bottomImage, imageSize = 'medium' }: Contact
     },
     {
       icon: FaPhone,
-      href: 'tel:+19452890980',
+      href: socialPhoneHref,
       label: 'Phone'
     }
   ];
@@ -90,7 +101,7 @@ export default function ContactUs({ bottomImage, imageSize = 'medium' }: Contact
             {/* United States Card */}
             <div className="bg-white rounded-lg shadow-md p-6 md:p-10 lg:p-12 w-full max-w-md md:max-w-lg lg:max-w-xl mx-auto flex flex-col">
               <h3 className="rubik-regular text-lg md:text-xl lg:text-2xl text-[#0D4F78] text-center mb-4">
-                United States
+                {locationTitle}
               </h3>
               
               {/* Location Icon */}
@@ -106,7 +117,7 @@ export default function ContactUs({ bottomImage, imageSize = 'medium' }: Contact
               
               {/* Address */}
               <p className="rubik-light text-base md:text-lg text-[#0D4F78] text-center mb-4 leading-relaxed">
-                Dallas, Texas, United States
+                {address}
               </p>
               
               {/* Phone Icon */}
@@ -122,10 +133,10 @@ export default function ContactUs({ bottomImage, imageSize = 'medium' }: Contact
               
               {/* Phone Number */}
               <p className="rubik-light text-base md:text-lg text-[#0D4F78] text-center mb-1">
-                +1 945 289 0980
+                {phoneNumber}
               </p>
               <p className="rubik-light text-base md:text-lg text-[#0D4F78] text-center">
-                Call or Message us on WhatsApp
+                {phoneSubtext}
               </p>
             </div>
           </div>

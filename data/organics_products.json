@@ -1,0 +1,107 @@
+{
+    "products": [
+        {
+            "name": "Organic Hibiscus Dried Petals",
+            "tamil": "செம்பருத்தி  உலர் மலர்கள்",
+            "telugu": "ఎండిన మందార పువ్వు రేకులు",
+            "variants": [
+                {
+                    "weight": "100g",
+                    "price": 100
+                },
+                {
+                    "weight": "250g",
+                    "price": 200
+                },
+                {
+                    "weight": "500g",
+                    "price": 500
+                }
+            ],
+            "image":"/images/organic_products/hibiscus.png"
+        },
+
+        {
+            "name": "Organic Butterfly Pea Dried Flowers",
+            "tamil": "சங்குப்பூ உலர்ந்த மலர்கள்",
+            "telugu": "ఎండిన శంఖపుష్పి పువ్వులను",
+            "variants": [
+                {
+                    "weight": "100g",
+                    "price": 100
+                },
+                {
+                    "weight": "250g",
+                    "price": 200
+                },
+                {
+                    "weight": "500g",
+                    "price": 500
+                }
+            ],
+            "image":"/images/organic_products/bluepea.png"
+        },
+        {
+            "name": "Organic Rose Dried Petals",
+            "tamil": "ரோஜா உலர் மலர்கள்",
+            "telugu": "ఎండిన రోజా పువ్వు రేకులు",
+            "variants": [
+                {
+                    "weight": "100g",
+                    "price": 100
+                },
+                {
+                    "weight": "250g",
+                    "price": 200
+                },
+                {
+                    "weight": "500g",
+                    "price": 500
+                }
+            ],
+            "image":"/images/organic_products/hibiscus.png"
+        },
+        {
+            "name": "Organic Lemongrass Dried Leaves",
+            "tamil": "லெமன் கிராஸ்",
+            "telugu": "ఎండిన లెమన్‌గ్రాస్ గడ్డి",
+            "variants": [
+                {
+                    "weight": "100g",
+                    "price": 100
+                },
+                {
+                    "weight": "250g",
+                    "price": 200
+                },
+                {
+                    "weight": "500g",
+                    "price": 500
+                }
+            ],
+            "image":"/images/organic_products/lemongrass.png"
+        }, 
+        {
+            "name": "Organic Amla Candy",
+            "tamil": "ஆம்லா காந்தி",
+            "telugu": "ఆమ్లా మిఠాయి",
+            "variants": [
+                {
+                    "weight": "100g",
+                    "price": 100
+                },
+                {
+                    "weight": "250g",
+                    "price": 200
+                },
+                {
+                    "weight": "500g",
+                    "price": 500
+                }
+            ],
+            "ingredients": "Organic Amla, Organic Jaggery",
+            "image":"/images/organic_products/amlacandy.png"
+        }
+
+    ]
+}
