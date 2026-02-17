@@ -76,7 +76,7 @@ export default function WelcomeSection() {
 
   return (
     <>
-      <section className="w-full py-16 md:py-16 lg:py-16 -mt-px" style={{ backgroundColor: 'var(--background-pink)' }}>
+      <section className="w-full py-16 md:py-16 lg:py-16 -mt-1 relative z-10" style={{ backgroundColor: 'var(--background-pink)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
@@ -88,8 +88,11 @@ export default function WelcomeSection() {
               </h2>
 
               <p className="rubik-light text-base md:text-lg text-center lg:text-left" style={{ color: 'var(--foreground-pink)' }}>
-                100% of proceeds directly support Haritachala, our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women.
+                100% of proceeds directly support Haritachala, our Sai Baba temple, spiritual retreats, our biodiverse organic farm, and the livelihoods of rural women. 
               </p>
+
+              <p className="alegreya-italic text-base md:text-lg text-center lg:text-left mt-4" style={{ color: 'var(--foreground-pink)' }}>
+                For purchase inquiries, please contact us on WhatsApp at <a href="https://wa.me/919320097980" className="underline hover:opacity-75 transition-opacity" target="_blank" rel="noopener noreferrer">+91 93200 97980</a>. We also welcome you to visit us at Sri Sainathuni Dhyana Mandiram, Tamil Nadu, India.              </p>
             </div>
 
             <div className="w-full max-w-3xl mx-auto lg:mx-0">

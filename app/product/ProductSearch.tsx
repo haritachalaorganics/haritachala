@@ -8,16 +8,18 @@ interface ProductSearchProps {
   onSearchChange: (value: string) => void;
   backgroundColor?: string;
   accentColor?: string;
+  containerPaddingClass?: string;
 }
 
 export default function ProductSearch({
   searchTerm,
   onSearchChange,
   backgroundColor = 'var(--background-pink)',
-  accentColor = 'var(--foreground-pink)'
+  accentColor = 'var(--foreground-pink)',
+  containerPaddingClass = 'py-8 md:py-12'
 }: ProductSearchProps) {
   return (
-    <div className="w-full py-8 md:py-12" style={{ backgroundColor }}>
+    <div className={`w-full ${containerPaddingClass}`} style={{ backgroundColor }}>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="relative">

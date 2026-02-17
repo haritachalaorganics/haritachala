@@ -14,6 +14,7 @@ interface OrganicProduct {
   name: string;
   tamil?: string;
   telugu?: string;
+  category?: string;
   variants?: ProductVariant[];
   ingredients?: string;
   image?: string;
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
 };
 
 export default function IndiaPage() {
-  const products = organicsProducts.products as OrganicProduct[];
+  const products = organicsProducts as OrganicProduct[];
 
   return (
     <div className="relative">

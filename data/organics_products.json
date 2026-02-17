@@ -1,107 +1,1065 @@
-{
-    "products": [
-        {
-            "name": "Organic Hibiscus Dried Petals",
-            "tamil": "செம்பருத்தி  உலர் மலர்கள்",
-            "telugu": "ఎండిన మందార పువ్వు రేకులు",
-            "variants": [
-                {
-                    "weight": "100g",
-                    "price": 100
-                },
-                {
-                    "weight": "250g",
-                    "price": 200
-                },
-                {
-                    "weight": "500g",
-                    "price": 500
-                }
-            ],
-            "image":"/images/organic_products/hibiscus.png"
-        },
-
-        {
-            "name": "Organic Butterfly Pea Dried Flowers",
-            "tamil": "சங்குப்பூ உலர்ந்த மலர்கள்",
-            "telugu": "ఎండిన శంఖపుష్పి పువ్వులను",
-            "variants": [
-                {
-                    "weight": "100g",
-                    "price": 100
-                },
-                {
-                    "weight": "250g",
-                    "price": 200
-                },
-                {
-                    "weight": "500g",
-                    "price": 500
-                }
-            ],
-            "image":"/images/organic_products/bluepea.png"
-        },
-        {
-            "name": "Organic Rose Dried Petals",
-            "tamil": "ரோஜா உலர் மலர்கள்",
-            "telugu": "ఎండిన రోజా పువ్వు రేకులు",
-            "variants": [
-                {
-                    "weight": "100g",
-                    "price": 100
-                },
-                {
-                    "weight": "250g",
-                    "price": 200
-                },
-                {
-                    "weight": "500g",
-                    "price": 500
-                }
-            ],
-            "image":"/images/organic_products/hibiscus.png"
-        },
-        {
-            "name": "Organic Lemongrass Dried Leaves",
-            "tamil": "லெமன் கிராஸ்",
-            "telugu": "ఎండిన లెమన్‌గ్రాస్ గడ్డి",
-            "variants": [
-                {
-                    "weight": "100g",
-                    "price": 100
-                },
-                {
-                    "weight": "250g",
-                    "price": 200
-                },
-                {
-                    "weight": "500g",
-                    "price": 500
-                }
-            ],
-            "image":"/images/organic_products/lemongrass.png"
-        }, 
-        {
-            "name": "Organic Amla Candy",
-            "tamil": "ஆம்லா காந்தி",
-            "telugu": "ఆమ్లా మిఠాయి",
-            "variants": [
-                {
-                    "weight": "100g",
-                    "price": 100
-                },
-                {
-                    "weight": "250g",
-                    "price": 200
-                },
-                {
-                    "weight": "500g",
-                    "price": 500
-                }
-            ],
-            "ingredients": "Organic Amla, Organic Jaggery",
-            "image":"/images/organic_products/amlacandy.png"
-        }
-
+[
+  {
+    "name": "Amla",
+    "tamil": "நெல்லிக்காய்",
+    "telugu": "ఉసిరికాయ",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "100g", "price": 100 }
     ]
-}
+  },
+  {
+    "name": "Amla Candy",
+    "tamil": "நெல்லிக்காய்",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Amrutakaada",
+    "tamil": "மூக்கிரட்டை",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Blue Pea Flowers",
+    "tamil": "சங்குப் பூ",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 7000 },
+      { "weight": "13g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Henna",
+    "tamil": "மருதாணி",
+    "telugu": "గోరింటాకు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 700 },
+      { "weight": "250g", "price": 200 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Hibiscus Flowers",
+    "tamil": "செம்பருத்தி பூ",
+    "telugu": "మందార పువ్వులు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 4000 },
+      { "weight": "25g", "price": 100 }
+    ]
+  },
+
+  {
+    "name": "Amla / Usirikayalu",
+    "tamil": "நெல்லிக்காய்",
+    "telugu": "ఉసిరికాయలు",
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1kg", "price": 140 }
+    ]
+  },
+  {
+    "name": "Banana Red",
+    "tamil": "சிவப்பு வாழைப்பழம்",
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1kg", "price": 100 }
+    ]
+  },
+  {
+    "name": "Jamun / Neredu",
+    "tamil": "நவ்வாப்பழம்",
+    "telugu": "నేరేడు",
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1kg", "price": 200 }
+    ]
+  },
+  {
+    "name": "Palm / Ice Apple Fruit",
+    "tamil": "பனம்பழம்",
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1 piece", "price": 10 }
+    ]
+  },
+
+  {
+    "name": "Bitter Gourd",
+    "tamil": "பாகற்காய்",
+    "telugu": "కాకరకాయ",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1kg", "price": 80 }
+    ]
+  },
+  {
+    "name": "Banana Flower",
+    "tamil": "வாழைப்பூ",
+    "telugu": "అరటి పువ్వు",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1 piece", "price": 30 }
+    ]
+  },
+
+  {
+    "name": "Ponnaganti",
+    "tamil": "பொன்னாங்கன்னி",
+    "telugu": "పొన్నగంటి",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "200g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Gongura",
+    "tamil": "புளிச்சக்கீரை",
+    "telugu": "గోంగూర",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "400g", "price": 30 }
+    ]
+  },
+
+  {
+    "name": "Mudagatha / Balloon Vine",
+    "tamil": "முடக்கத்தான்",
+    "telugu": "ముదగత్త",
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "200g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Fire on the Mountain",
+    "tamil": "பாலக்கீரை",
+    "telugu": null,
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "250g", "price": 30 }
+    ]
+  },
+
+  {
+    "name": "Aloe Vera",
+    "tamil": "சோற்றுக்கற்றாழை",
+    "telugu": "కలబంద",
+    "category": "HERBS FRESH",
+    "variants": [
+      { "weight": "500g", "price": 30 }
+    ]
+  },
+
+  {
+    "name": "Blue Pea Tea",
+    "tamil": "சங்குப் பூ தேநீர்",
+    "telugu": null,
+    "category": "TEAS",
+    "variants": [
+      { "weight": "100ml cup", "price": 10 }
+    ]
+  },
+  {
+    "name": "Lemongrass Tea",
+    "tamil": "லெமன் க்ராஸ் தேநீர்",
+    "telugu": null,
+    "category": "TEAS",
+    "variants": [
+      { "weight": "100ml cup", "price": 10 }
+    ]
+  },
+  {
+    "name": "Astmaaku",
+    "tamil": null,
+    "telugu": "ఆస్తమాకు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Atibala",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Avisa",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Brahmi",
+    "tamil": "பிரம்மி",
+    "telugu": "బ్రాహ్మి",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Indigo",
+    "tamil": "அவுரி",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Neem",
+    "tamil": "வேப்பிலை",
+    "telugu": "వేప",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Tulasi",
+    "tamil": "துளசி",
+    "telugu": "తులసి",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+
+  {
+    "name": "Banana Raw",
+    "tamil": "வாழைக்காய்",
+    "telugu": "అరటికాయ",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1kg", "price": 40 }
+    ]
+  },
+  {
+    "name": "Banana Stem",
+    "tamil": "வாழைத்தண்டு",
+    "telugu": "అరటి కాండం",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1 piece", "price": 30 }
+    ]
+  },
+  {
+    "name": "Drumsticks",
+    "tamil": "முருங்கைக்காய்",
+    "telugu": "మునగకాయ",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1kg", "price": 60 }
+    ]
+  },
+  {
+    "name": "Pumpkin",
+    "tamil": "பூசணிக்காய்",
+    "telugu": "గుమ్మడికాయ",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1kg", "price": 40 }
+    ]
+  },
+
+  {
+    "name": "Drumstick Leaves",
+    "tamil": "முருங்கைக் கீரை",
+    "telugu": "మునగాకు",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "200g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Curry Leaves",
+    "tamil": "கறிவேப்பிலை",
+    "telugu": "కరివేపాకు",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "100g", "price": 20 }
+    ]
+  },
+  {
+    "name": "Malabar Spinach / Bachali",
+    "tamil": "பசலைக்கீரை",
+    "telugu": "బచ్చలి",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "250g", "price": 30 }
+    ]
+  },
+
+  {
+    "name": "Bilimbi Fruit",
+    "tamil": "இரும்பன் புளி",
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1kg", "price": 120 }
+    ]
+  },
+  {
+    "name": "Dragon Fruit Red",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1kg", "price": 180 }
+    ]
+  },
+  {
+    "name": "Sapota Native",
+    "tamil": "சப்போட்டா",
+    "telugu": "సపోటా",
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1kg", "price": 120 }
+    ]
+  },
+  {
+    "name": "Soursop",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [
+      { "weight": "1kg", "price": 200 }
+    ]
+  },
+
+  {
+    "name": "Rose Flowers",
+    "tamil": "ரோஜா பூ",
+    "telugu": "గులాబీ పువ్వులు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 4000 },
+      { "weight": "25g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Rosella",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 4000 },
+      { "weight": "25g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Punarnava Tea",
+    "tamil": null,
+    "telugu": null,
+    "category": "TEAS",
+    "variants": [
+      { "weight": "100ml", "price": 10 }
+    ]
+  },
+  {
+    "name": "Balloon Vine / Mudagatha",
+    "tamil": "முடக்கத்தான்",
+    "telugu": "ముదగత్త",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Chenchalaaku",
+    "tamil": null,
+    "telugu": "చెంచలాకు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Drumstick Leaves Powder",
+    "tamil": "முருங்கை இலை",
+    "telugu": "మునగాకు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Fire on the Mountain",
+    "tamil": "பாலக்கீரை",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Grass / Garika",
+    "tamil": "அருகம்புல்",
+    "telugu": "గరిక",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Hibiscus Leaves",
+    "tamil": "செம்பருத்தி இலை",
+    "telugu": "మందార ఆకు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Jamun Powder",
+    "tamil": "நாவல் பழம்",
+    "telugu": "నేరేడు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "250g", "price": 250 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Kanuga",
+    "tamil": null,
+    "telugu": "కానుగ",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Kesavardini Leaves",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Kuppintaaku",
+    "tamil": null,
+    "telugu": "కుప్పింతాకు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Lemongrass Powder",
+    "tamil": "எலுமிச்சை புல்",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Lemon Peel",
+    "tamil": "எலுமிச்சை தோல்",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Mango Pulp Powder",
+    "tamil": "மாம்பழ சாறு",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Mango Nuts",
+    "tamil": "மாம்பழ கொட்டை",
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "250g", "price": 250 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Multivitamin Powder",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "250g", "price": 250 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Nela Chamanti",
+    "tamil": null,
+    "telugu": "నేల చామంతి",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Nela Usiri",
+    "tamil": null,
+    "telugu": "నేల ఉసిరి",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Noni Fruits Powder",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Neem",
+    "tamil": "வேப்பிலை",
+    "telugu": "వేప",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Punarnava",
+    "tamil": "முக்கிரட்டை",
+    "telugu": "పునర్నవ",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Pudina",
+    "tamil": "புதினா",
+    "telugu": "పుదీనా",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Ranapala",
+    "tamil": null,
+    "telugu": "రాణపాల",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "250g", "price": 250 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Rose Flowers",
+    "tamil": "ரோஜா பூ",
+    "telugu": "గులాబీ పువ్వులు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Rosella",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 4000 },
+      { "weight": "50g", "price": 200 }
+    ]
+  },
+  {
+    "name": "Soursop Powder",
+    "tamil": null,
+    "telugu": null,
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Tamalapaaku / Betel Leaves",
+    "tamil": "வெற்றிலை",
+    "telugu": "తమలపాకు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Tippateega",
+    "tamil": null,
+    "telugu": "తిప్పతీగ",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 1000 },
+      { "weight": "100g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Tulasi",
+    "tamil": "துளசி",
+    "telugu": "తులసి",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 2000 },
+      { "weight": "50g", "price": 100 }
+    ]
+  },
+  {
+    "name": "Tummi",
+    "tamil": null,
+    "telugu": "తుమ్మి",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Tangedu",
+    "tamil": null,
+    "telugu": "తంగేడు",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Vaamu",
+    "tamil": "ஓமம்",
+    "telugu": "వాము",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Vaadanaaraayana",
+    "tamil": null,
+    "telugu": "వాడనారాయణ",
+    "category": "HERBAL POWDERS",
+    "variants": [
+      { "weight": "1kg", "price": 800 },
+      { "weight": "80g", "price": 80 }
+    ]
+  },
+  {
+    "name": "Banana Elaki",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 100 }]
+  },
+  {
+    "name": "Banana Karpuravalli",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 80 }]
+  },
+  {
+    "name": "Banana Manjal",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 80 }]
+  },
+  {
+    "name": "Custard Apple / Sitaphalam",
+    "tamil": "சீதாப்பழம்",
+    "telugu": "సీతాఫలం",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 120 }]
+  },
+  {
+    "name": "Hanumanthaphalam",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 120 }]
+  },
+  {
+    "name": "Mango Bangalore / Totapuri",
+    "tamil": "தோத்தாபுரி",
+    "telugu": "తోతాపురి",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 100 }]
+  },
+  {
+    "name": "Mango Banganapalli",
+    "tamil": "బంగినపల్లి",
+    "telugu": "బంగినపల్లి",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 160 }]
+  },
+  {
+    "name": "Mango Imam Pasand",
+    "tamil": "இமாம் பசந்த்",
+    "telugu": "ఇమాంపసంద్",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 200 }]
+  },
+  {
+    "name": "Mango Imampasandu",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 160 }]
+  },
+  {
+    "name": "Mango Kobbari",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 100 }]
+  },
+  {
+    "name": "Mango Malgova",
+    "tamil": "மால்கோவா",
+    "telugu": "మల్గోవా",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 160 }]
+  },
+  {
+    "name": "Mango Neelam",
+    "tamil": "நீலம்",
+    "telugu": "నీలం",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 100 }]
+  },
+  {
+    "name": "Mango Punasa",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 80 }]
+  },
+  {
+    "name": "Mango Rasalu / Kesari",
+    "tamil": "ரசாலு",
+    "telugu": "రసాలు",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 160 }]
+  },
+  {
+    "name": "Mulberry",
+    "tamil": "முல்பெரி",
+    "telugu": "మల్బరీ",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 1000 }]
+  },
+  {
+    "name": "Narinja (Orange)",
+    "tamil": "ஆரஞ்சு",
+    "telugu": "నారింజ",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 120 }]
+  },
+  {
+    "name": "Noni",
+    "tamil": "நோனி",
+    "telugu": "నోని",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 80 }]
+  },
+  {
+    "name": "Palm / Ice Apple Fruit",
+    "tamil": "பனம்பழம்",
+    "telugu": "తాటిముంజ",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1 piece", "price": 10 }]
+  },
+  {
+    "name": "Palm Sprouts / Teegalu",
+    "tamil": null,
+    "telugu": "తీగలు",
+    "category": "FRUITS",
+    "variants": [{ "weight": "4 pieces", "price": 20 }]
+  },
+  {
+    "name": "Papaya Native",
+    "tamil": "பப்பாளி",
+    "telugu": "బొప్పాయి",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 40 }]
+  },
+  {
+    "name": "Sapota Hybrid",
+    "tamil": "சப்போட்டா",
+    "telugu": "సపోటా",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 100 }]
+  },
+  {
+    "name": "Sapota Native / Heirloom",
+    "tamil": "சப்போட்டா",
+    "telugu": "సపోటా",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 120 }]
+  },
+  {
+    "name": "Star Fruit",
+    "tamil": "தாமரை பழம்",
+    "telugu": "కమరకాయ",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 80 }]
+  },
+  {
+    "name": "Surinam Cherry",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 800 }]
+  },
+  {
+    "name": "Water Apple",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 160 }]
+  },
+  {
+    "name": "Watermelon",
+    "tamil": "தர்பூசணி",
+    "telugu": "పుచ్చకాయ",
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 40 }]
+  },
+  {
+    "name": "West Indian Cherry",
+    "tamil": null,
+    "telugu": null,
+    "category": "FRUITS",
+    "variants": [{ "weight": "1kg", "price": 800 }]
+  },
+  {
+    "name": "Tapioca",
+    "tamil": "மரவள்ளிக்கிழங்கு",
+    "telugu": "కాస్సావా",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1kg", "price": 60 }
+    ]
+  },
+  {
+    "name": "Ivy Gourd",
+    "tamil": "கோவைக்காய்",
+    "telugu": "దొండకాయ",
+    "category": "VEGETABLES",
+    "variants": [
+      { "weight": "1kg", "price": 80 }
+    ]
+  },
+
+  {
+    "name": "Pasalakeerai / Ceylon Bacchali",
+    "tamil": "பசலைக்கீரை",
+    "telugu": "బచ్చలి",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "400g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Munagaku / Moringa",
+    "tamil": "முருங்கைக் கீரை",
+    "telugu": "మునగాకు",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "300g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Vaadanaaraayana",
+    "tamil": null,
+    "telugu": "వాడనారాయణ",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "200g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Avisa",
+    "tamil": null,
+    "telugu": null,
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "300g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Brahmi",
+    "tamil": "பிரம்மி",
+    "telugu": "బ్రాహ్మి",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "100g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Vaamaaku",
+    "tamil": null,
+    "telugu": "వామాకు",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "300g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Gongura",
+    "tamil": "புளிச்சக்கீரை",
+    "telugu": "గోంగూర",
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "400g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Chakramuni",
+    "tamil": null,
+    "telugu": null,
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "100g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Chakramuni (Big Leaves)",
+    "tamil": null,
+    "telugu": null,
+    "category": "GREENS BUNCHES",
+    "variants": [
+      { "weight": "100g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Amrutakaada",
+    "tamil": "மூக்கிரட்டை",
+    "telugu": "పునర్నవ",
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "250g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Chenchalaaku",
+    "tamil": null,
+    "telugu": "చెంచలాకు",
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "200g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Chinta Aaku",
+    "tamil": "புளிச்சகீரை",
+    "telugu": "చింతాకు",
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "100g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Manttakali",
+    "tamil": "மணத்தக்காளி",
+    "telugu": "మంచుతక్కలి",
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "200g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Punarnava",
+    "tamil": "முக்கிரட்டை",
+    "telugu": "పునర్నవ",
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "250g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Tummi",
+    "tamil": null,
+    "telugu": "తుమ్మి",
+    "category": "WILD FORAGED GREENS",
+    "variants": [
+      { "weight": "200g", "price": 30 }
+    ]
+  },
+  {
+    "name": "Henna Fresh Leaves with Stems",
+    "tamil": "மருதாணி இலை",
+    "telugu": "గోరింటాకు",
+    "category": "HERBS FRESH",
+    "variants": [
+      { "weight": "500g", "price": 40 }
+    ]
+  }
+
+]

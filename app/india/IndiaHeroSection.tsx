@@ -1,7 +1,7 @@
 export default function IndiaHeroSection() {
   return (
     <section
-      className="relative w-full h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden"
+      className="relative w-full h-[70vh] lg:h-[85vh] overflow-hidden"
       style={{ backgroundColor: 'var(--background-pink)' }}
     >
       <div className="absolute inset-0">
@@ -9,7 +9,7 @@ export default function IndiaHeroSection() {
           autoPlay
           muted
           playsInline
-          className="block w-full h-full object-cover object-center"
+          className="block w-full h-[calc(100%+2px)] object-cover object-bottom"
         >
           <source src="/images/pages/india/india_heroSection.mp4" type="video/mp4" />
           Your browser does not support the video tag.
