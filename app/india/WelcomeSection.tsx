@@ -15,6 +15,7 @@ const highlights = [
 
 export default function WelcomeSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const welcomeVideoRef = useRef<HTMLVideoElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
@@ -33,6 +34,31 @@ export default function WelcomeSection() {
     checkScroll();
     window.addEventListener('resize', checkScroll);
     return () => window.removeEventListener('resize', checkScroll);
+  }, []);
+
+  useEffect(() => {
+    const videoElement = welcomeVideoRef.current;
+    if (!videoElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoElement.play().catch(() => {
+            // Silent fail for autoplay restrictions
+          });
+        } else {
+          videoElement.pause();
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(videoElement);
+
+    return () => {
+      observer.disconnect();
+      videoElement.pause();
+    };
   }, []);
 
   const scroll = (direction: 'left' | 'right') => {
@@ -97,7 +123,7 @@ export default function WelcomeSection() {
 
             <div className="w-full max-w-3xl mx-auto lg:mx-0">
               <div className="rounded-2xl overflow-hidden shadow-lg bg-black/10 aspect-video">
-                <video autoPlay loop muted playsInline className="w-full h-full object-cover" preload="metadata">
+                <video ref={welcomeVideoRef} loop muted playsInline className="w-full h-full object-cover" preload="metadata">
                   <source src="/images/pages/india/welcomeToHaritachala.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>

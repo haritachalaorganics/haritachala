@@ -1,6 +1,6 @@
 [
   {
-    "name": "Amla",
+    "name": "Amla Powder",
     "tamil": "நெல்லிக்காய்",
     "telugu": "ఉసిరికాయ",
     "category": "HERBAL POWDERS",
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "name": "Amla Candy",
+    "name": "Amla Candy Powder",
     "tamil": "நெல்லிக்காய்",
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "name": "Amrutakaada",
+    "name": "Amrutakaada Powder",
     "tamil": "மூக்கிரட்டை",
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "name": "Blue Pea Flowers",
+    "name": "Blue Pea Flowers Powder",
     "tamil": "சங்குப் பூ",
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "name": "Henna",
+    "name": "Henna Powder",
     "tamil": "மருதாணி",
     "telugu": "గోరింటాకు",
     "category": "HERBAL POWDERS",
@@ -51,7 +51,7 @@
     ]
   },
   {
-    "name": "Hibiscus Flowers",
+    "name": "Hibiscus Flowers Powder",
     "tamil": "செம்பருத்தி பூ",
     "telugu": "మందార పువ్వులు",
     "category": "HERBAL POWDERS",
@@ -169,7 +169,7 @@
     "name": "Blue Pea Tea",
     "tamil": "சங்குப் பூ தேநீர்",
     "telugu": null,
-    "category": "TEAS",
+    "category": "POURNAMI SPECIAL",
     "variants": [
       { "weight": "100ml cup", "price": 10 }
     ]
@@ -178,13 +178,13 @@
     "name": "Lemongrass Tea",
     "tamil": "லெமன் க்ராஸ் தேநீர்",
     "telugu": null,
-    "category": "TEAS",
+    "category": "POURNAMI SPECIAL",
     "variants": [
       { "weight": "100ml cup", "price": 10 }
     ]
   },
   {
-    "name": "Astmaaku",
+    "name": "Astmaaku Powder",
     "tamil": null,
     "telugu": "ఆస్తమాకు",
     "category": "HERBAL POWDERS",
@@ -194,7 +194,7 @@
     ]
   },
   {
-    "name": "Atibala",
+    "name": "Atibala Powder",
     "tamil": null,
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -204,7 +204,7 @@
     ]
   },
   {
-    "name": "Avisa",
+    "name": "Avisa Powder",
     "tamil": null,
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -214,7 +214,7 @@
     ]
   },
   {
-    "name": "Brahmi",
+    "name": "Brahmi Powder",
     "tamil": "பிரம்மி",
     "telugu": "బ్రాహ్మి",
     "category": "HERBAL POWDERS",
@@ -224,7 +224,7 @@
     ]
   },
   {
-    "name": "Indigo",
+    "name": "Indigo Powder",
     "tamil": "அவுரி",
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "name": "Neem",
+    "name": "Neem Powder",
     "tamil": "வேப்பிலை",
     "telugu": "వేప",
     "category": "HERBAL POWDERS",
@@ -244,7 +244,7 @@
     ]
   },
   {
-    "name": "Tulasi",
+    "name": "Tulasi Powder",
     "tamil": "துளசி",
     "telugu": "తులసి",
     "category": "HERBAL POWDERS",
@@ -357,7 +357,7 @@
   },
 
   {
-    "name": "Rose Flowers",
+    "name": "Rose Flowers Powder",
     "tamil": "ரோஜா பூ",
     "telugu": "గులాబీ పువ్వులు",
     "category": "HERBAL POWDERS",
@@ -367,7 +367,7 @@
     ]
   },
   {
-    "name": "Rosella",
+    "name": "Rosella Powder",
     "tamil": null,
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -380,13 +380,13 @@
     "name": "Punarnava Tea",
     "tamil": null,
     "telugu": null,
-    "category": "TEAS",
+    "category": "POURNAMI SPECIAL",
     "variants": [
       { "weight": "100ml", "price": 10 }
     ]
   },
   {
-    "name": "Balloon Vine / Mudagatha",
+    "name": "Balloon Vine / Mudagatha Powder",
     "tamil": "முடக்கத்தான்",
     "telugu": "ముదగత్త",
     "category": "HERBAL POWDERS",
@@ -396,7 +396,7 @@
     ]
   },
   {
-    "name": "Chenchalaaku",
+    "name": "Chenchalaaku Powder",
     "tamil": null,
     "telugu": "చెంచలాకు",
     "category": "HERBAL POWDERS",
@@ -416,7 +416,7 @@
     ]
   },
   {
-    "name": "Fire on the Mountain",
+    "name": "Fire on the Mountain Powder",
     "tamil": "பாலக்கீரை",
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -426,7 +426,7 @@
     ]
   },
   {
-    "name": "Grass / Garika",
+    "name": "Grass / Garika Powder",
     "tamil": "அருகம்புல்",
     "telugu": "గరిక",
     "category": "HERBAL POWDERS",
@@ -436,7 +436,7 @@
     ]
   },
   {
-    "name": "Hibiscus Leaves",
+    "name": "Hibiscus Leaves Powder",
     "tamil": "செம்பருத்தி இலை",
     "telugu": "మందార ఆకు",
     "category": "HERBAL POWDERS",
@@ -457,7 +457,7 @@
     ]
   },
   {
-    "name": "Kanuga",
+    "name": "Kanuga Powder",
     "tamil": null,
     "telugu": "కానుగ",
     "category": "HERBAL POWDERS",
@@ -467,7 +467,7 @@
     ]
   },
   {
-    "name": "Kesavardini Leaves",
+    "name": "Kesavardini Leaves Powder",
     "tamil": null,
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -477,7 +477,7 @@
     ]
   },
   {
-    "name": "Kuppintaaku",
+    "name": "Kuppintaaku Powder",
     "tamil": null,
     "telugu": "కుప్పింతాకు",
     "category": "HERBAL POWDERS",
@@ -497,7 +497,7 @@
     ]
   },
   {
-    "name": "Lemon Peel",
+    "name": "Lemon Peel Powder",
     "tamil": "எலுமிச்சை தோல்",
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -517,7 +517,7 @@
     ]
   },
   {
-    "name": "Mango Nuts",
+    "name": "Mango Nuts Powder",
     "tamil": "மாம்பழ கொட்டை",
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -539,7 +539,7 @@
     ]
   },
   {
-    "name": "Nela Chamanti",
+    "name": "Nela Chamanti Powder",
     "tamil": null,
     "telugu": "నేల చామంతి",
     "category": "HERBAL POWDERS",
@@ -549,7 +549,7 @@
     ]
   },
   {
-    "name": "Nela Usiri",
+    "name": "Nela Usiri Powder",
     "tamil": null,
     "telugu": "నేల ఉసిరి",
     "category": "HERBAL POWDERS",
@@ -569,7 +569,7 @@
     ]
   },
   {
-    "name": "Neem",
+    "name": "Neem Powder",
     "tamil": "வேப்பிலை",
     "telugu": "వేప",
     "category": "HERBAL POWDERS",
@@ -579,7 +579,7 @@
     ]
   },
   {
-    "name": "Punarnava",
+    "name": "Punarnava Powder",
     "tamil": "முக்கிரட்டை",
     "telugu": "పునర్నవ",
     "category": "HERBAL POWDERS",
@@ -589,7 +589,7 @@
     ]
   },
   {
-    "name": "Pudina",
+    "name": "Pudina Powder",
     "tamil": "புதினா",
     "telugu": "పుదీనా",
     "category": "HERBAL POWDERS",
@@ -599,7 +599,7 @@
     ]
   },
   {
-    "name": "Ranapala",
+    "name": "Ranapala Powder",
     "tamil": null,
     "telugu": "రాణపాల",
     "category": "HERBAL POWDERS",
@@ -610,7 +610,7 @@
     ]
   },
   {
-    "name": "Rose Flowers",
+    "name": "Rose Flowers Powder",
     "tamil": "ரோஜா பூ",
     "telugu": "గులాబీ పువ్వులు",
     "category": "HERBAL POWDERS",
@@ -620,7 +620,7 @@
     ]
   },
   {
-    "name": "Rosella",
+    "name": "Rosella Powder",
     "tamil": null,
     "telugu": null,
     "category": "HERBAL POWDERS",
@@ -640,7 +640,7 @@
     ]
   },
   {
-    "name": "Tamalapaaku / Betel Leaves",
+    "name": "Tamalapaaku / Betel Leaves Powder",
     "tamil": "வெற்றிலை",
     "telugu": "తమలపాకు",
     "category": "HERBAL POWDERS",
@@ -650,7 +650,7 @@
     ]
   },
   {
-    "name": "Tippateega",
+    "name": "Tippateega Powder",
     "tamil": null,
     "telugu": "తిప్పతీగ",
     "category": "HERBAL POWDERS",
@@ -660,7 +660,7 @@
     ]
   },
   {
-    "name": "Tulasi",
+    "name": "Tulasi Powder",
     "tamil": "துளசி",
     "telugu": "తులసి",
     "category": "HERBAL POWDERS",
@@ -670,7 +670,7 @@
     ]
   },
   {
-    "name": "Tummi",
+    "name": "Tummi Powder",
     "tamil": null,
     "telugu": "తుమ్మి",
     "category": "HERBAL POWDERS",
@@ -680,7 +680,7 @@
     ]
   },
   {
-    "name": "Tangedu",
+    "name": "Tangedu Powder",
     "tamil": null,
     "telugu": "తంగేడు",
     "category": "HERBAL POWDERS",
@@ -690,7 +690,7 @@
     ]
   },
   {
-    "name": "Vaamu",
+    "name": "Vaamu Powder",
     "tamil": "ஓமம்",
     "telugu": "వాము",
     "category": "HERBAL POWDERS",
@@ -700,7 +700,7 @@
     ]
   },
   {
-    "name": "Vaadanaaraayana",
+    "name": "Vaadanaaraayana Powder",
     "tamil": null,
     "telugu": "వాడనారాయణ",
     "category": "HERBAL POWDERS",

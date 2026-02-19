@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import ProductSearch from '@/app/product/ProductSearch';
 import WelcomeSection from './WelcomeSection';
 import ProductGrid from './ProductGrid';
@@ -31,6 +31,32 @@ interface IndiaProductsSectionProps {
 
 export default function IndiaProductsSection({ products }: IndiaProductsSectionProps) {
   const [searchTerm, setSearchTerm] = useState('');
+  const bannerVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const videoElement = bannerVideoRef.current;
+    if (!videoElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoElement.play().catch(() => {
+            // Silent fail for autoplay restrictions
+          });
+        } else {
+          videoElement.pause();
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(videoElement);
+
+    return () => {
+      observer.disconnect();
+      videoElement.pause();
+    };
+  }, []);
 
   const filteredProducts = useMemo(() => {
     const query = searchTerm.trim().toLowerCase();
@@ -72,7 +98,15 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   return (
     <>
       <WelcomeSection />
-      <section className="w-full pt-8 md:pt-10 lg:pt-12 pb-2" style={{ backgroundColor: 'var(--background-purple)' }}>
+      <section className="w-full" style={{ backgroundColor: 'var(--background-purple)' }}>
+        <div className="w-full h-screen overflow-hidden">
+          <video ref={bannerVideoRef} muted playsInline className="block w-full h-full object-cover" preload="metadata">
+            <source src="/images/pages/india/products_intro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+      <section className="w-full -mt-px pt-8 md:pt-10 lg:pt-12 pb-2" style={{ backgroundColor: 'var(--background-purple)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-2 md:mb-3">
             <h2
@@ -85,7 +119,14 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
               className="alegreya-italic text-lg md:text-xl lg:text-2xl text-center"
               style={{ color: 'var(--foreground-white)' }}
             >
-              Organically Grown, Sun-dried, and, Handpicked with Love
+              Organically Grown, Sun-dried, and Handpicked with Love
+            </p>
+
+            <p
+              className="rubik-regular text-sm md:text-base text-center mt-3"
+              style={{ color: 'var(--foreground-white)' }}
+            >
+              Total Products: {filteredProducts.length}
             </p>
           </div>
         </div>

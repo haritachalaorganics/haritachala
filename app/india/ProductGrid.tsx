@@ -43,6 +43,7 @@ interface CategoryCarouselProps {
 }
 
 function CategoryCarousel({ category, products }: CategoryCarouselProps) {
+  const isPournamiCategory = category.toLowerCase().includes('pournami');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -184,21 +185,23 @@ function CategoryCarousel({ category, products }: CategoryCarouselProps) {
                   </div>
                 )}
 
-                <div className="mt-auto pt-5">
-                  <a
-                    href={getWhatsAppLink(product.name)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex w-full items-center justify-center rubik-bold uppercase tracking-wide text-base md:text-lg px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:opacity-80"
-                    style={{
-                      borderColor: 'var(--foreground-purple)',
-                      color: 'var(--foreground-purple)',
-                    }}
-                    aria-label={`Buy ${product.name} on WhatsApp`}
-                  >
-                    Buy Now
-                  </a>
-                </div>
+                {!isPournamiCategory && (
+                  <div className="mt-auto pt-5">
+                    <a
+                      href={getWhatsAppLink(product.name)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex w-full items-center justify-center rubik-bold uppercase tracking-wide text-base md:text-lg px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:opacity-80"
+                      style={{
+                        borderColor: 'var(--foreground-purple)',
+                        color: 'var(--foreground-purple)',
+                      }}
+                      aria-label={`Buy ${product.name} on WhatsApp`}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                )}
               </div>
             </article>
           ))}

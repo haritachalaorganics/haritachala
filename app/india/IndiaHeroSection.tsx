@@ -7,11 +7,12 @@ export default function IndiaHeroSection() {
       <div className="absolute inset-0">
         <video
           autoPlay
+          loop
           muted
           playsInline
           className="block w-full h-[calc(100%+2px)] object-cover object-bottom"
         >
-          <source src="/images/pages/india/india_heroSection.mp4" type="video/mp4" />
+          <source src="/images/pages/india/herosection_india.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
