@@ -8,13 +8,20 @@ interface ProductVariant {
   price: number;
 }
 
+interface SelectedVariant extends ProductVariant {
+  quantity: number;
+}
+
 interface OrganicProduct {
   name: string;
   tamil?: string;
   telugu?: string;
   category?: string;
+  bestSeller?: boolean;
+  stock?: boolean;
   variants?: ProductVariant[];
-  ingredients?: string;
+  ingredients?: string | string[];
+  description?: string;
 }
 
 interface ProductGridProps {
@@ -22,6 +29,7 @@ interface ProductGridProps {
     category: string;
     products: OrganicProduct[];
   }[];
+  onAddToCart: (product: OrganicProduct, selectedVariants: SelectedVariant[]) => void;
 }
 
 function getCategoryId(category: string) {
@@ -31,18 +39,185 @@ function getCategoryId(category: string) {
     .replace(/(^-|-$)/g, '')}`;
 }
 
-function getWhatsAppLink(productName: string) {
-  const phoneNumber = '919320097980';
-  const message = `Hello, I am interested in buying ${productName}`;
-  return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-}
-
 interface CategoryCarouselProps {
   category: string;
   products: OrganicProduct[];
+  onAddToCart: (product: OrganicProduct, selectedVariants: SelectedVariant[]) => void;
 }
 
-function CategoryCarousel({ category, products }: CategoryCarouselProps) {
+interface ProductCardProps {
+  product: OrganicProduct;
+  productKey: string;
+  isCartEnabled: boolean;
+  onAddToCart: (product: OrganicProduct, selectedVariants: SelectedVariant[]) => void;
+}
+
+function formatIngredients(ingredients?: string | string[]) {
+  if (!ingredients) return '';
+  if (Array.isArray(ingredients)) {
+    return ingredients.join(', ');
+  }
+  return ingredients;
+}
+
+function ProductCard({ product, productKey, isCartEnabled, onAddToCart }: ProductCardProps) {
+  const isInStock = product.stock !== false;
+  const [variantQuantities, setVariantQuantities] = useState<number[]>(
+    () => (product.variants || []).map(() => 0)
+  );
+  const [addedFeedback, setAddedFeedback] = useState<'idle' | 'added' | 'select'>('idle');
+
+  useEffect(() => {
+    if (addedFeedback === 'idle') return;
+    const timer = window.setTimeout(() => setAddedFeedback('idle'), 900);
+    return () => window.clearTimeout(timer);
+  }, [addedFeedback]);
+
+  const incrementVariant = (variantIndex: number) => {
+    setVariantQuantities((previous) =>
+      previous.map((quantity, index) => (index === variantIndex ? quantity + 1 : quantity))
+    );
+  };
+
+  const decrementVariant = (variantIndex: number) => {
+    setVariantQuantities((previous) =>
+      previous.map((quantity, index) =>
+        index === variantIndex ? Math.max(0, quantity - 1) : quantity
+      )
+    );
+  };
+
+  const handleAddToCart = () => {
+    const selectedVariants = (product.variants || [])
+      .map((variant, index) => ({
+        ...variant,
+        quantity: variantQuantities[index] || 0,
+      }))
+      .filter((variant) => variant.quantity > 0);
+
+    if (selectedVariants.length === 0) {
+      setAddedFeedback('select');
+      return;
+    }
+
+    onAddToCart(product, selectedVariants);
+    setAddedFeedback('added');
+  };
+
+  return (
+    <article
+      key={productKey}
+      className="flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] min-h-[360px] bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/30 overflow-hidden flex flex-col"
+    >
+      <div className="p-5 md:p-6 text-center flex flex-col flex-1">
+        <h3
+          className="afacad-regular text-2xl md:text-3xl leading-tight mb-3"
+          style={{ color: 'var(--foreground-pink)' }}
+        >
+          {product.name}
+        </h3>
+
+        <div className="mb-2">
+          <span
+            className="flex w-full items-center justify-center rubik-medium text-sm md:text-base px-3 py-1"
+            style={{
+              backgroundColor: isInStock ? 'var(--background-pink)' : '#E5E7EB',
+              color: 'var(--foreground-white)',
+            }}
+          >
+            {isInStock ? 'In Stock' : 'Out of Stock'}
+          </span>
+        </div>
+
+        {product.ingredients && (
+          <p className="rubik-light text-sm md:text-base" style={{ color: 'var(--foreground-pink)' }}>
+            <span className="rubik-medium">Ingredients: </span>
+            {formatIngredients(product.ingredients)}
+          </p>
+        )}
+
+        {product.variants && product.variants.length > 0 && (
+          <div className="mt-4 space-y-2 text-left">
+            {product.variants.map((variant, variantIndex) => (
+              <div
+                key={`${product.name}-${variant.weight}-${variant.price}-${variantIndex}`}
+                className="flex items-center justify-between gap-2"
+              >
+                <span
+                  className="rubik-regular text-sm md:text-base px-3 py-1 rounded-full"
+                  style={{
+                    backgroundColor: 'var(--background-pink)',
+                    color: 'var(--foreground-pink)',
+                  }}
+                >
+                  {variant.weight} • ₹{variant.price}
+                </span>
+
+                {isCartEnabled && isInStock && (
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => decrementVariant(variantIndex)}
+                      className="w-8 h-8 rounded-full border text-base transition-all duration-300 hover:opacity-80 hover:scale-105 active:scale-95"
+                      style={{ borderColor: 'var(--foreground-pink)', color: 'var(--foreground-pink)' }}
+                      aria-label={`Decrease ${variant.weight} quantity for ${product.name}`}
+                    >
+                      −
+                    </button>
+                    <span
+                      className="rubik-bold text-sm min-w-6 text-center"
+                      style={{ color: 'var(--foreground-pink)' }}
+                    >
+                      {variantQuantities[variantIndex] || 0}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => incrementVariant(variantIndex)}
+                      className="w-8 h-8 rounded-full border text-base transition-all duration-300 hover:opacity-80 hover:scale-105 active:scale-95"
+                      style={{ borderColor: 'var(--foreground-pink)', color: 'var(--foreground-pink)' }}
+                      aria-label={`Increase ${variant.weight} quantity for ${product.name}`}
+                    >
+                      +
+                    </button>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-auto pt-5">
+          {isCartEnabled && isInStock ? (
+            <button
+              type="button"
+              onClick={handleAddToCart}
+              className="inline-flex w-full items-center justify-center rubik-bold uppercase tracking-wide text-base md:text-lg px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:opacity-80 hover:scale-105 active:scale-95"
+              style={{
+                borderColor: 'var(--foreground-pink)',
+                color: 'var(--foreground-pink)',
+              }}
+              aria-label={`Add ${product.name} to cart`}
+            >
+              {addedFeedback === 'added' ? 'Added' : addedFeedback === 'select' ? 'Select Quantity' : 'Add to Cart'}
+            </button>
+          ) : (
+            <span
+              className="inline-flex w-full items-center justify-center rubik-bold uppercase tracking-wide text-sm md:text-base px-6 py-3 rounded-lg border-2"
+              style={{
+                borderColor: 'var(--foreground-pink)',
+                color: 'var(--foreground-pink)',
+              }}
+            >
+              {isInStock ? 'Not Available in Cart' : 'Out of Stock'}
+            </span>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function CategoryCarousel({ category, products, onAddToCart }: CategoryCarouselProps) {
   const isPournamiCategory = category.toLowerCase().includes('pournami');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -109,7 +284,7 @@ function CategoryCarousel({ category, products }: CategoryCarouselProps) {
       <div className="mb-5 md:mb-6 text-center">
         <h3
           className="afacad-regular text-2xl md:text-3xl lg:text-4xl uppercase"
-          style={{ color: 'var(--foreground-white)' }}
+          style={{ color: 'var(--foreground-pink)' }}
         >
           {category}
         </h3>
@@ -138,72 +313,13 @@ function CategoryCarousel({ category, products }: CategoryCarouselProps) {
           }}
         >
           {products.map((product, productIndex) => (
-            <article
+            <ProductCard
               key={`${category}-${product.name}-${productIndex}`}
-              className="flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] min-h-[360px] bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/30 overflow-hidden flex flex-col"
-            >
-              <div className="p-5 md:p-6 text-center flex flex-col flex-1">
-                <h3
-                  className="afacad-regular text-2xl md:text-3xl leading-tight mb-3"
-                  style={{ color: 'var(--foreground-purple)' }}
-                >
-                  {product.name}
-                </h3>
-
-                {product.tamil && (
-                  <p className="rubik-light text-sm md:text-base mb-1" style={{ color: 'var(--foreground-purple)' }}>
-                    {product.tamil}
-                  </p>
-                )}
-
-                {product.telugu && (
-                  <p className="rubik-light text-sm md:text-base mb-3" style={{ color: 'var(--foreground-purple)' }}>
-                    {product.telugu}
-                  </p>
-                )}
-
-                {product.ingredients && (
-                  <p className="rubik-light text-sm md:text-base" style={{ color: 'var(--foreground-purple)' }}>
-                    {product.ingredients}
-                  </p>
-                )}
-
-                {product.variants && product.variants.length > 0 && (
-                  <div className="flex justify-center flex-wrap gap-2 mt-4">
-                    {product.variants.map((variant, variantIndex) => (
-                      <span
-                        key={`${product.name}-${variant.weight}-${variant.price}-${variantIndex}`}
-                        className="rubik-regular text-sm md:text-base px-4 py-1.5 rounded-full"
-                        style={{
-                          backgroundColor: 'var(--background-purple)',
-                          color: 'var(--foreground-white)',
-                        }}
-                      >
-                        {variant.weight} • ₹{variant.price}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                {!isPournamiCategory && (
-                  <div className="mt-auto pt-5">
-                    <a
-                      href={getWhatsAppLink(product.name)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex w-full items-center justify-center rubik-bold uppercase tracking-wide text-base md:text-lg px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:opacity-80"
-                      style={{
-                        borderColor: 'var(--foreground-purple)',
-                        color: 'var(--foreground-purple)',
-                      }}
-                      aria-label={`Buy ${product.name} on WhatsApp`}
-                    >
-                      Buy Now
-                    </a>
-                  </div>
-                )}
-              </div>
-            </article>
+              productKey={`${category}-${product.name}-${productIndex}`}
+              product={product}
+              isCartEnabled={!isPournamiCategory && product.stock !== false}
+              onAddToCart={onAddToCart}
+            />
           ))}
         </div>
 
@@ -223,7 +339,7 @@ function CategoryCarousel({ category, products }: CategoryCarouselProps) {
   );
 }
 
-export default function ProductGrid({ groupedProducts }: ProductGridProps) {
+export default function ProductGrid({ groupedProducts, onAddToCart }: ProductGridProps) {
   const scrollToCategory = (category: string) => {
     const section = document.getElementById(getCategoryId(category));
     if (!section) return;
@@ -232,7 +348,7 @@ export default function ProductGrid({ groupedProducts }: ProductGridProps) {
   };
 
   return (
-    <section className="w-full pb-12 md:pb-16 lg:pb-20 pt-0" style={{ backgroundColor: 'var(--background-purple)' }}>
+    <section className="w-full pb-12 md:pb-16 lg:pb-20 pt-0" style={{ backgroundColor: 'var(--background-pink)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 md:mb-10">
           <div
@@ -248,8 +364,8 @@ export default function ProductGrid({ groupedProducts }: ProductGridProps) {
                 onClick={() => scrollToCategory(category)}
                 className="rubik-regular text-xs md:text-sm px-3 md:px-4 py-2 rounded-full border transition-all duration-300 hover:opacity-80 hover:scale-105 active:scale-95 whitespace-nowrap w-full"
                 style={{
-                  borderColor: 'var(--foreground-white)',
-                  color: 'var(--foreground-white)',
+                  borderColor: 'var(--foreground-pink)',
+                  color: 'var(--foreground-pink)',
                 }}
               >
                 {category}
@@ -259,13 +375,13 @@ export default function ProductGrid({ groupedProducts }: ProductGridProps) {
         </div>
 
         {groupedProducts.length === 0 ? (
-          <p className="rubik-regular text-center text-base md:text-lg" style={{ color: 'var(--foreground-white)' }}>
+          <p className="rubik-regular text-center text-base md:text-lg" style={{ color: 'var(--foreground-pink)' }}>
             No products found for the current search.
           </p>
         ) : (
           groupedProducts.map(({ category, products }, index) => (
             <div key={`${category}-${index}`}>
-              <CategoryCarousel category={category} products={products} />
+              <CategoryCarousel category={category} products={products} onAddToCart={onAddToCart} />
               {index < groupedProducts.length - 1 && (
                 <div className="border-t border-white/60 mb-10 md:mb-12 lg:mb-14" />
               )}
