@@ -51,6 +51,9 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   const [searchTerm, setSearchTerm] = useState('');
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [customerName, setCustomerName] = useState('');
+  const [customerNameError, setCustomerNameError] = useState('');
+  const [isCustomerNameFocused, setIsCustomerNameFocused] = useState(false);
   const bannerVideoRef = useRef<HTMLVideoElement>(null);
 
   const getProductId = (product: OrganicProduct) => `${product.name}__${product.category || ''}`;
@@ -165,6 +168,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
 
   const cartWhatsAppLink = useMemo(() => {
     const phoneNumber = '919320097980';
+    const trimmedCustomerName = customerName.trim();
     const lines = cartItems.flatMap((item) =>
       item.selectedVariants.map(
         (variant) =>
@@ -173,13 +177,23 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
     );
     const message =
       lines.length > 0
-        ? `Hello, I would like to place an order for:\n\n${lines
+        ? `Hello, my name is ${trimmedCustomerName}. I would like to place an order for:\n\n${lines
             .map((line, index) => `${index + 1}. ${line}`)
             .join('\n')}\n\nTotal Amount: ₹${totalCartAmount}\nPlease confirm availability.`
-        : 'Hello, I would like to place an order.';
+        : `Hello, my name is ${trimmedCustomerName}. I would like to place an order.`;
 
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  }, [cartItems, totalCartAmount]);
+  }, [cartItems, customerName, totalCartAmount]);
+
+  const handleBuyNow = () => {
+    if (!customerName.trim()) {
+      setCustomerNameError('Please enter your name before placing the order.');
+      return;
+    }
+
+    setCustomerNameError('');
+    window.open(cartWhatsAppLink, '_blank', 'noopener,noreferrer');
+  };
 
   useEffect(() => {
     const videoElement = bannerVideoRef.current;
@@ -460,19 +474,56 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
                       Total Amount: ₹{totalCartAmount}
                     </p>
                   </div>
-                  <a
-                    href={cartWhatsAppLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rubik-bold uppercase tracking-wide text-sm md:text-base px-5 py-3 rounded-lg border-2 transition-all duration-300 hover:opacity-80 hover:scale-105 active:scale-95"
-                    style={{
-                      borderColor: 'var(--foreground-purple)',
-                      color: 'var(--foreground-purple)',
-                    }}
-                  >
-                    <FaShoppingCart aria-hidden="true" />
-                    Buy Now
-                  </a>
+                  <div className="w-full md:w-auto md:min-w-[320px]">
+                    <label
+                      htmlFor="customer-name"
+                      className="rubik-medium text-sm md:text-base mb-2 block"
+                      style={{ color: 'var(--foreground-purple)' }}
+                    >
+                      Your Name (required)
+                    </label>
+                    <input
+                      id="customer-name"
+                      type="text"
+                      value={customerName}
+                      onFocus={() => setIsCustomerNameFocused(true)}
+                      onBlur={() => setIsCustomerNameFocused(false)}
+                      onChange={(event) => {
+                        setCustomerName(event.target.value);
+                        if (event.target.value.trim()) {
+                          setCustomerNameError('');
+                        }
+                      }}
+                      className={`w-full rounded-lg border px-3 py-2 rubik-regular text-sm md:text-base transition-colors duration-200 ${
+                        isCustomerNameFocused ? 'placeholder:text-white/80' : 'placeholder:text-[var(--foreground-purple)]'
+                      }`}
+                      style={{
+                        borderColor: 'var(--foreground-purple)',
+                        backgroundColor: isCustomerNameFocused ? 'var(--foreground-purple)' : 'var(--foreground-white)',
+                        color: isCustomerNameFocused ? 'var(--foreground-white)' : 'var(--foreground-purple)',
+                      }}
+                      placeholder="Enter your full name"
+                    />
+                    {customerNameError && (
+                      <p className="rubik-regular text-xs md:text-sm mt-1" style={{ color: 'var(--foreground-purple)' }}>
+                        {customerNameError}
+                      </p>
+                    )}
+
+                    <button
+                      type="button"
+                      onClick={handleBuyNow}
+                      className="mt-3 w-full inline-flex items-center justify-center gap-2 rubik-bold uppercase tracking-wide text-sm md:text-base px-5 py-3 rounded-lg border-2 transition-all duration-300 hover:opacity-80 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      style={{
+                        borderColor: 'var(--foreground-purple)',
+                        color: 'var(--foreground-purple)',
+                      }}
+                      disabled={!customerName.trim()}
+                    >
+                      <FaShoppingCart aria-hidden="true" />
+                      Buy Now
+                    </button>
+                  </div>
                 </div>
               </>
             )}

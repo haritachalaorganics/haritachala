@@ -12,7 +12,7 @@ export default function IndiaHeroSection() {
           playsInline
           className="block w-full h-[calc(100%+2px)] object-cover object-bottom"
         >
-          <source src="/images/pages/india/herosection_india.mp4" type="video/mp4" />
+          <source src="/images/pages/india/inda_hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

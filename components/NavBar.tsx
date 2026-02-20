@@ -10,7 +10,11 @@ import FadeIn from './animations/FadeIn';
 import Stagger from './animations/Stagger';
 import StaggerItem from './animations/StaggerItem';
 
-export default function NavBar() {
+interface NavBarProps {
+  showOrderNow?: boolean;
+}
+
+export default function NavBar({ showOrderNow = true }: NavBarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -21,6 +25,10 @@ export default function NavBar() {
     { name: 'FAQs', href: '/faq' },
     { name: 'Order Now!', href: '/order' },
   ];
+
+  const visibleNavLinks = showOrderNow
+    ? navLinks
+    : navLinks.filter((link) => link.name !== 'Order Now!');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -39,7 +47,7 @@ export default function NavBar() {
 
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center gap-8">
-              {navLinks.map((link) => {
+              {visibleNavLinks.map((link) => {
                 if (link.name === 'Order Now!') {
                   return (
                     <Link
@@ -154,7 +162,7 @@ export default function NavBar() {
             {/* Menu Links */}
             <Stagger>
               <nav className="flex flex-col items-center gap-6 md:gap-8">
-                {navLinks.map((link) => {
+                {visibleNavLinks.map((link) => {
                   if (link.name === 'Order Now!') {
                     return (
                       <StaggerItem key={link.name}>
