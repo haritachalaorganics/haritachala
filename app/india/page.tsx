@@ -3,22 +3,9 @@ import NavBar from '@/components/NavBar';
 import IndiaHeroSection from './IndiaHeroSection';
 import IndiaProductsSection from './IndiaProductsSection';
 import ContactUs from '@/components/ContactUs';
-import organicsProducts from '@/data/organics_products.json';
+import { getProducts } from '@/lib/products';
 
-interface ProductVariant {
-  weight: string;
-  price: number;
-}
-
-interface OrganicProduct {
-  name: string;
-  tamil?: string;
-  telugu?: string;
-  category?: string;
-  variants?: ProductVariant[];
-  ingredients?: string;
-  image?: string;
-}
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'India Organic Products',
@@ -59,8 +46,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function IndiaPage() {
-  const products = organicsProducts as OrganicProduct[];
+export default async function IndiaPage() {
+  const raw = await getProducts();
+  // Normalise null → undefined so downstream components stay simple
+  const products = raw.map((p) => ({
+    ...p,
+    tamil: p.tamil ?? undefined,
+    telugu: p.telugu ?? undefined,
+  }));
 
   return (
     <div className="relative">
