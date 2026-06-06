@@ -51,6 +51,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   const [searchTerm, setSearchTerm] = useState('');
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [showOrderTip, setShowOrderTip] = useState(false);
   const [customerName, setCustomerName] = useState('');
   const [customerNameError, setCustomerNameError] = useState('');
   const [isCustomerNameFocused, setIsCustomerNameFocused] = useState(false);
@@ -167,7 +168,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   );
 
   const cartWhatsAppLink = useMemo(() => {
-    const phoneNumber = '919320097980';
+    const phoneNumber = '916369728545';
     const trimmedCustomerName = customerName.trim();
     const lines = cartItems.flatMap((item) =>
       item.selectedVariants.map(
@@ -194,6 +195,22 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
     setCustomerNameError('');
     window.open(cartWhatsAppLink, '_blank', 'noopener,noreferrer');
   };
+
+  useEffect(() => {
+    const el = document.getElementById('products-india');
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowOrderTip(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const videoElement = bannerVideoRef.current;
@@ -269,7 +286,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
       groups.set(category, existing);
     });
 
-    return Array.from(groups.entries())
+    const sorted = Array.from(groups.entries())
       .map<CategoryProducts>(([category, categoryProducts]) => ({
         category,
         products: categoryProducts,
@@ -282,11 +299,17 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
         if (!firstPrepared && secondPrepared) return 1;
         return 0;
       });
+
+    const bestSellers = filteredProducts.filter((p) => p.bestSeller);
+    if (bestSellers.length > 0) {
+      return [{ category: 'BEST SELLERS', products: bestSellers }, ...sorted];
+    }
+    return sorted;
   }, [filteredProducts]);
 
   return (
     <>
-      <WelcomeSection products={products} onAddToCart={addToCart} />
+      <WelcomeSection />
       <section className="w-full" style={{ backgroundColor: 'var(--background-pink)' }}>
         {/* <div className="w-full h-screen overflow-hidden">
           <video ref={bannerVideoRef} muted playsInline className="block w-full h-full object-cover" preload="metadata">
@@ -328,6 +351,36 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
         containerPaddingClass="pt-1 pb-8 md:pt-2 md:pb-10"
       />
       <ProductGrid groupedProducts={groupedProducts} onAddToCart={addToCart} />
+
+      {showOrderTip && (
+        <div
+          className="fixed bottom-6 left-6 z-40 w-72 bg-white rounded-2xl shadow-xl border p-5"
+          style={{ borderColor: 'var(--foreground-purple)' }}
+        >
+          <div className="flex items-start justify-between gap-3 mb-3">
+            <h4
+              className="afacad-regular text-2xl leading-tight"
+              style={{ color: 'var(--foreground-purple)' }}
+            >
+              How to Order
+            </h4>
+            <button
+              type="button"
+              onClick={() => setShowOrderTip(false)}
+              className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full border transition-all hover:opacity-70"
+              style={{ borderColor: 'var(--foreground-purple)', color: 'var(--foreground-purple)' }}
+              aria-label="Dismiss tip"
+            >
+              <FaTimes size={11} />
+            </button>
+          </div>
+          <p className="rubik-light text-sm leading-relaxed" style={{ color: 'var(--foreground-purple)' }}>
+            Browse products below and select your quantities. When ready, tap the{' '}
+            <strong className="rubik-medium">Cart</strong> button in the bottom right, enter your
+            name, and place your order via WhatsApp.
+          </p>
+        </div>
+      )}
 
       <button
         type="button"

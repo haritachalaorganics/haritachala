@@ -162,7 +162,9 @@
         "price": 100
       }
     ],
-    "stock": true
+    "stock": true,
+    "ingredients": [],
+    "bestSeller": false
   },
   {
     "name": "Jamun / Neredu",
