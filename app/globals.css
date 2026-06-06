@@ -127,3 +127,7 @@ button, a, input, textarea {
 /* Regular (400) */
 .rubik-regular { font-family: var(--font-rubik); font-weight: 400; font-style: normal; }
 .rubik-regular-italic { font-family: var(--font-rubik); font-weight: 400; font-style: italic; }
+/* Medium (500) */
+.rubik-medium { font-family: var(--font-rubik); font-weight: 500; font-style: normal; }
+/* Bold (700) */
+.rubik-bold { font-family: var(--font-rubik); font-weight: 700; font-style: normal; }
