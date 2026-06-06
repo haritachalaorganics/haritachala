@@ -1,20 +1,20 @@
 'use client';
 
-import Image from 'next/image';
 import Stagger from '@/components/animations/Stagger';
 import StaggerItem from '@/components/animations/StaggerItem';
 
 export default function IndiaHeroSection() {
   return (
     <section className="relative w-full h-screen overflow-hidden bg-white">
-      <Image
-        src="/images/pages/india/general_images/staff_to_haritachala_1.JPG"
-        alt="Staff walking to Haritachala"
-        fill
-        className="object-cover object-center"
-        priority
-        sizes="100vw"
-      />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      >
+        <source src="/images/pages/india/india_products_hero_section.mp4" type="video/mp4" />
+      </video>
 
       {/* left-to-right dark gradient so text is legible */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent" />

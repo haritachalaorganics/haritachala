@@ -52,6 +52,11 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [showOrderTip, setShowOrderTip] = useState(false);
+  const [wantsShipping, setWantsShipping] = useState(false);
+  const [shippingAddress, setShippingAddress] = useState('');
+  const [shippingAddressError, setShippingAddressError] = useState('');
+  const [shippingAcknowledged, setShippingAcknowledged] = useState(false);
+  const [isShippingAddressFocused, setIsShippingAddressFocused] = useState(false);
   const [customerName, setCustomerName] = useState('');
   const [customerNameError, setCustomerNameError] = useState('');
   const [isCustomerNameFocused, setIsCustomerNameFocused] = useState(false);
@@ -176,23 +181,34 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
           `${item.name} (${variant.weight}) × ${variant.quantity} = ₹${variant.quantity * variant.price}`
       )
     );
+    const fulfillmentLine = wantsShipping && shippingAddress.trim()
+      ? `\nFulfillment: Shipping\nShipping Address: ${shippingAddress.trim()}\nNote: Shipping cost will be confirmed and added to the final total.`
+      : `\nFulfillment: Pickup at Haritachala, Tiruvannamalai`;
     const message =
       lines.length > 0
         ? `Hello, my name is ${trimmedCustomerName}. I would like to place an order for:\n\n${lines
             .map((line, index) => `${index + 1}. ${line}`)
-            .join('\n')}\n\nTotal Amount: ₹${totalCartAmount}\nPlease confirm availability.`
-        : `Hello, my name is ${trimmedCustomerName}. I would like to place an order.`;
+            .join('\n')}\n\nProduct Total: ₹${totalCartAmount}${fulfillmentLine}\n\nPlease confirm availability.`
+        : `Hello, my name is ${trimmedCustomerName}. I would like to place an order.${fulfillmentLine}`;
 
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  }, [cartItems, customerName, totalCartAmount]);
+  }, [cartItems, customerName, totalCartAmount, wantsShipping, shippingAddress]);
 
   const handleBuyNow = () => {
     if (!customerName.trim()) {
       setCustomerNameError('Please enter your name before placing the order.');
       return;
     }
+    if (wantsShipping && !shippingAddress.trim()) {
+      setShippingAddressError('Please enter a shipping address.');
+      return;
+    }
+    if (wantsShipping && !shippingAcknowledged) {
+      return;
+    }
 
     setCustomerNameError('');
+    setShippingAddressError('');
     window.open(cartWhatsAppLink, '_blank', 'noopener,noreferrer');
   };
 
@@ -433,7 +449,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
             </div>
 
             <p className="rubik-regular text-sm md:text-base mb-4" style={{ color: 'var(--foreground-purple)' }}>
-              Orders must be picked up at Haritachala in Tiruvannamalai. No delivery or shipping options are available.
+              Orders can be picked up at Haritachala in Tiruvannamalai, or shipped to your address.
             </p>
 
             {cartItems.length === 0 ? (
@@ -518,16 +534,92 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
                   ))}
                 </div>
 
-                <div className="mt-5 md:mt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+                <div className="mt-5 md:mt-6 space-y-5">
+                  {/* Totals */}
                   <div>
                     <p className="rubik-bold text-base md:text-lg" style={{ color: 'var(--foreground-purple)' }}>
                       Total Items: {totalCartItems}
                     </p>
                     <p className="rubik-bold text-base md:text-lg" style={{ color: 'var(--foreground-purple)' }}>
-                      Total Amount: ₹{totalCartAmount}
+                      Product Total: ₹{totalCartAmount}
                     </p>
                   </div>
-                  <div className="w-full md:w-auto md:min-w-[320px]">
+
+                  {/* Shipping toggle */}
+                  <div className="rounded-xl border p-4 space-y-4" style={{ borderColor: 'var(--foreground-purple)' }}>
+                    <label className="flex items-center gap-3 cursor-pointer select-none">
+                      <input
+                        type="checkbox"
+                        checked={wantsShipping}
+                        onChange={(e) => {
+                          setWantsShipping(e.target.checked);
+                          if (!e.target.checked) {
+                            setShippingAddress('');
+                            setShippingAddressError('');
+                            setShippingAcknowledged(false);
+                          }
+                        }}
+                        className="w-4 h-4 accent-[#645DAB] cursor-pointer"
+                      />
+                      <span className="rubik-medium text-sm md:text-base" style={{ color: 'var(--foreground-purple)' }}>
+                        Ship to me
+                      </span>
+                    </label>
+
+                    {wantsShipping && (
+                      <div className="space-y-3">
+                        <div>
+                          <label
+                            htmlFor="shipping-address"
+                            className="rubik-medium text-sm md:text-base mb-1 block"
+                            style={{ color: 'var(--foreground-purple)' }}
+                          >
+                            Shipping Address (required)
+                          </label>
+                          <textarea
+                            id="shipping-address"
+                            rows={3}
+                            value={shippingAddress}
+                            onFocus={() => setIsShippingAddressFocused(true)}
+                            onBlur={() => setIsShippingAddressFocused(false)}
+                            onChange={(e) => {
+                              setShippingAddress(e.target.value);
+                              if (e.target.value.trim()) setShippingAddressError('');
+                            }}
+                            className={`w-full rounded-lg border px-3 py-2 rubik-regular text-sm md:text-base transition-colors duration-200 resize-none ${
+                              isShippingAddressFocused ? 'placeholder:text-white/80' : 'placeholder:text-[var(--foreground-purple)]'
+                            }`}
+                            style={{
+                              borderColor: 'var(--foreground-purple)',
+                              backgroundColor: isShippingAddressFocused ? 'var(--foreground-purple)' : 'var(--foreground-white)',
+                              color: isShippingAddressFocused ? 'var(--foreground-white)' : 'var(--foreground-purple)',
+                            }}
+                            placeholder="Street, city, state, PIN code"
+                          />
+                          {shippingAddressError && (
+                            <p className="rubik-regular text-xs md:text-sm mt-1" style={{ color: 'var(--foreground-purple)' }}>
+                              {shippingAddressError}
+                            </p>
+                          )}
+                        </div>
+
+                        <label className="flex items-start gap-3 cursor-pointer select-none">
+                          <input
+                            type="checkbox"
+                            checked={shippingAcknowledged}
+                            onChange={(e) => setShippingAcknowledged(e.target.checked)}
+                            className="mt-0.5 w-4 h-4 accent-[#645DAB] cursor-pointer flex-shrink-0"
+                          />
+                          <span className="rubik-light text-xs md:text-sm leading-relaxed" style={{ color: 'var(--foreground-purple)' }}>
+                            I understand that shipping costs vary by destination and will be confirmed separately before fulfillment. The shipping charge will be added to my product total.
+                          </span>
+                        </label>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Name + Buy Now */}
+                  <div>
                     <label
                       htmlFor="customer-name"
                       className="rubik-medium text-sm md:text-base mb-2 block"
@@ -543,9 +635,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
                       onBlur={() => setIsCustomerNameFocused(false)}
                       onChange={(event) => {
                         setCustomerName(event.target.value);
-                        if (event.target.value.trim()) {
-                          setCustomerNameError('');
-                        }
+                        if (event.target.value.trim()) setCustomerNameError('');
                       }}
                       className={`w-full rounded-lg border px-3 py-2 rubik-regular text-sm md:text-base transition-colors duration-200 ${
                         isCustomerNameFocused ? 'placeholder:text-white/80' : 'placeholder:text-[var(--foreground-purple)]'
@@ -571,7 +661,10 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
                         borderColor: 'var(--foreground-purple)',
                         color: 'var(--foreground-purple)',
                       }}
-                      disabled={!customerName.trim()}
+                      disabled={
+                        !customerName.trim() ||
+                        (wantsShipping && (!shippingAddress.trim() || !shippingAcknowledged))
+                      }
                     >
                       <FaShoppingCart aria-hidden="true" />
                       Buy Now
