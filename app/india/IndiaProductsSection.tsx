@@ -326,13 +326,16 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   return (
     <>
       <WelcomeSection />
-      <section className="w-full" style={{ backgroundColor: 'var(--background-pink)' }}>
-        {/* <div className="w-full h-screen overflow-hidden">
-          <video ref={bannerVideoRef} muted playsInline className="block w-full h-full object-cover" preload="metadata">
-            <source src="/images/pages/india/products_intro.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div> */}
+      <section className="w-full" style={{ backgroundColor: '#000' }}>
+        <video
+          ref={bannerVideoRef}
+          muted
+          playsInline
+          className="block w-full h-[70vh] object-cover"
+          preload="metadata"
+        >
+          <source src="/images/pages/india/products_intro.mp4" type="video/mp4" />
+        </video>
       </section>
       <section id="products-india" className="w-full -mt-px pt-8 md:pt-10 lg:pt-12 pb-2" style={{ backgroundColor: 'var(--background-pink)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

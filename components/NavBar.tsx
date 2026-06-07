@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { HiMenuAlt3 } from 'react-icons/hi';
@@ -16,6 +16,12 @@ interface NavBarProps {
 
 export default function NavBar({ showOrderNow = true }: NavBarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -37,11 +43,18 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
   return (
     <>
       {/* Main Navigation Bar */}
-      <nav className="w-full sticky top-0 z-50">
+      <nav
+        className="w-full sticky top-0 z-50 bg-[#C4735A]"
+        style={{
+          opacity: isVisible ? 1 : 0,
+          transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+          transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="afacad-italic text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl text-[#645DAB]">
+            <Link href="/" className="afacad-italic text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl text-white">
               Haritachala Organics
             </Link>
 
@@ -53,7 +66,7 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="afacad-bold text-lg lg:text-xl xl:text-xl text-[#645DAB] border-2 border-[#645DAB] px-4 py-1.5 rounded hover:bg-[#645DAB] hover:text-white transition-all"
+                      className="afacad-bold text-lg lg:text-xl xl:text-xl text-white border-2 border-white px-4 py-1.5 rounded hover:bg-white hover:text-[#C4735A] transition-all"
                     >
                       {link.name}
                     </Link>
@@ -63,20 +76,20 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="afacad-bold text-lg lg:text-xl xl:text-xl text-[#645DAB] hover:opacity-70 transition-opacity"
+                    className="afacad-bold text-lg lg:text-xl xl:text-xl text-white hover:opacity-70 transition-opacity"
                   >
                     {link.name}
                   </Link>
                 );
               })}
-              
+
               {/* Social Media Icons */}
               <div className="flex items-center gap-4 ml-2">
                 <a
                   href="https://wa.me/19452890980"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  className="text-white hover:opacity-70 transition-opacity"
                   aria-label="WhatsApp"
                 >
                   <RiWhatsappFill className="w-6 h-6 lg:w-7 lg:h-7" />
@@ -85,7 +98,7 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
                   href="https://www.instagram.com/haritachalaorganics/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  className="text-white hover:opacity-70 transition-opacity"
                   aria-label="Instagram"
                 >
                   <RiInstagramFill className="w-6 h-6 lg:w-7 lg:h-7" />
@@ -94,7 +107,7 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
                   href="https://www.facebook.com/haritachalaorganicsusa"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  className="text-white hover:opacity-70 transition-opacity"
                   aria-label="Facebook"
                 >
                   <RiFacebookFill className="w-6 h-6 lg:w-7 lg:h-7" />
@@ -103,19 +116,18 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
                   href="http://www.tiktok.com/@haritachalaorganics"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#645DAB] hover:opacity-70 transition-opacity"
+                  className="text-white hover:opacity-70 transition-opacity"
                   aria-label="TikTok"
                 >
                   <RiTiktokFill className="w-6 h-6 lg:w-7 lg:h-7" />
                 </a>
-                
               </div>
             </div>
 
             {/* Mobile/Tablet Menu Button */}
             <button
               onClick={toggleMenu}
-              className="lg:hidden text-[#645DAB] p-2 hover:opacity-70 transition-opacity"
+              className="lg:hidden text-white p-2 hover:opacity-70 transition-opacity"
               aria-label="Toggle menu"
             >
               <HiMenuAlt3 className="w-8 h-8" />

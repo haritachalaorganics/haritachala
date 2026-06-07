@@ -1,9 +1,35 @@
 "use client";
 
+import { useEffect, useRef } from 'react';
 import OurProductsSection from './OurProductsSection';
 import ReasonsToLoveUs from './ReasonsToLoveUs';
 
 export default function WelcomeSection() {
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const videoElement = heroVideoRef.current;
+    if (!videoElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (videoElement.currentTime < 6) videoElement.currentTime = 6;
+          videoElement.play().catch(() => {});
+        } else {
+          videoElement.pause();
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(videoElement);
+    return () => {
+      observer.disconnect();
+      videoElement.pause();
+    };
+  }, []);
+
   return (
     <>
       {/* We are Haritachala Organics */}
@@ -72,6 +98,18 @@ export default function WelcomeSection() {
 
       {/* Reasons to Love Us — 4 animated panels */}
       <ReasonsToLoveUs />
+
+      <section className="w-full" style={{ backgroundColor: '#000' }}>
+        <video
+          ref={heroVideoRef}
+          muted
+          playsInline
+          className="block w-full h-[70vh] object-cover"
+          preload="metadata"
+        >
+          <source src="/images/pages/india/hero_section_india_slideshow.mp4" type="video/mp4" />
+        </video>
+      </section>
 
       {/* Our Products */}
       <OurProductsSection />

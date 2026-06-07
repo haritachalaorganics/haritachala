@@ -79,8 +79,6 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/40"></div>
         </div>
 
-        {/* White Gradient Overlay for NavBar */}
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/90 to-transparent z-10 pointer-events-none"></div>
       </section>
 
       {/* Product Card Section */}

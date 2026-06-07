@@ -13,14 +13,12 @@ export default function IndiaHeroSection() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover object-center"
       >
-        <source src="/images/pages/india/india_products_hero_section.mp4" type="video/mp4" />
+        <source src="/images/pages/india/hero_section_india_slideshow.mp4" type="video/mp4" />
       </video>
 
       {/* left-to-right dark gradient so text is legible */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent" />
 
-      {/* top fade blends with navbar */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/85 via-white/50 to-transparent pointer-events-none z-10" />
 
       {/* Mobile — centered, near top */}
       <div className="relative z-20 h-full flex items-start pt-36 justify-center px-4 md:hidden">
