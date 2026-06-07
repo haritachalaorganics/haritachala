@@ -94,7 +94,7 @@
     {
       "name": "Organic Vegan Banana Walnut Bread",
       "available": ["US"],
-      "availableThisMonth": true,
+      "availableThisMonth": false,
       "tagline": "Loaf at first bite",
       "images": ["/images/bakery_products/vegan_banana_bread.jpeg", "/images/product_detailed/vegan_banana_bread/vb2.png", "/images/product_detailed/vegan_banana_bread/vb3.jpeg", "/images/product_detailed/vegan_banana_bread/vb4.jpeg"],
       "variants": [
@@ -154,7 +154,7 @@
     {
       "name": "Organic and Artisanal Strawberry Jam",
       "available": ["US"],
-      "availableThisMonth": true,
+      "availableThisMonth": false,
       "tagline": "Organic and Artisanal",
       "images": ["/images/bakery_products/strawberry_jam.jpg", "/images/product_detailed/strawberry_jam/sj1.jpg", "/images/product_detailed/strawberry_jam/sj2.JPG", "/images/product_detailed/strawberry_jam/sj3.JPG", "/images/product_detailed/strawberry_jam/sj4.jpg", "/images/product_detailed/strawberry_jam/sj5.png", "/images/product_detailed/strawberry_jam/sj6.jpg", "/images/product_detailed/strawberry_jam/sj7.png"],
       "variants": [
@@ -220,7 +220,7 @@
     {
       "name": "Cashew and Coconut-Cardamom Nut Butter with Flower Sprinkles",
       "available": ["US"],
-      "availableThisMonth": true,
+      "availableThisMonth": false,
       "images": ["/images/bakery_products/nut_butters/cococardamom.png"],
       "variants": [
         { "size": "4 oz", "price": "$6.00" }
@@ -251,7 +251,7 @@
     {
       "name": "Cashew and Cacao Nut Butter with Flower Sprinkles",
       "available": ["US"],
-      "availableThisMonth": true,
+      "availableThisMonth": false,
       "images": ["/images/bakery_products/nut_butters/cacaocashew.png"],
       "variants": [
         { "size": "4 oz", "price": "$7.00" }
