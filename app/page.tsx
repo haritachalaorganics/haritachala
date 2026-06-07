@@ -53,7 +53,6 @@ export default function Home() {
       <HeroSection />
 
       {/* New Products Alert Section */}
-      <NewProductsAlert />
       
       {/* About Section */}
       <AboutSection />

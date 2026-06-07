@@ -65,7 +65,7 @@ export default function HeroSection() {
       </div>
 
       {/* Hero Text and Buttons - Only visible on large screens */}
-      <div className="hidden md:flex relative z-20 h-full items-end pb-6 md:pb-8 lg:pb-10">
+      <div className="hidden md:flex relative z-20 h-full items-end pb-16 md:pb-20 lg:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <Stagger className="max-w-2xl">
             <StaggerItem>
@@ -91,6 +91,16 @@ export default function HeroSection() {
               </div>
             </StaggerItem>
           </Stagger>
+        </div>
+      </div>
+      {/* Running Order Banner */}
+      <div className="absolute bottom-0 left-0 right-0 z-30 bg-[#645DAB]/80 backdrop-blur-sm" style={{ overflow: 'hidden' }}>
+        <div style={{ display: 'flex', width: 'max-content', whiteSpace: 'nowrap', animation: 'marquee 28s linear infinite', padding: '16px 0' }}>
+          {[0, 1].map((i) => (
+            <span key={i} aria-hidden={i === 1 || undefined} className="rubik-regular text-white tracking-wide" style={{ fontSize: '1.05rem', paddingRight: '80px' }}>
+              {'✦   Good news, Dallas! Our order form is now open for Dallas, Texas residents — place your order before it closes on June 11th at 11:59 PM CST   ✦   Good news, Dallas! Our order form is now open for Dallas, Texas residents — place your order before it closes on June 11th at 11:59 PM CST'}
+            </span>
+          ))}
         </div>
       </div>
     </section>
