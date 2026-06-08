@@ -1,5 +1,38 @@
 [
   {
+    "id": "ffe7455bba137677",
+    "timestamp": "2026-06-08T20:32:06.949Z",
+    "type": "LOGIN_SUCCESS",
+    "username": "hcadmin",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "14a40dd76da1c818",
+    "timestamp": "2026-06-08T15:03:37.486Z",
+    "type": "LOGIN_SUCCESS",
+    "username": "hcadmin",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "d119fda27175163f",
+    "timestamp": "2026-06-08T13:43:15.927Z",
+    "type": "LOGIN_SUCCESS",
+    "username": "hcadmin",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "205cb31b3d00bbb3",
+    "timestamp": "2026-06-08T13:42:07.009Z",
+    "type": "LOGIN_FAILURE",
+    "username": "hoadmin",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "reason": "Invalid credentials"
+  },
+  {
     "id": "f798c9953e97df92",
     "timestamp": "2026-06-06T20:11:08.158Z",
     "type": "LOGIN_SUCCESS",

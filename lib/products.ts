@@ -15,6 +15,7 @@ export interface OrganicProduct {
   variants?: ProductVariant[];
   ingredients?: string[];
   description?: string;
+  images?: string[];
   stock: boolean;
 }
 

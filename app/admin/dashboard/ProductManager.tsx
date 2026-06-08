@@ -7,10 +7,13 @@ import { OrganicProduct, ProductVariant } from '@/lib/products';
 const CATEGORIES = [
   'HERBAL POWDERS',
   'PREPARED PRODUCTS',
+  'TEA COLLECTION',
   'FRUITS',
   'VEGETABLES',
   'WILD FORAGED GREENS',
+  'GREENS BUNCHES',
   'HERBS FRESH',
+  'POURNAMI SPECIAL',
   'OTHER',
 ];
 
@@ -23,6 +26,7 @@ const EMPTY_PRODUCT: OrganicProduct = {
   variants: [{ weight: '', price: 0 }],
   ingredients: [],
   description: '',
+  images: [],
   stock: true,
 };
 
@@ -43,6 +47,8 @@ export default function ProductManager({ initialProducts }: Props) {
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
   const [ingredientInput, setIngredientInput] = useState('');
   const [loggingOut, setLoggingOut] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
 
   // ── Filtered view ──────────────────────────────────────────────────────────
   const filtered = useMemo(() => {
@@ -106,14 +112,51 @@ export default function ProductManager({ initialProducts }: Props) {
   function openAdd() {
     setForm(EMPTY_PRODUCT);
     setIngredientInput('');
+    setUploadError(null);
     setModal({ mode: 'add', index: null });
   }
 
   function openEdit(index: number) {
     const p = products[index];
-    setForm({ ...p, ingredients: Array.isArray(p.ingredients) ? [...p.ingredients] : [] });
+    setForm({
+      ...p,
+      ingredients: Array.isArray(p.ingredients) ? [...p.ingredients] : [],
+      images: Array.isArray(p.images) ? [...p.images] : [],
+    });
     setIngredientInput('');
+    setUploadError(null);
     setModal({ mode: 'edit', index });
+  }
+
+  // ── Image helpers ─────────────────────────────────────────────────────────
+  async function handleImageUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const files = Array.from(e.target.files ?? []);
+    if (!files.length) return;
+    setUploading(true);
+    setUploadError(null);
+
+    const data = new FormData();
+    data.append('productName', form.name.trim() || 'unnamed');
+    files.forEach((f) => data.append('files', f));
+
+    try {
+      const res = await fetch('/api/admin/upload', { method: 'POST', body: data });
+      const json = await res.json();
+      if (!res.ok) {
+        setUploadError(json.error ?? 'Upload failed');
+      } else {
+        setForm((f) => ({ ...f, images: [...(f.images ?? []), ...(json.paths as string[])] }));
+      }
+    } catch {
+      setUploadError('Network error during upload');
+    } finally {
+      setUploading(false);
+      e.target.value = '';
+    }
+  }
+
+  function removeImage(i: number) {
+    setForm((f) => ({ ...f, images: (f.images ?? []).filter((_, idx) => idx !== i) }));
   }
 
   // ── Submit modal form ─────────────────────────────────────────────────────
@@ -126,6 +169,7 @@ export default function ProductManager({ initialProducts }: Props) {
       description: form.description?.trim() || undefined,
       variants: (form.variants ?? []).filter((v) => v.weight.trim()),
       ingredients: (form.ingredients ?? []).filter(Boolean),
+      images: (form.images ?? []).filter(Boolean),
     };
 
     if (!trimmed.name) return;
@@ -273,6 +317,7 @@ export default function ProductManager({ initialProducts }: Props) {
                   <th className="px-4 py-3">Product</th>
                   <th className="px-4 py-3 hidden sm:table-cell">Category</th>
                   <th className="px-4 py-3 hidden md:table-cell">Variants</th>
+                  <th className="px-4 py-3 hidden lg:table-cell">Images</th>
                   <th className="px-4 py-3">Stock</th>
                   <th className="px-4 py-3 text-right">Actions</th>
                 </tr>
@@ -303,6 +348,25 @@ export default function ProductManager({ initialProducts }: Props) {
                       </td>
                       <td className="px-4 py-3 hidden md:table-cell text-stone-500 text-xs">
                         {(product.variants ?? []).map((v) => `${v.weight} ₹${v.price}`).join(', ') || '—'}
+                      </td>
+                      <td className="px-4 py-3 hidden lg:table-cell">
+                        {(product.images ?? []).length > 0 ? (
+                          <div className="flex items-center gap-1.5">
+                            <div className="w-8 h-8 rounded border border-stone-200 overflow-hidden flex-shrink-0">
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                src={product.images![0]}
+                                alt=""
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                            {(product.images ?? []).length > 1 && (
+                              <span className="text-xs text-stone-400">+{(product.images ?? []).length - 1}</span>
+                            )}
+                          </div>
+                        ) : (
+                          <span className="text-xs text-stone-300">—</span>
+                        )}
                       </td>
                       <td className="px-4 py-3">
                         <button
@@ -461,7 +525,8 @@ export default function ProductManager({ initialProducts }: Props) {
                         value={v.weight}
                         onChange={(e) => updateVariant(i, 'weight', e.target.value)}
                         placeholder="e.g. 100g"
-                        className={`${INPUT} flex-1`}
+                        className={INPUT}
+                        style={{ flex: '1 1 0%', width: 'auto', color: '#000' }}
                       />
                       <span className="text-stone-400 text-sm">₹</span>
                       <input
@@ -469,7 +534,8 @@ export default function ProductManager({ initialProducts }: Props) {
                         value={v.price}
                         min={0}
                         onChange={(e) => updateVariant(i, 'price', e.target.value)}
-                        className={`${INPUT} w-24`}
+                        className={INPUT}
+                        style={{ width: '7rem', color: '#000' }}
                       />
                       <button
                         onClick={() => removeVariant(i)}
@@ -527,6 +593,62 @@ export default function ProductManager({ initialProducts }: Props) {
                   placeholder="Describe the product…"
                 />
               </Field>
+
+              {/* Images */}
+              <div>
+                <label className="block text-sm font-medium text-stone-700 mb-2">
+                  Product Images
+                  <span className="ml-1 text-xs font-normal text-stone-400">
+                    (saved to product_images/{form.name.trim().toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '') || 'unnamed'}/)
+                  </span>
+                </label>
+
+                {(form.images ?? []).length > 0 && (
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {(form.images ?? []).map((src, i) => (
+                      <div key={i} className="relative group w-20 h-20 flex-shrink-0">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={src}
+                          alt=""
+                          className="w-full h-full object-cover rounded-lg border border-stone-200"
+                        />
+                        <button
+                          type="button"
+                          onClick={() => removeImage(i)}
+                          className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-red-500 hover:bg-red-600 text-white rounded-full text-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity leading-none"
+                        >
+                          ×
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <label
+                  className={`flex items-center justify-center gap-2 cursor-pointer border-2 border-dashed rounded-lg px-4 py-3 transition-colors ${
+                    uploading
+                      ? 'border-stone-200 opacity-50 pointer-events-none'
+                      : 'border-stone-300 hover:border-green-500 hover:bg-green-50'
+                  }`}
+                >
+                  <span className="text-sm text-stone-500">
+                    {uploading ? 'Uploading…' : 'Click to upload images'}
+                  </span>
+                  <input
+                    type="file"
+                    multiple
+                    accept="image/*"
+                    className="hidden"
+                    onChange={handleImageUpload}
+                    disabled={uploading}
+                  />
+                </label>
+
+                {uploadError && (
+                  <p className="text-xs text-red-500 mt-1">{uploadError}</p>
+                )}
+              </div>
             </div>
 
             <div className="px-5 py-4 border-t border-stone-200 flex justify-end gap-2">
@@ -552,7 +674,7 @@ export default function ProductManager({ initialProducts }: Props) {
 }
 
 // ── Small helpers ──────────────────────────────────────────────────────────
-const INPUT = 'w-full border border-stone-300 rounded-lg px-3 py-2 text-sm text-stone-900 bg-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent';
+const INPUT = 'w-full border border-stone-300 rounded-lg px-3 py-2 text-sm text-black bg-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent';
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (

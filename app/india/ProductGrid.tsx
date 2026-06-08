@@ -22,6 +22,7 @@ interface OrganicProduct {
   variants?: ProductVariant[];
   ingredients?: string | string[];
   description?: string;
+  images?: string[];
 }
 
 interface ProductGridProps {
@@ -66,6 +67,8 @@ function ProductCard({ product, productKey, isCartEnabled, onAddToCart }: Produc
     () => (product.variants || []).map(() => 0)
   );
   const [addedFeedback, setAddedFeedback] = useState<'idle' | 'added' | 'select'>('idle');
+  const [imgError, setImgError] = useState(false);
+  const firstImage = !imgError && product.images && product.images.length > 0 ? product.images[0] : null;
 
   useEffect(() => {
     if (addedFeedback === 'idle') return;
@@ -109,6 +112,25 @@ function ProductCard({ product, productKey, isCartEnabled, onAddToCart }: Produc
       key={productKey}
       className="flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] min-h-[360px] bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/30 overflow-hidden flex flex-col"
     >
+      <div className="w-full h-48 flex-shrink-0 overflow-hidden bg-stone-100">
+        {firstImage ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={firstImage}
+            alt={product.name}
+            className="w-full h-full object-cover"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="w-full h-full flex flex-col items-center justify-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-stone-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 3l18 18M3 8.25A2.25 2.25 0 015.25 6h13.5A2.25 2.25 0 0121 8.25v7.5" />
+            </svg>
+            <span className="rubik-regular text-xs text-stone-400">Image Not Available</span>
+          </div>
+        )}
+      </div>
+
       <div className="p-5 md:p-6 text-center flex flex-col flex-1">
         <h3
           className="afacad-regular text-2xl md:text-3xl leading-tight mb-3"

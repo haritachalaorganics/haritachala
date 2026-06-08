@@ -25,7 +25,7 @@ interface OrganicProduct {
   variants?: ProductVariant[];
   ingredients?: string | string[];
   description?: string;
-  image?: string;
+  images?: string[];
 }
 
 interface CartItem {
