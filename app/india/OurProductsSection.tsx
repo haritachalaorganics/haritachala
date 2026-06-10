@@ -35,7 +35,7 @@ function SectionHeader() {
   return (
     <div
       ref={ref}
-      className="w-full py-16 md:py-20 text-center"
+      className="w-full py-10 md:py-20 text-center"
       style={{ backgroundColor: 'var(--foreground-blue)' }}
     >
       <p
@@ -92,18 +92,17 @@ export default function OurProductsSection() {
       <section
         ref={sectionRef}
         style={{ backgroundColor: 'var(--background-blue)' }}
-        className="w-full py-16 md:py-20 lg:py-24"
+        className="w-full py-10 md:py-20 lg:py-24"
       >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Top image strip */}
-          <div className="grid grid-cols-3 gap-3 md:gap-4 mb-10 md:mb-12">
+          <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6 md:mb-12">
             {productImagesTop.map((img, i) => (
               <div
                 key={img.src}
-                className="relative overflow-hidden rounded-xl shadow-md"
+                className="relative overflow-hidden rounded-xl shadow-md h-[120px] md:h-[200px]"
                 style={{
-                  height: '200px',
                   opacity: visible ? 1 : 0,
                   transform: visible ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.97)',
                   transition: `opacity 0.75s ease-out ${i * 0.15}s, transform 0.75s ease-out ${i * 0.15}s`,
@@ -122,7 +121,7 @@ export default function OurProductsSection() {
 
           {/* White card */}
           <div
-            className="bg-white rounded-2xl shadow-md px-8 py-8 md:px-10 md:py-10 mb-10 md:mb-12"
+            className="bg-white rounded-2xl shadow-md px-5 py-6 md:px-10 md:py-10 mb-6 md:mb-12"
             style={{
               opacity: visible ? 1 : 0,
               transform: visible ? 'translateY(0)' : 'translateY(24px)',
@@ -153,9 +152,8 @@ export default function OurProductsSection() {
             {productImagesBottom.map((img, i) => (
               <div
                 key={img.src}
-                className="relative overflow-hidden rounded-xl shadow-md"
+                className="relative overflow-hidden rounded-xl shadow-md h-[120px] md:h-[200px]"
                 style={{
-                  height: '200px',
                   opacity: visible ? 1 : 0,
                   transform: visible ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.97)',
                   transition: `opacity 0.75s ease-out ${0.5 + i * 0.15}s, transform 0.75s ease-out ${0.5 + i * 0.15}s`,

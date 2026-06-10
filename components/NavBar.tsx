@@ -44,10 +44,13 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
     <>
       {/* Main Navigation Bar */}
       <nav
-        className="w-full sticky top-0 z-50 bg-[#C4735A]"
+        className="w-full sticky top-0 z-50"
         style={{
           opacity: isVisible ? 1 : 0,
           transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+          backgroundColor: 'rgba(196, 115, 90, 0.55)',
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
           transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
         }}
       >

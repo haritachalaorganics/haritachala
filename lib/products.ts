@@ -10,13 +10,21 @@ export interface OrganicProduct {
   name: string;
   tamil?: string | null;
   telugu?: string | null;
-  category?: string;
+  category?: string;      // legacy single-category field, kept for backward compat
+  categories?: string[];  // multi-category support; takes precedence over category
   bestSeller?: boolean;
   variants?: ProductVariant[];
   ingredients?: string[];
   description?: string;
   images?: string[];
   stock: boolean;
+}
+
+/** Returns all categories for a product, normalising legacy single-category data. */
+export function getProductCategories(product: OrganicProduct): string[] {
+  if (product.categories && product.categories.length > 0) return product.categories;
+  if (product.category) return [product.category];
+  return [];
 }
 
 const LOCAL_FILE = join(process.cwd(), 'data', 'organics_products.json');

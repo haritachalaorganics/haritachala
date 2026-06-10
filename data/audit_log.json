@@ -1,5 +1,30 @@
 [
   {
+    "id": "cccbc34651a1f590",
+    "timestamp": "2026-06-10T04:25:05.060Z",
+    "type": "LOGIN_SUCCESS",
+    "username": "hcadmin",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "fcc92d180235e89b",
+    "timestamp": "2026-06-09T16:40:50.470Z",
+    "type": "LOGIN_SUCCESS",
+    "username": "hcadmin",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+  },
+  {
+    "id": "b43ac21bd91f9518",
+    "timestamp": "2026-06-09T16:40:36.881Z",
+    "type": "LOGIN_FAILURE",
+    "username": "hcadmin",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "reason": "Invalid credentials"
+  },
+  {
     "id": "ffe7455bba137677",
     "timestamp": "2026-06-08T20:32:06.949Z",
     "type": "LOGIN_SUCCESS",

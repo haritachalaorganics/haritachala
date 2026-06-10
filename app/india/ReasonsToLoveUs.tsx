@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import { FaLeaf, FaShieldAlt, FaHandPaper, FaSun, FaFemale } from 'react-icons/fa';
 
 interface PanelConfig {
   id: string;
@@ -20,10 +21,10 @@ const panels: PanelConfig[] = [
   {
     id: 'organic',
     number: '01',
-    label: 'PURE & NATURAL',
-    title: 'Grown Without Chemicals. Pure from the Source.',
+    label: 'CHEMICAL FREE',
+    title: '100% Organic and Sustainably Grown',
     description:
-      'From seed to harvest, every botanical is cultivated without synthetic pesticides, herbicides, or additives. Our blue pea flowers grow in rich, untreated soil — vibrant, pure, and brimming with natural goodness.',
+      'From seed to harvest, every botanical is grown without synthetic pesticides, herbicides, or chemical additives. Nurtured in living, untreated soil, our products are vibrant, pure, and rich in natural vitality.',
     images: [
       '/images/pages/india/general_images/staff_bluepea_1.JPG',
       '/images/pages/india/general_images/staff_bluepea_2.JPG',
@@ -37,10 +38,10 @@ const panels: PanelConfig[] = [
   {
     id: 'handpicked',
     number: '02',
-    label: 'HANDCRAFTED',
-    title: 'Every Petal, Hand-Picked with Love.',
+    label: 'HANDPICKED',
+    title: 'Every Petal, Hand-Picked with Care',
     description:
-      'No machines, no shortcuts. Every hibiscus flower, herb, and botanical is gently hand-harvested at peak freshness by our dedicated team. This devotion ensures only the finest quality reaches you.',
+      'Each flower, herb, and botanical is carefully harvested by hand at the peak of freshness. This attentive process preserves quality, potency, and the natural beauty of every harvest.',
     images: [
       '/images/pages/india/general_images/staff_hib_1.JPG',
       '/images/pages/india/general_images/staff_hib_2.JPG',
@@ -54,10 +55,10 @@ const panels: PanelConfig[] = [
   {
     id: 'sundried',
     number: '03',
-    label: 'SUN-DRIED',
-    title: 'Sun-Kissed. Naturally Preserved.',
+    label: 'NATURALLY PRESERVED',
+    title: 'Sun-Dried the Traditional Way',
     description:
-      "Harnessing the generous Indian sun, we slowly sun-dry every product to lock in its nutrients, fragrance, and flavor. No artificial heat, no preservatives — just pure, time-honored drying passed down through generations.",
+      'Using the warmth of the natural sun, we gently dry our botanicals to preserve their nutrients, aroma, color, and flavor. Free from artificial heat and preservatives, this time-honored method honors both nature and tradition.',
     images: [
       '/images/pages/india/general_images/staff_drying_1.JPG',
       '/images/pages/india/general_images/staff_drying_2.JPG',
@@ -162,7 +163,7 @@ function ParallaxTile({
 }
 
 /* ─── Single panel ──────────────────────────────────────────────────────── */
-function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
+function Panel({ panel, index, onShopNow }: { panel: PanelConfig; index: number; onShopNow?: () => void }) {
   const [isVisible, setIsVisible] = useState(false);
   const panelRef = useRef<HTMLElement>(null);
   const isReversed = index % 2 !== 0;
@@ -194,8 +195,8 @@ function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
         transition: 'opacity 0.85s ease-out 0.05s, transform 0.85s ease-out 0.05s',
       }}
     >
-      {/* large tile */}
-      <div className="aspect-[4/3]">
+      {/* large tile — video aspect on mobile, 4/3 on desktop */}
+      <div className="aspect-video md:aspect-[4/3]">
         <ParallaxTile
           src={img1}
           alt={panel.title}
@@ -204,8 +205,8 @@ function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
           isVisible={isVisible}
         />
       </div>
-      {/* two smaller tiles */}
-      <div className="flex gap-2">
+      {/* two smaller tiles — hidden on mobile */}
+      <div className="hidden md:flex gap-2">
         <div className="flex-1 aspect-[4/3]">
           <ParallaxTile
             src={img2}
@@ -244,7 +245,7 @@ function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
       >
         {/* watermark number */}
         <span
-          className="afacad-regular absolute bottom-0 right-4 select-none pointer-events-none leading-none"
+          className="afacad-regular absolute top-0 right-4 select-none pointer-events-none leading-none"
           style={{
             fontSize: '9rem',
             color: panel.cardAccentColor,
@@ -254,7 +255,7 @@ function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
           {panel.number}
         </span>
 
-        <div className={`relative z-10 p-8 md:p-10 lg:p-12 ${isReversed ? 'text-center lg:text-right' : 'text-center lg:text-left'}`}>
+        <div className={`relative z-10 p-6 md:p-10 lg:p-12 ${isReversed ? 'text-center lg:text-right' : 'text-center lg:text-left'}`}>
           <p
             className="rubik-regular text-[10px] tracking-[0.28em] uppercase mb-4 font-bold"
             style={{ color: panel.labelColor }}
@@ -268,11 +269,26 @@ function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
             {panel.title}
           </h3>
           <p
-            className="rubik-light text-base md:text-lg leading-relaxed"
+            className="rubik-light text-base md:text-lg leading-relaxed mb-8"
             style={{ color: panel.headingColor, opacity: 0.8 }}
           >
             {panel.description}
           </p>
+          {onShopNow && (
+            <div className={`flex ${isReversed ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
+              <button
+                type="button"
+                onClick={onShopNow}
+                className="inline-flex items-center gap-2.5 px-8 py-3 rounded-full rubik-regular uppercase tracking-widest text-white text-sm transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 shadow-md"
+                style={{ backgroundColor: panel.cardAccentColor }}
+              >
+                Shop Now
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -280,7 +296,7 @@ function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
 
   return (
     <article ref={panelRef} style={{ backgroundColor: panel.sectionBg }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 lg:py-24">
         <div
           className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-12 items-center`}
         >
@@ -292,7 +308,16 @@ function Panel({ panel, index }: { panel: PanelConfig; index: number }) {
   );
 }
 
+
 /* ─── Section header ────────────────────────────────────────────────────── */
+const headerFeatures = [
+  { Icon: FaLeaf, label: 'Organic' },
+  { Icon: FaShieldAlt, label: 'Chemical Free' },
+  { Icon: FaHandPaper, label: 'Hand Picked' },
+  { Icon: FaSun, label: 'Sun-Dried' },
+  { Icon: FaFemale, label: 'Women Empowered' },
+];
+
 function SectionHeader() {
   const [visible, setVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -307,7 +332,7 @@ function SectionHeader() {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.3 }
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -316,7 +341,7 @@ function SectionHeader() {
   return (
     <div
       ref={ref}
-      className="w-full py-16 md:py-20 text-center"
+      className="w-full py-8 md:py-10 text-center"
       style={{ backgroundColor: 'var(--foreground-pink)' }}
     >
       <p
@@ -348,17 +373,44 @@ function SectionHeader() {
       >
         Everything we create is rooted in love, nature, and community.
       </p>
+
+      <div className="flex flex-nowrap justify-center gap-2 sm:gap-6 md:gap-10 mt-8 px-2 sm:px-6">
+        {headerFeatures.map(({ Icon, label }, i) => (
+          <div
+            key={label}
+            className="flex flex-col items-center w-[52px] sm:w-auto"
+            style={{
+              opacity: visible ? 1 : 0,
+              transform: visible ? 'translateY(0)' : 'translateY(20px)',
+              transition: `opacity 0.6s ease-out ${0.4 + i * 0.12}s, transform 0.6s ease-out ${0.4 + i * 0.12}s`,
+            }}
+          >
+            <div
+              className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center mb-2 sm:mb-3"
+              style={{ boxShadow: '0 4px 20px rgba(196, 115, 90, 0.25)' }}
+            >
+              <Icon
+                className="text-base sm:text-2xl md:text-3xl"
+                style={{ color: 'var(--foreground-pink)' }}
+              />
+            </div>
+            <p className="rubik-regular text-[8px] sm:text-xs md:text-sm text-white/90 text-center leading-tight">
+              {label}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
 /* ─── Root export ───────────────────────────────────────────────────────── */
-export default function ReasonsToLoveUs() {
+export default function ReasonsToLoveUs({ onShopNow }: { onShopNow?: () => void }) {
   return (
     <>
       <SectionHeader />
       {panels.map((panel, index) => (
-        <Panel key={panel.id} panel={panel} index={index} />
+        <Panel key={panel.id} panel={panel} index={index} onShopNow={onShopNow} />
       ))}
     </>
   );

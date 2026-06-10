@@ -17,6 +17,7 @@ interface OrganicProduct {
   tamil?: string;
   telugu?: string;
   category?: string;
+  categories?: string[];
   bestSeller?: boolean;
   stock?: boolean;
   variants?: ProductVariant[];
@@ -339,7 +340,11 @@ function CategoryCarousel({ category, products, onAddToCart }: CategoryCarouselP
               key={`${category}-${product.name}-${productIndex}`}
               productKey={`${category}-${product.name}-${productIndex}`}
               product={product}
-              isCartEnabled={!isPournamiCategory && product.stock !== false}
+              isCartEnabled={
+                !isPournamiCategory &&
+                !((product.categories && product.categories.length > 0 ? product.categories : product.category ? [product.category] : []).some(c => c.toLowerCase().includes('pournami'))) &&
+                product.stock !== false
+              }
               onAddToCart={onAddToCart}
             />
           ))}

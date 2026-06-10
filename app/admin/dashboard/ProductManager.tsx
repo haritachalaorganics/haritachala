@@ -17,11 +17,17 @@ const CATEGORIES = [
   'OTHER',
 ];
 
+function getProductCategories(p: OrganicProduct): string[] {
+  if (p.categories && p.categories.length > 0) return p.categories;
+  if (p.category) return [p.category];
+  return [];
+}
+
 const EMPTY_PRODUCT: OrganicProduct = {
   name: '',
   tamil: '',
   telugu: '',
-  category: 'HERBAL POWDERS',
+  categories: ['HERBAL POWDERS'],
   bestSeller: false,
   variants: [{ weight: '', price: 0 }],
   ingredients: [],
@@ -55,7 +61,7 @@ export default function ProductManager({ initialProducts }: Props) {
     return products.filter((p) => {
       const q = search.toLowerCase();
       const nameMatch = p.name.toLowerCase().includes(q);
-      const catMatch = filterCategory === 'ALL' || p.category === filterCategory;
+      const catMatch = filterCategory === 'ALL' || getProductCategories(p).includes(filterCategory);
       const stockMatch =
         filterStock === 'ALL' ||
         (filterStock === 'IN' && p.stock) ||
@@ -122,6 +128,7 @@ export default function ProductManager({ initialProducts }: Props) {
       ...p,
       ingredients: Array.isArray(p.ingredients) ? [...p.ingredients] : [],
       images: Array.isArray(p.images) ? [...p.images] : [],
+      categories: getProductCategories(p),
     });
     setIngredientInput('');
     setUploadError(null);
@@ -166,6 +173,8 @@ export default function ProductManager({ initialProducts }: Props) {
       name: form.name.trim(),
       tamil: form.tamil?.trim() || null,
       telugu: form.telugu?.trim() || null,
+      category: undefined,  // migrate to categories array going forward
+      categories: (form.categories ?? []).filter(Boolean),
       description: form.description?.trim() || undefined,
       variants: (form.variants ?? []).filter((v) => v.weight.trim()),
       ingredients: (form.ingredients ?? []).filter(Boolean),
@@ -342,9 +351,16 @@ export default function ProductManager({ initialProducts }: Props) {
                         </div>
                       </td>
                       <td className="px-4 py-3 hidden sm:table-cell">
-                        <span className="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded-full">
-                          {product.category ?? '—'}
-                        </span>
+                        <div className="flex flex-wrap gap-1">
+                          {getProductCategories(product).length > 0
+                            ? getProductCategories(product).map((c) => (
+                                <span key={c} className="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full">
+                                  {c}
+                                </span>
+                              ))
+                            : <span className="text-xs text-stone-300">—</span>
+                          }
+                        </div>
                       </td>
                       <td className="px-4 py-3 hidden md:table-cell text-stone-500 text-xs">
                         {(product.variants ?? []).map((v) => `${v.weight} ₹${v.price}`).join(', ') || '—'}
@@ -481,16 +497,36 @@ export default function ProductManager({ initialProducts }: Props) {
                 </Field>
               </div>
 
-              {/* Category */}
-              <Field label="Category">
-                <select
-                  value={form.category ?? ''}
-                  onChange={(e) => setForm((f) => ({ ...f, category: e.target.value }))}
-                  className={INPUT}
-                >
-                  {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
-                </select>
-              </Field>
+              {/* Categories */}
+              <div>
+                <label className="block text-sm font-medium text-stone-700 mb-2">
+                  Categories <span className="font-normal text-stone-400">(select all that apply)</span>
+                </label>
+                <div className="grid grid-cols-2 gap-1.5">
+                  {CATEGORIES.map((c) => {
+                    const checked = (form.categories ?? []).includes(c);
+                    return (
+                      <label key={c} className="flex items-center gap-2 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={checked}
+                          onChange={(e) => {
+                            const current = form.categories ?? [];
+                            setForm((f) => ({
+                              ...f,
+                              categories: e.target.checked
+                                ? [...current, c]
+                                : current.filter((x) => x !== c),
+                            }));
+                          }}
+                          className="w-4 h-4 accent-green-700 flex-shrink-0"
+                        />
+                        <span className="text-sm text-stone-700">{c}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
 
               {/* Checkboxes */}
               <div className="flex gap-6">

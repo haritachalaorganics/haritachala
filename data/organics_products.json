@@ -71,7 +71,10 @@
     "description": "Prana Daily Elixir Malt Powder is a nutritious blend of sundried and sprouted grains and spices, designed to support overall health and wellness. This blend creates a wholesome and energizing drink and is perfect for kickstart to your morning.",
     "stock": true,
     "images": [
-      "/images/pages/india/product_images/prana_daily_elixir_malt_powder/elixir_1.JPG"
+      "/images/pages/india/product_images/prana_daily_elixir_malt_powder/elixir_1.JPG",
+      "/images/pages/india/product_images/prana_daily_elixir_malt_powder/NYR04351.JPG",
+      "/images/pages/india/product_images/prana_daily_elixir_malt_powder/NYR04428.JPG",
+      "/images/pages/india/product_images/prana_daily_elixir_malt_powder/NYR04228.JPG"
     ]
   },
   {
@@ -316,7 +319,8 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/blue_pea_tea/NYR04642.JPG"
-    ]
+    ],
+    "description": "A stunning vivid-blue brew made from butterfly pea flowers — naturally caffeine-free, rich in antioxidants, and known for its vibrant colour that shifts with a squeeze of lemon."
   },
   {
     "name": "Lemongrass Tea",
@@ -333,7 +337,8 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/lemongrass_tea/NYR05017.JPG"
-    ]
+    ],
+    "description": "Bright, citrusy, and calming — a light herbal infusion that soothes digestion, eases bloating, and gently refreshes the mind and body."
   },
   {
     "name": "Astmaaku Powder",
@@ -639,7 +644,8 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/punarnava_tea/NYR05075.JPG"
-    ]
+    ],
+    "description": "A revered Ayurvedic herb whose name means \"one that renews\" — known for its rejuvenating, purifying, and liver-supportive properties, and cherished for reducing water retention."
   },
   {
     "name": "Balloon Vine / Mudagatha Powder",
@@ -1828,7 +1834,8 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/blue_pea_tea/NYR04642.JPG"
-    ]
+    ],
+    "description": "A stunning vivid-blue brew made from butterfly pea flowers — naturally caffeine-free, rich in antioxidants, and known for its vibrant colour that shifts with a squeeze of lemon."
   },
   {
     "name": "Lemongrass Tea",
@@ -1846,7 +1853,8 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/lemongrass_tea/NYR05017.JPG"
-    ]
+    ],
+    "description": "Bright, citrusy, and calming — a light herbal infusion that soothes digestion, eases bloating, and gently refreshes the mind and body."
   },
   {
     "name": "Grass/Garika Tea",
@@ -1864,7 +1872,8 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/grassgarika_tea/NYR05059.JPG"
-    ]
+    ],
+    "description": "Earthy, clean, and grounding — a simple tea brewed from tender green grasses, celebrated in traditional medicine for its cooling and detoxifying properties."
   },
   {
     "name": "Roselle Tea",
@@ -1882,7 +1891,8 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/dried_rosella_flowers/NYR04775.JPG"
-    ]
+    ],
+    "description": "Delicately tangy and deeply coloured — a floral infusion with a softer, more nuanced edge than hibiscus, prized for its Vitamin C content and gentle digestive support."
   },
   {
     "name": "Hibiscus Tea",
@@ -1899,8 +1909,9 @@
     "stock": true,
     "ingredients": [],
     "images": [
-      "/images/pages/india/product_images/dried_hibiscus_flowers/NYR02752.JPG"
-    ]
+      "/images/pages/india/product_images/hibiscus_tea/NYR04710.JPG"
+    ],
+    "description": "A deep ruby infusion bursting with Vitamin C and tartness — vibrant in flavour and colour, traditionally enjoyed for heart health and as a natural cooling drink."
   },
   {
     "name": "Punarnava Tea",
@@ -1918,6 +1929,21 @@
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/punarnava_tea/NYR05075.JPG"
-    ]
+    ],
+    "description": "A revered Ayurvedic herb whose name means \"one that renews\" — known for its rejuvenating, purifying, and liver-supportive properties, and cherished for reducing water retention."
+  },
+  {
+    "name": "Mulberry Tea",
+    "tamil": null,
+    "telugu": null,
+    "category": "TEA COLLECTION",
+    "bestSeller": false,
+    "variants": [],
+    "ingredients": [],
+    "description": "A naturally sweet herbal tea made from dried mulberries, offering a fruity flavor and a rich source of antioxidants and beneficial plant compounds.",
+    "images": [
+      "/images/pages/india/product_images/mulberry_tea/NYR04842.JPG"
+    ],
+    "stock": true
   }
 ]
