@@ -48,9 +48,9 @@ export default function NavBar({ showOrderNow = true }: NavBarProps) {
         style={{
           opacity: isVisible ? 1 : 0,
           transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
-          backgroundColor: 'rgba(196, 115, 90, 0.55)',
-          backdropFilter: 'blur(10px)',
-          WebkitBackdropFilter: 'blur(10px)',
+          backgroundColor: 'rgba(196, 115, 90, 0.30)',
+          backdropFilter: 'blur(8px)',
+          WebkitBackdropFilter: 'blur(8px)',
           transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
         }}
       >

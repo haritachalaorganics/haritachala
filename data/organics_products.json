@@ -15,7 +15,7 @@
         "price": 100
       }
     ],
-    "stock": true,
+    "stock": false,
     "ingredients": [],
     "images": [
       "/images/pages/india/product_images/amla_powder/NYR03685.JPG"

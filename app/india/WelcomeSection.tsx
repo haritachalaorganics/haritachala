@@ -30,7 +30,7 @@ export default function WelcomeSection() {
               style={{ color: 'var(--foreground-pink)' }}
             >
               This page lists Haritachala Organics products currently available in Tiruvannamalai for
-              pickup at Haritachala. We do not offer delivery or shipping at this time.
+              pickup at Haritachala and for national shipping in India. 
             </p>
 
             <p
