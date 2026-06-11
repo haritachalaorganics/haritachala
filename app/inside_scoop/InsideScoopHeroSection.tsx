@@ -21,8 +21,6 @@ export default function InsideScoopHeroSection() {
         </video>
       </div>
 
-      {/* White Gradient Overlay for Navbar */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/85 via-white/50 to-transparent pointer-events-none z-10" />
 
       {/* Hero Text Content - Bottom of hero section */}
       <div className="relative z-20 h-full flex items-end justify-center px-4 pb-8 md:pb-12 lg:pb-16">

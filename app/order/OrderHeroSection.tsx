@@ -9,8 +9,6 @@ export default function OrderHeroSection() {
       className="relative w-full pt-24 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24"
       style={{ backgroundColor: 'var(--background-blue)' }}
     >
-      {/* White Gradient Overlay for NavBar */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/90 to-transparent z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
         <SlideUp>
