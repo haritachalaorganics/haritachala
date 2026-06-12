@@ -26,7 +26,7 @@ interface OrganicProduct {
   category?: string;
   categories?: string[];
   bestSeller?: boolean;
-  stock?: boolean;
+  stock: boolean;
   variants?: ProductVariant[];
   ingredients?: string | string[];
   description?: string;
