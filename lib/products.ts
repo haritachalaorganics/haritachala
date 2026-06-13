@@ -67,6 +67,7 @@ export async function saveProducts(
         access: 'public',
         contentType: 'application/json',
         addRandomSuffix: false,
+        allowOverwrite: true,
       });
       return { success: true, message: 'Saved to blob storage.' };
     } catch (e) {
