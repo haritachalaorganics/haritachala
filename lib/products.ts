@@ -71,8 +71,9 @@ export async function saveProducts(
       });
       return { success: true, message: 'Saved to blob storage.' };
     } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
       console.error('[products] blob write failed:', e);
-      return { success: false, message: 'Failed to save to blob storage.' };
+      return { success: false, message: `Blob error: ${msg}` };
     }
   }
 
