@@ -66,8 +66,6 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
 
   // Popup: shows "How to Order" after shop is opened
   const [showHowToOrder, setShowHowToOrder] = useState(false);
-  // Popup: appears when Our Products section scrolls into view
-  const [ourProductsPopupVisible, setOurProductsPopupVisible] = useState(false);
 
   const [wantsShipping, setWantsShipping] = useState(false);
   const [shippingAddress, setShippingAddress] = useState('');
@@ -187,27 +185,9 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   }, []);
 
   const handleShopNow = useCallback(() => {
+    setIsCartOpen(false);
     setIsShopOpen(true);
-    setOurProductsPopupVisible(false);
-    // Slight delay so the modal has time to open before the tip appears
     setTimeout(() => setShowHowToOrder(true), 600);
-  }, []);
-
-  // Our Products popup — fires once when the section scrolls into view
-  useEffect(() => {
-    const el = document.getElementById('our-products-section');
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setOurProductsPopupVisible(true);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.2 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
   }, []);
 
   // ESC closes whichever modal is foremost
@@ -555,40 +535,6 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
         </div>
       )}
 
-      {/* ── Popup: Our Products section → "Shop Our Products" ── */}
-      {ourProductsPopupVisible && (
-        <div
-          className="fixed bottom-6 left-6 z-40 w-72 bg-white rounded-2xl shadow-xl border p-5"
-          style={{ borderColor: 'var(--foreground-pink)' }}
-        >
-          <div className="flex items-start justify-between gap-3 mb-3">
-            <h4 className="afacad-regular text-2xl leading-tight" style={{ color: 'var(--foreground-pink)' }}>
-              Shop Our Products
-            </h4>
-            <button
-              type="button"
-              onClick={() => setOurProductsPopupVisible(false)}
-              className="flex-shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full border transition-all hover:opacity-70"
-              style={{ borderColor: 'var(--foreground-pink)', color: 'var(--foreground-pink)' }}
-              aria-label="Dismiss"
-            >
-              <FaTimes size={11} />
-            </button>
-          </div>
-          <p className="rubik-light text-sm leading-relaxed mb-4" style={{ color: 'var(--foreground-pink)' }}>
-            Browse and order from our full collection of organically grown products.
-          </p>
-          <button
-            type="button"
-            onClick={handleShopNow}
-            className="w-full rubik-regular uppercase tracking-widest text-sm px-4 py-2.5 rounded-full text-white transition-all hover:opacity-90 shadow-md"
-            style={{ backgroundColor: 'var(--foreground-pink)' }}
-          >
-            Shop Now
-          </button>
-        </div>
-      )}
-
       {/* ── Floating cart button ── */}
       <button
         type="button"
@@ -646,9 +592,22 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
             </p>
 
             {cartItems.length === 0 ? (
-              <p className="rubik-regular text-base md:text-lg" style={{ color: 'var(--foreground-purple)' }}>
-                Your cart is empty.
-              </p>
+              <div className="text-center py-6">
+                <p className="rubik-regular text-base md:text-lg mb-6" style={{ color: 'var(--foreground-purple)' }}>
+                  Your cart is empty.
+                </p>
+                <button
+                  type="button"
+                  onClick={handleShopNow}
+                  className="inline-flex items-center gap-3 px-8 py-3 rounded-full rubik-regular uppercase tracking-widest text-white text-sm transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 shadow-md"
+                  style={{ backgroundColor: 'var(--foreground-purple)' }}
+                >
+                  Shop Now
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+              </div>
             ) : (
               <>
                 <div className="space-y-3 md:space-y-4">
