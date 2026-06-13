@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Discover handcrafted organic foods from Haritachala Organics. We offer artisanal baked goods, preserves, and organic products made with care in California and India.",
     images: [
       {
-        url: "/images/pages/home/homepage.herosection.img.png",
+        url: "/images/logo/ho.logo.jpg",
         width: 1200,
         height: 630,
         alt: "Haritachala Organics - Handcrafted Organic Foods",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Haritachala Organics - Artisanal Organic Foods",
     description: "Discover handcrafted organic foods from Haritachala Organics. We offer artisanal baked goods, preserves, and organic products made with care.",
-    images: ["/images/pages/home/homepage.herosection.img.png"],
+    images: ["/images/logo/ho.logo.jpg"],
   },
   alternates: {
     canonical: "/",
