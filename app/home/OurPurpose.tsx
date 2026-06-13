@@ -33,6 +33,7 @@ export default function OurPurpose() {
                 alt="Haritachala Sainathuni Dhyana Mandiram"
                 fill
                 className="object-cover rounded-lg"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </ScaleIn>
@@ -62,6 +63,7 @@ export default function OurPurpose() {
                       alt="Haritachala Sainathuni Dhyana Mandiram"
                       fill
                       className="object-cover"
+                      sizes="192px"
                     />
                   </div>
                   {/* Image Caption */}

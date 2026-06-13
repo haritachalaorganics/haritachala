@@ -13,6 +13,7 @@ export default function FAQHeroSection() {
           fill
           className="object-cover object-top"
           priority
+          sizes="100vw"
         />
       </div>
 

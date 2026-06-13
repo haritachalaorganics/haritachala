@@ -15,6 +15,8 @@ export default function InsideScoopHeroSection() {
           loop
           muted
           playsInline
+          preload="none"
+          poster="/images/pages/inside_scoop/inside_scoop.heroSection.png"
           className="w-full h-full object-cover object-top"
         >
           <source src="/images/pages/inside_scoop/insideScoop.heroSectionVideo.mp4" type="video/mp4" />

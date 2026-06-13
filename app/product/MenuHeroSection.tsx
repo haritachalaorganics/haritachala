@@ -31,6 +31,8 @@ export default function MenuHeroSection() {
           autoPlay
           muted
           playsInline
+          preload="none"
+          poster="/images/pages/our_products/productDetail.heroSection.JPG"
           className="w-full h-full object-cover object-center"
         >
           <source src="/images/pages/our_products/ourProducts.heroSectionVideo.mp4" type="video/mp4" />

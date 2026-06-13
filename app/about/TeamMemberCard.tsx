@@ -24,6 +24,7 @@ export default function TeamMemberCard({
               alt={name}
               fill
               className="object-cover object-top"
+              sizes="(max-width: 768px) 340px, 400px"
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-[#F5F5F0]">

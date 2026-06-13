@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import ScrollButton from '@/components/ScrollButton';
 
 interface ProductVariant {
@@ -113,13 +114,14 @@ function ProductCard({ product, productKey, isCartEnabled, onAddToCart }: Produc
       key={productKey}
       className="flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] min-h-[360px] bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/30 overflow-hidden flex flex-col"
     >
-      <div className="w-full h-48 flex-shrink-0 overflow-hidden bg-stone-100">
+      <div className="relative w-full h-48 flex-shrink-0 overflow-hidden bg-stone-100">
         {firstImage ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={firstImage}
             alt={product.name}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 300px, (max-width: 768px) 340px, 360px"
             onError={() => setImgError(true)}
           />
         ) : (

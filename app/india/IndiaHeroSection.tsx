@@ -11,6 +11,8 @@ export default function IndiaHeroSection() {
         loop
         muted
         playsInline
+        preload="none"
+        poster="/images/pages/india/general_images/products_1.JPG"
         className="absolute inset-0 w-full h-full object-cover object-center"
       >
         <source src="/images/pages/india/hero_section_india_slideshow.mp4" type="video/mp4" />

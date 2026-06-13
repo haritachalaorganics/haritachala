@@ -39,6 +39,7 @@ export default function ProductCard({
             alt={name}
             fill
             className="object-cover"
+            sizes="(max-width: 640px) 320px, (max-width: 1024px) 384px, 320px"
             onError={(e) => {
               e.currentTarget.src = "https://placehold.co/400x400/png";
             }}

@@ -35,6 +35,7 @@ export default function OurInspiration() {
                   alt="Saibaba of Shirdi"
                   fill
                   className="object-cover object-top rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
@@ -64,6 +65,7 @@ export default function OurInspiration() {
                   alt="Our Inspiration"
                   fill
                   className="object-cover object-top rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
@@ -97,6 +99,7 @@ export default function OurInspiration() {
                     alt="Ammagaru"
                     fill
                     className="object-cover object-top rounded-lg"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
               </div>

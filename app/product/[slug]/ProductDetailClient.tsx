@@ -73,7 +73,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
             fill
             className="object-cover"
             priority
-            unoptimized
+            sizes="100vw"
           />
           {/* Gradient Overlay for better text visibility */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/40"></div>
@@ -100,7 +100,7 @@ export default function ProductDetailClient({ product, bgColor, textColor, butto
                     alt={`${product.name} - Image ${currentImageIndex + 1}`}
                     fill
                     className="object-cover"
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   
                   {/* Carousel Controls - Only show if more than 1 image */}

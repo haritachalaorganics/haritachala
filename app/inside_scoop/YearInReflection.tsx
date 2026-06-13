@@ -14,6 +14,7 @@ export default function BehindTheScenes3() {
                 alt="Year Reflection"
                 fill
                 className="object-contain rounded-lg"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
 

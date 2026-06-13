@@ -16,6 +16,8 @@ export default function HeroSection() {
           loop
           muted
           playsInline
+          preload="none"
+          poster="/images/pages/home/haritachala_herosection.png"
           className="w-full h-full object-cover object-center"
         >
           <source src="/images/pages/home/hero_section_video.mp4" type="video/mp4" />

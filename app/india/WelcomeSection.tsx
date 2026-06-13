@@ -56,6 +56,8 @@ export default function WelcomeSection() {
               loop
               muted
               playsInline
+              preload="none"
+              poster="/images/pages/india/general_images/products_1.JPG"
               className="block w-full h-auto"
             >
               <source src="/images/pages/india/welcomeToHaritachala.mp4" type="video/mp4" />

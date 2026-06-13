@@ -69,6 +69,7 @@ export default function BehindTheScenes1() {
                 alt="Behind The Scenes"
                 fill
                 className="object-contain rounded-lg"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
 

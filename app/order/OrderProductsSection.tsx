@@ -79,6 +79,7 @@ export default function OrderProductsSection() {
                     alt={currentProduct.name}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     onError={(e) => {
                       e.currentTarget.src = 'https://placehold.co/400x400/png';
                     }}

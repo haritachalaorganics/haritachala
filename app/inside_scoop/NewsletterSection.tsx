@@ -14,6 +14,7 @@ export default function NewsletterSection() {
               alt="Stay Connected"
               fill
               className="object-cover rounded-lg"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
 

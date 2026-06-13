@@ -156,6 +156,7 @@ export default function LearnMoreSection() {
                         alt={article.title}
                         fill
                         className="object-cover"
+                        sizes="(max-width: 768px) 280px, 300px"
                       />
                     </div>
                     <div className="px-6 pb-6 flex flex-col justify-between flex-grow">

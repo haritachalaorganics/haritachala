@@ -28,6 +28,7 @@ export default function HowWeWork() {
               alt="How We Work"
               fill
               className="object-contain rounded-lg"
+              sizes="100vw"
             />
           </div>
         </ScaleIn>
@@ -74,6 +75,7 @@ export default function HowWeWork() {
                 alt="How We Work"
                 fill
                 className="object-contain rounded-lg"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </ScaleIn>
