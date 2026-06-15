@@ -205,8 +205,8 @@ function Panel({ panel, index, onShopNow }: { panel: PanelConfig; index: number;
           isVisible={isVisible}
         />
       </div>
-      {/* two smaller tiles — hidden on mobile */}
-      <div className="hidden md:flex gap-2">
+      {/* two smaller tiles */}
+      <div className="flex gap-2">
         <div className="flex-1 aspect-[4/3]">
           <ParallaxTile
             src={img2}

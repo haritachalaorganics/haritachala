@@ -130,14 +130,14 @@ export default function PranaElixir() {
 
         {/* Image gallery */}
         <div
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4"
+          className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? 'translateY(0)' : 'translateY(24px)',
             transition: 'opacity 0.7s ease-out 0.45s, transform 0.7s ease-out 0.45s',
           }}
         >
-          {images.map((src, i) => (
+          {images.slice(0, 4).map((src, i) => (
             <div
               key={src}
               className="relative aspect-square rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
