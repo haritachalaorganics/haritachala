@@ -105,6 +105,7 @@ export default function NewProductsAlert() {
                     ref={videoRef}
                     className="w-full h-full object-cover"
                     controls
+                    loop
                     playsInline
                     preload="metadata"
                     muted={isMuted}

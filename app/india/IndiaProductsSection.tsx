@@ -9,6 +9,7 @@ import ProductGrid from './ProductGrid';
 import ReasonsToLoveUs from './ReasonsToLoveUs';
 import TeaCollection from './TeaCollection';
 import PranaElixir from './PranaElixir';
+import PournamiSales from './PournamiSales';
 
 interface ProductVariant {
   weight: string;
@@ -60,6 +61,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
     (category || '').trim().toLowerCase() === 'prepared products';
 
   const [searchTerm, setSearchTerm] = useState('');
+  const [showOnlyInStock, setShowOnlyInStock] = useState(true);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isShopOpen, setIsShopOpen] = useState(false);
@@ -246,7 +248,11 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
   // Filter out Tea Collection everywhere
   const filteredProducts = useMemo(() => {
     const query = searchTerm.trim().toLowerCase();
-    const base = products.filter((p) => !isTeaCollection(p));
+    const base = products.filter((p) => {
+      if (isTeaCollection(p)) return false;
+      if (showOnlyInStock && p.stock === false) return false;
+      return true;
+    });
     if (!query) return base;
     return base.filter((p) => {
       const variantText = (p.variants || []).map((v) => `${v.weight} ${v.price}`).join(' ').toLowerCase();
@@ -264,7 +270,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
         variantText.includes(query)
       );
     });
-  }, [products, searchTerm]);
+  }, [products, searchTerm, showOnlyInStock]);
 
   const totalProductCount = useMemo(
     () => products.filter((p) => !isTeaCollection(p)).length,
@@ -309,6 +315,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
         <video
           ref={firstVideoRef}
           muted
+          loop
           playsInline
           className="block w-full h-[45vh] md:h-[70vh] object-cover"
           preload="metadata"
@@ -390,10 +397,13 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
         <OurProductsSection />
       </div>
 
-      {/* 5. Tea Collection */}
+      {/* 5. Pournami Sales */}
+      <PournamiSales />
+
+      {/* 6. Tea Collection */}
       <TeaCollection products={products} />
 
-      {/* 6. Prana Elixir */}
+      {/* 7. Prana Elixir */}
       <PranaElixir />
 
       {/* 8. Second Video — hero_section_india_slideshow.mp4 */}
@@ -401,6 +411,7 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
         <video
           ref={secondVideoRef}
           muted
+          loop
           playsInline
           className="block w-full h-[45vh] md:h-[70vh] object-cover"
           preload="metadata"
@@ -445,12 +456,31 @@ export default function IndiaProductsSection({ products }: IndiaProductsSectionP
                 >
                   Products Available in India
                 </h2>
-                <p
-                  className="rubik-regular text-xs mt-0.5"
-                  style={{ color: 'var(--foreground-pink)', opacity: 0.65 }}
-                >
-                  {filteredProducts.length} products
-                </p>
+                <div className="flex items-center gap-2 mt-0.5 flex-wrap">
+                  <p
+                    className="rubik-regular text-xs"
+                    style={{ color: 'var(--foreground-pink)', opacity: 0.65 }}
+                  >
+                    {filteredProducts.length} products
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setShowOnlyInStock((prev) => !prev)}
+                    className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full rubik-regular text-xs border transition-all duration-200 hover:opacity-80"
+                    style={{
+                      borderColor: 'var(--foreground-pink)',
+                      backgroundColor: showOnlyInStock ? 'var(--foreground-pink)' : 'transparent',
+                      color: showOnlyInStock ? 'white' : 'var(--foreground-pink)',
+                    }}
+                    aria-pressed={showOnlyInStock}
+                  >
+                    <span
+                      className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: showOnlyInStock ? '#86efac' : 'rgba(196,115,90,0.4)' }}
+                    />
+                    In Stock Only
+                  </button>
+                </div>
               </div>
 
               <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">

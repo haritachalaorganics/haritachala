@@ -29,6 +29,7 @@ export default function MenuHeroSection() {
         <video
           ref={videoRef}
           autoPlay
+          loop
           muted
           playsInline
           preload="none"
