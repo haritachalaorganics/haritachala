@@ -7,21 +7,20 @@
       "tagline": "Loaf at first bite",
       "images": ["/images/bakery_products/banana_bread.jpeg", "/images/product_detailed/classic_banana_bread/bananabread1.jpg", "/images/product_detailed/classic_banana_bread/bananabread2.jpg", "/images/product_detailed/classic_banana_bread/bananabread3.JPG", "/images/product_detailed/classic_banana_bread/bananabread4.JPG", "/images/product_detailed/classic_banana_bread/bananabread6.jpg"],
       "variants": [
-        { "size": "2.65 lb", "price": "$14.77"}
+        { "size": "Full Loaf", "price": "$16.00"},
+        { "size": "Slice", "price": "$3.00"}
       ],
       "description": "Enjoy the naturally sweet, wholesome goodness of our fresh, organic, homemade banana bread.",
       "ingredients": [
-        "Organic all purpose flour",
-        "Baking soda",
-        "Himalayan pink salt",
-        "Irish butter",
-        "Organic cane sugar",
-        "Organic pasteurized eggs",
-        "Organic bananas",
-        "Organic grassfed A2 milk",
-        "Vanilla extract",
-        "Walnuts",
-        "Zero preservatives"
+        "Organic All Purpose Flour",
+        "Baking Soda",
+        "Pink Salt",
+        "Organic Butter",
+        "Organic Sugar",
+        "Organic Eggs",
+        "Organic Bananas",
+        "Vanilla Extract",
+        "Walnuts"
       ],
       "guidelines": ["Consume within one week."],
       "testimonial": ["\"It's the best banana bread I've ever had in my entire life! I'd fly to Haritachala just to eat this bread!\"", "\"Both the Organic Banana Walnut Bread and Organic Almond Bisticks have excellent taste, quantity, and quality. I especially love that the Banana Walnut Bread comes pre-sliced like Starbucks—soft and absolutely delicious!\"", "\"It's royal product of our bakery , we enjoyed every bite which was lasted well and it's good till last week , it's wholesome recipe (Ordered by my brother we also have enjoyed)\""],
@@ -36,7 +35,8 @@
       "tagline": "crunchy, nutty bites made for slow sips and cozy moments",
       "images": ["/images/bakery_products/almond_biscotti.jpeg", "/images/product_detailed/biscotti/b1.jpg", "/images/product_detailed/biscotti/b2.jpg", "/images/product_detailed/biscotti/b3.jpg", "/images/product_detailed/biscotti/b4.jpg", "/images/product_detailed/biscotti/b5.jpg", "/images/product_detailed/biscotti/b8.jpg"],
       "variants": [
-        { "size": "16 whole biscotti", "price": "$14.00" }
+        { "size": "Large", "price": "$14.50" },
+        { "size": "Small", "price": "$3.50" }
       ],
       "description": "A lightly sweet, twice-baked almond biscotti made with almond flour, whole almonds, and organic ingredients for a satisfying crunch with every bite.",
       "ingredients": [
@@ -61,7 +61,8 @@
       "tagline": "tangy, toasty crunch with seeds in every bite",
       "images": ["/images/bakery_products/cranberry_crisps.PNG", "/images/product_detailed/cranberry_crisps/c1.jpg", "/images/product_detailed/cranberry_crisps/c2.jpg",  "/images/product_detailed/cranberry_crisps/c5.jpg", "/images/product_detailed/cranberry_crisps/c8.JPG", "/images/product_detailed/cranberry_crisps/c9.png", "/images/product_detailed/cranberry_crisps/c10.png"],
       "variants": [
-        { "size": "35 crackers", "price": "$11.00" }
+        { "size": "Large", "price": "$12.00" },
+        { "size": "Small", "price": "$2.50" }
       ],
       "description": "Thin, healthy, crispy crackers baked with a blend of toasted seeds, almonds, and dried cranberries, balanced with a subtle tang and natural sweetness for an addictive crunch.",
       "ingredients": [
@@ -189,7 +190,7 @@
       "available": ["US"],
       "availableThisMonth": false,
       "variants": [
-        { "size": "4 oz", "price": "$6.50" }
+        { "size": "4 oz", "price": "$8.00" }
       ],
       "images": ["/images/bakery_products/nut_butters/pistacashew.png"],
       "description": "Smoother and creamier than our other nut butters, it’s less sweet, a little more savory, and perfectly comforting in a way that feels both indulgent and wholesome. Packed with nourishing fats, plant protein, and antioxidants from pistachios, this is a little jar of comfort crafted to taste as dreamy as it looks.",
@@ -213,7 +214,7 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "flyer": "/pdfs/CashewPista.pdf"
+      "flyer": "/pdfs/CashewPistachio.pdf"
 
     },
 
@@ -223,7 +224,7 @@
       "availableThisMonth": false,
       "images": ["/images/bakery_products/nut_butters/cococardamom.png"],
       "variants": [
-        { "size": "4 oz", "price": "$6.00" }
+        { "size": "4 oz", "price": "$7.00" }
       ],
       "description": "Experience the nostalgic flavor of Kaju Katli in this velvety spread, naturally sweetened by cashews and coconut with no added sugar or preservatives and infused with edible wildflowers to provide a vibrant boost of essential micronutrients.",
       "ingredients": [
@@ -245,7 +246,7 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "flyer": "/pdfs/CocoCardamom.pdf"
+      "flyer": "/pdfs/CashewCoca.pdf"
     },
 
     {
@@ -254,7 +255,7 @@
       "availableThisMonth": false,
       "images": ["/images/bakery_products/nut_butters/cacaocashew.png"],
       "variants": [
-        { "size": "4 oz", "price": "$7.00" }
+        { "size": "4 oz", "price": "$8.00" }
       ],
       "description": "Relive the comfort of classic chocolate flavors through this smooth cashew-cacao spread, where creamy cashews meet rich cacao for a naturally indulgent treat. Free from added sugar or preservatives, it’s pure, simple, and irresistibly comforting.",
       "ingredients": [
@@ -278,7 +279,7 @@
         "Used as a filling for dates or desserts.",
         "As a dip with crackers or biscuits."
       ],
-      "flyer": "/pdfs/CacaoCashew.pdf"
+      "flyer": "/pdfs/CashewCacao.pdf"
     },
 
     {
@@ -438,7 +439,45 @@
       "whySpelt": "Spelt flour is unique for a variety of reasons. With its mild, nutty flavor, Spelt is an ancient variety of wheat that is more satiating compared to regular wheat and helps prevent blood sugar spikes. Although it contains gluten, its molecular composition is different— more fragile and water soluble—making it easier to digest. Additionally, Spelt is higher in fiber than wheat, aiding in gluten digestion. It also contains magnesium and zinc, which contribute to overall sleep quality and immunity.",
       "ourBackstory": "Our dream is to open an artisinal bakery at Haritachala (Tiruvannamalai, India). This Sandwich bread is one of the first products being launched from our Haritachala Bakery lineup. We hope you savor the healthy, high- quality ingredients in these traditional recipes and feel our love and passion in every bite. We wholeheartedly seek your blessings and your valuable feedback. May each bite of our artisanal bread offer a soulful experience, bringing families and friends together in shared moments of culinary joy. Our Artisanal Bakers, Hasita and Tanvi, have dedicated countless hours to cultivating their own mother yeast, experimenting with various wheat flours, and perfecting the recipe. Our Sandwich Bread is just the first of many handcrafted products we want to share with you!",
       "flyer": "/pdfs/SpeltBreadFlyer.pdf"
+    },
+
+    {
+      "name": "Organic and Artisinal Strawberry Amla Jam",
+      "available": ["US"],
+      "availableThisMonth": true,
+      "tagline": "Organic and Artisanal",
+      "images": ["/images/product_detailed/strawberry_amla_jam/sa_jam_1.png"],
+      "variants": [
+        { "size": "8 oz", "price": "$11.50" }
+      ],
+      "description": "A sweet, homemade organic strawberry jam with the goodness of amla (gooseberry), free of artificial colors, flavors, and preservatives.",
+      "ingredients": [
+        "Organic Strawberries",
+        "Organic Cane Sugar",
+        "Gooseberry Powder",
+        "Organic Lime Juice"
+      ],
+      "guidelines": ["Consume within 30 days", "Refrigerate after opening."]
+    },
+
+    {
+      "name": "Organic and Artisinal Pineapple Mango Jam",
+      "available": ["US"],
+      "availableThisMonth": true,
+      "tagline": "Organic and Artisanal",
+      "images": ["/images/product_detailed/pineapple_mango_jam/pm_jam_1.png"],
+      "variants": [
+        { "size": "8 oz", "price": "$11.50" }
+      ],
+      "description": "A tropical homemade organic jam made with ripe pineapple and mango, free of artificial colors, flavors, and preservatives.",
+      "ingredients": [
+        "Organic Pineapple",
+        "Organic Cane Sugar",
+        "Mango",
+        "Organic Lime Juice"
+      ],
+      "guidelines": ["Consume within 30 days", "Refrigerate after opening."]
     }
-    
+
   ]
 }

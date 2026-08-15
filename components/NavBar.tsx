@@ -14,7 +14,7 @@ interface NavBarProps {
   showOrderNow?: boolean;
 }
 
-export default function NavBar({ showOrderNow = true }: NavBarProps) {
+export default function NavBar({ showOrderNow = false }: NavBarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
